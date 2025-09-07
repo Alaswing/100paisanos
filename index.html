@@ -3,16 +3,11 @@
 <head>
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>100 Paisanos — Panel (lista + funciones)</title>
+<title>100 Paisanos — Panel</title>
 <style>
 :root{
-  --bg:#0f1b2b;
-  --panel:#12243a;
-  --chip:#19304d;
-  --ok:#32c08b;
-  --bad:#ff4d4f;
-  --text:#eaf1ff;
-  --muted:#a8bfdc;
+  --bg:#0f1b2b; --panel:#12243a; --chip:#19304d;
+  --ok:#32c08b; --bad:#ff4d4f; --text:#eaf1ff; --muted:#a8bfdc;
 }
 *{box-sizing:border-box}
 html,body{height:100%}
@@ -62,6 +57,10 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-appl
 .notice{font-size:12px;color:#9eb7d6;text-align:center}
 .hidden .txt{filter:blur(6px);opacity:.6}
 .hidden .pts{visibility:hidden}
+
+/* nuevo: botón “Cargar JSON” compacto */
+.file-btn{position:relative}
+.file-btn input{position:absolute;inset:0;opacity:0;cursor:pointer}
 </style>
 </head>
 <body>
@@ -72,6 +71,9 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-appl
     <div class="row">
       <button id="turnA" class="btn ok">Turno A</button>
       <button id="turnB" class="btn">Turno B</button>
+      <label class="btn file-btn" title="Cargar un preguntas.json local">Cargar JSON
+        <input id="fileJSON" type="file" accept="application/json">
+      </label>
     </div>
 
     <div class="row"><label class="small">Sesión</label>
@@ -159,8 +161,11 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-appl
   </main>
 </div>
 
-<audio id="tick" src="tick.mp3" preload="auto"></audio>
-<audio id="timeout" src="timeup.mp3" preload="auto"></audio>
+<!-- sonidos -->
+<audio id="sndCorrect" src="correcto.mp3" preload="auto"></audio>
+<audio id="sndWrong"   src="incorrecto.mp3" preload="auto"></audio>
+<audio id="tick"       src="tick.mp3" preload="auto"></audio>
+<audio id="timeout"    src="timeup.mp3" preload="auto"></audio>
 
 <script>
 let DATA=[];           // preguntas.json
@@ -170,15 +175,33 @@ let roundPoints=0;     // puntos acumulados de la ronda
 let multiplier=1;      // multiplicador
 let activeTeam='A';
 let scoreA=0, scoreB=0;
+let robo=false;        // modo robo?
 
 // temporizador
 let tLeft=0, tTimer=null;
 
 const $ = s => document.querySelector(s);
 
-async function loadData(){
-  const r = await fetch('preguntas.json');
-  DATA = await r.json();
+// --------- carga de preguntas ----------
+async function loadDataFromUrl(){
+  try{
+    const r = await fetch('preguntas.json',{cache:'no-store'});
+    DATA = await r.json();
+    normalizeAndMount();
+  }catch(e){
+    console.warn('No se pudo leer preguntas.json desde el servidor.', e);
+    DATA=[]; mountSelector();
+  }
+}
+function loadDataFromFile(file){
+  const fr = new FileReader();
+  fr.onload = () => {
+    try{ DATA = JSON.parse(fr.result); normalizeAndMount(); }
+    catch(e){ alert('Archivo JSON inválido'); }
+  };
+  fr.readAsText(file,'utf-8');
+}
+function normalizeAndMount(){
   // Normaliza esquema plano (texto1/puntos1 .. texto10/puntos10) a respuestas[]
   DATA = DATA.map(q => {
     if (Array.isArray(q.respuestas)) return q;
@@ -193,23 +216,26 @@ async function loadData(){
     }
     return { ...q, respuestas: resp };
   });
-  // llenar selector
+  mountSelector();
+}
+function mountSelector(){
   $("#selPregunta").innerHTML = DATA.map((q,i)=>`<option value="${i}">${i+1}. ${q.pregunta}</option>`).join("");
-  $("#selPregunta").value = qIndex;
-  setQuestion(qIndex);
+  $("#selPregunta").value = qIndex=0;
+  setQuestion(0);
   $("#sesionView").textContent = $("#selSesion").selectedOptions[0].textContent.split(") ")[1];
 }
 
+// --------- pintar pregunta ----------
 function setQuestion(i){
   qIndex = +i;
   const q = DATA[qIndex];
-  $("#pregunta").textContent = q.pregunta;
+  $("#pregunta").textContent = q ? q.pregunta : '—';
   $("#sesionView").textContent = $("#selSesion").selectedOptions[0].textContent.split(') ')[1];
 
-  const max = Math.max(5, (q.respuestas||[]).length); // aseguro 5 renglones
+  const max = Math.max(5, (q?.respuestas||[]).length); // aseguro 5 renglones
   const items = [];
   for(let idx=0; idx<max; idx++){
-    const r = q.respuestas[idx];
+    const r = q?.respuestas[idx];
     if(r){
       const aliases = (r.aliases||r.alias||[]).map(norm);
       items.push(`<li class="answer hidden" data-pts="${r.puntos}" data-text="${norm(r.texto)}" data-alias="${aliases.join('|')}">
@@ -222,11 +248,12 @@ function setQuestion(i){
     }
   }
   $("#answers").innerHTML = items.join("");
-  strikes=0; roundPoints=0; updateUI();
+  strikes=0; roundPoints=0; robo=false; updateUI();
   stopTimer();
   $("#timeView").textContent = "—";
 }
 
+// --------- UI ----------
 function updateUI(){
   $("#puntosRonda").textContent = roundPoints;
   [1,2,3].forEach(n=>$("#x"+n).classList.toggle("on", n<=strikes));
@@ -237,42 +264,35 @@ function updateUI(){
   $("#turnB").classList.toggle("ok", activeTeam==='B');
 }
 
-// --- normalización y similitud ---
-function norm(s){ return (s||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9\s]/g,"").replace(/\s+/g," ").trim() }
+function play(id){ try{ const a=$(id); a.currentTime=0; a.play(); }catch(e){} }
 
+// --- normalización / similitud ---
+function norm(s){ return (s||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9\s]/g,"").replace(/\s+/g," ").trim() }
 function dice(a,b){
   if(a===b) return 1;
   if(a.length<2||b.length<2) return 0;
-  const bigrams = s => {
-    const m=new Map();
-    for(let i=0;i<s.length-1;i++){
-      const bg=s.slice(i,i+2);
-      m.set(bg,(m.get(bg)||0)+1);
-    }
-    return m;
-  };
-  const A=bigrams(a), B=bigrams(b);
-  let overlap=0;
-  for(const [bg,ca] of A){
-    const cb=B.get(bg)||0;
-    overlap += Math.min(ca,cb);
-  }
-  const total=[...A.values()].reduce((x,y)=>x+y,0)+[...B.values()].reduce((x,y)=>x+y,0);
-  return (2*overlap)/total;
+  const grams = s => { const m=new Map(); for(let i=0;i<s.length-1;i++){ const g=s.slice(i,i+2); m.set(g,(m.get(g)||0)+1);} return m; };
+  const A=grams(a), B=grams(b);
+  let overlap=0, tot=0;
+  for(const v of A.values()) tot+=v;
+  for(const v of B.values()) tot+=v;
+  for(const [g,c] of A){ overlap += Math.min(c, B.get(g)||0); }
+  return (2*overlap)/tot;
 }
-
 function isMatch(ans, li){
   const base = li.dataset.text;
   const aliases = (li.dataset.alias||"").split("|").filter(Boolean);
   if(ans===base) return true;
   if(aliases.includes(ans)) return true;
-  if(dice(ans, base) >= 0.88) return true; // umbral alto para evitar falsos positivos
+  if(dice(ans, base) >= 0.88) return true;
   const alt = ans.replace(/(es|s)$/,"");
   if(alt && (alt===base || aliases.includes(alt))) return true;
   return false;
 }
 
+// --------- acciones ----------
 function validar(){
+  if(robo) return; // en robo validas con la mecánica que quieras; aquí bloqueamos para evitar confusiones
   const ans = norm($("#txtRespuesta").value);
   if(!ans) return;
   const candidates = Array.from(document.querySelectorAll("#answers .answer.hidden"));
@@ -281,6 +301,7 @@ function validar(){
     li.classList.remove("hidden");
     const pts = +li.dataset.pts;
     roundPoints += pts * multiplier;
+    play("#sndCorrect");
     updateUI();
   }else{
     strike();
@@ -290,15 +311,28 @@ function validar(){
 
 function strike(){
   strikes = Math.min(3, strikes+1);
+  play("#sndWrong");
+  if(strikes===3){ autoToRobo(); }
+  updateUI();
+}
+
+function autoToRobo(){
+  // cambia a modo ROBO y pasa el turno
+  stopTimer();
+  strikes=0; robo=true;
+  activeTeam = (activeTeam==='A')?'B':'A';
+  $("#selSesion").value="robo";
+  $("#sesionView").textContent="Robo";
   updateUI();
 }
 
 function revelarTodo(){
   document.querySelectorAll("#answers .answer").forEach(el=>el.classList.remove("hidden"));
+  if(!robo) play("#sndCorrect"); // mismo sonido que acierto
 }
 
 function nuevaRonda(){
-  roundPoints=0; strikes=0; updateUI();
+  roundPoints=0; strikes=0; robo=false; updateUI();
   setQuestion(qIndex);
   $("#sesionView").textContent = $("#selSesion").selectedOptions[0].textContent.split(") ")[1];
 }
@@ -336,11 +370,17 @@ function cambiarEquipo(){
   updateUI();
 }
 
+// --------- wiring ----------
 document.addEventListener("DOMContentLoaded",()=>{
-  loadData();
+  loadDataFromUrl();
+
+  $("#fileJSON").addEventListener("change", e=>{
+    const f = e.target.files?.[0];
+    if(f) loadDataFromFile(f);
+  });
 
   $("#selPregunta").addEventListener("change", e=>setQuestion(e.target.value));
-  $("#selSesion").addEventListener("change", e=>$("#sesionView").textContent = e.target.selectedOptions[0].textContent.split(') ')[1]);
+  $("#selSesion").addEventListener("change", e=>{ $("#sesionView").textContent = e.target.selectedOptions[0].textContent.split(') ')[1]; robo = (e.target.value==='robo'); });
   $("#selMult").addEventListener("change", e=>{ multiplier = +e.target.value.replace("x",""); updateUI(); });
 
   $("#btnValidar").addEventListener("click", validar);
