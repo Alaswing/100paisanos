@@ -1,9 +1,9 @@
 <!doctype html>
 <html lang="es">
 <head>
-<meta charset="utf-8">
+<meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
-<title>100 Paisanos — Panel (lista)</title>
+<title>100 Paisanos — Panel (lista + funciones)</title>
 <style>
 :root{
   --bg:#0f1b2b;
@@ -18,7 +18,8 @@
 html,body{height:100%}
 body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial}
 .wrap{display:grid;grid-template-columns:320px 1fr;gap:16px;min-height:100%}
-@media (max-width: 980px){.wrap{grid-template-columns:1fr}}
+@media (max-width:980px){.wrap{grid-template-columns:1fr}}
+
 /* Panel izq */
 .panel{background:var(--panel);border:1px solid #1e3a5f;border-radius:14px;padding:14px}
 .panel h3{margin:0 0 8px;font-weight:800;font-size:18px;color:#cfe6ff}
@@ -31,6 +32,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-appl
 .btn.ok{border-color:#2a8b68;background:#0f2b24}
 .btn.bad{border-color:#8a2f33;background:#2a0d0f}
 .small{font-size:12px;color:var(--muted)}
+
 /* Tablero */
 .board{background:#0b1627;border:1px solid #173355;border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:14px}
 .header{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:12px}
@@ -41,17 +43,22 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-appl
 .score{background:#102a48;border:1px solid #2d507d;border-radius:10px;padding:4px 10px;font-weight:900}
 .title{text-align:center}
 .title h1{margin:0;font-size:28px;letter-spacing:.2px}
-.title .chip{display:inline-block;margin-top:6px;background:var(--chip);border:1px solid #294c78;border-radius:999px;padding:6px 10px}
+.title .chips{display:flex;gap:10px;flex-wrap:wrap;justify-content:center;margin-top:6px}
+.chip{display:inline-block;background:var(--chip);border:1px solid #294c78;border-radius:999px;padding:6px 10px}
+
 /* Respuestas en LISTA */
 .answers{display:flex;flex-direction:column;gap:10px;list-style:none;margin:0;padding:0}
-.answer{display:flex;gap:10px;align-items:center;justify-content:space-between;border:1px solid #1b3a61;background:linear-gradient(180deg,#0e223a,#0a1626);border-radius:12px;padding:10px 12px;min-height:50px}
+.answer{display:flex;gap:10px;align-items:center;justify-content:space-between;border:1px solid #1b3a61;background:linear-gradient(180deg,#0e223a,#0a1626);border-radius:12px;padding:10px 12px;min-height:54px}
 .answer .left{display:flex;gap:10px;align-items:center}
 .badge{width:34px;height:34px;border-radius:8px;background:#112a47;border:1px solid #2a4e7a;display:grid;place-items:center;font-weight:800}
 .answer .pts{font-weight:900}
+.placeholder .txt{opacity:.35}
+.placeholder .pts{opacity:.35}
+
 .strikes{display:flex;gap:10px;justify-content:center}
 .x{width:44px;height:44px;border-radius:10px;background:#2a0d0f;border:1px solid #8a2f33;display:grid;place-items:center;font-size:22px;font-weight:900;opacity:.35}
 .x.on{opacity:1}
-.footer{display:flex;gap:10px;justify-content:center;flex-wrap:wrap}
+
 .notice{font-size:12px;color:#9eb7d6;text-align:center}
 .hidden .txt{filter:blur(6px);opacity:.6}
 .hidden .pts{visibility:hidden}
@@ -61,6 +68,12 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-appl
 <div class="wrap">
   <aside class="panel">
     <h3>Panel del Conductor</h3>
+
+    <div class="row">
+      <button id="turnA" class="btn ok">Turno A</button>
+      <button id="turnB" class="btn">Turno B</button>
+    </div>
+
     <div class="row"><label class="small">Sesión</label>
       <select id="selSesion">
         <option value="duelo">1) Duelo</option>
@@ -68,38 +81,72 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-appl
         <option value="robo">3) Robo</option>
       </select>
     </div>
+
     <div class="row"><label class="small">Multiplicador</label>
-      <select id="selMult">
-        <option>x1</option><option>x2</option><option>x3</option><option>x4</option>
-      </select>
+      <select id="selMult"><option>x1</option><option>x2</option><option>x3</option><option>x4</option></select>
     </div>
+
     <div class="row"><label class="small">Pregunta #</label>
       <select id="selPregunta"></select>
     </div>
+
+    <div class="row"><label class="small">Temporizador (seg)</label>
+      <input id="inpSeg" type="number" value="30" min="5" max="120">
+      <button id="btnTimer" class="btn">Activar</button>
+    </div>
+
     <div class="row"><label class="small">Respuesta del equipo activo</label></div>
     <div class="row">
       <input id="txtRespuesta" type="text" placeholder="Escribe la respuesta del equipo" />
       <button id="btnValidar" class="btn ok">Validar</button>
     </div>
+
     <div class="row">
       <button id="btnRevelar" class="btn">Revelar todas</button>
       <button id="btnNueva" class="btn">Nueva ronda</button>
     </div>
+
     <div class="row">
       <button id="btnStrike" class="btn bad">Strike</button>
+      <button id="btnSumarEquipo" class="btn ok">Sumar a equipo activo</button>
+      <button id="btnCambiar" class="btn">Cambiar equipo</button>
+    </div>
+
+    <div class="row">
+      <button id="plus10A" class="btn ok">+10 A</button>
+      <button id="minus10A" class="btn bad">-10 A</button>
+      <button id="plus10B" class="btn ok">+10 B</button>
+      <button id="minus10B" class="btn bad">-10 B</button>
+    </div>
+
+    <div class="row">
       <button id="btnBorrar" class="btn">Borrar puntos</button>
     </div>
-    <p class="notice">Sugerencia: elige pregunta, luego la sesión y el equipo activo. Usa “Validar” para registrar la respuesta.</p>
+
+    <p class="notice">Primero elige la pregunta, luego la sesión y quién está activo. Usa “Validar” para registrar respuestas.</p>
   </aside>
 
   <main class="board">
     <div class="header">
-      <div class="team"><input id="teamA" value="Equipo A" /></div>
+      <div class="team">
+        <input id="teamA" value="Equipo A" />
+        <div class="score" id="scoreA">0</div>
+      </div>
+
       <div class="title">
         <h1 id="pregunta">Cargando pregunta…</h1>
-        <div class="chip">Puntos ronda: <b id="puntosRonda">0</b></div>
+        <div class="chips">
+          <div class="chip">Puntos ronda: <b id="puntosRonda">0</b></div>
+          <div class="chip">Sesión: <span id="sesionView">—</span></div>
+          <div class="chip">Multiplicador: <span id="multView">x1</span></div>
+          <div class="chip">Tiempo: <span id="timeView">—</span></div>
+        </div>
       </div>
-      <div class="team right"><input id="teamB" value="Equipo B" /></div>
+
+      <div class="team right">
+        <div class="score" id="scoreB">0</div>
+        <input id="teamB" value="Equipo B" />
+      </div>
     </div>
 
     <ul class="answers" id="answers"></ul>
@@ -109,21 +156,23 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-appl
       <div class="x" id="x2">X</div>
       <div class="x" id="x3">X</div>
     </div>
-
-    <div class="footer">
-      <div class="chip">Sesión: <span id="sesionView">—</span></div>
-      <div class="chip">Multiplicador: <span id="multView">x1</span></div>
-    </div>
   </main>
 </div>
+
+<audio id="tick" src="tick.mp3" preload="auto"></audio>
+<audio id="timeout" src="timeup.mp3" preload="auto"></audio>
 
 <script>
 let DATA=[];           // preguntas.json
 let qIndex=0;          // índice de pregunta
-let revealed=false;    // mostrar todo
 let strikes=0;         // X activas
 let roundPoints=0;     // puntos acumulados de la ronda
-let multiplier=1;      // multiplicador de ronda
+let multiplier=1;      // multiplicador
+let activeTeam='A';
+let scoreA=0, scoreB=0;
+
+// temporizador
+let tLeft=0, tTimer=null;
 
 const $ = s => document.querySelector(s);
 
@@ -141,31 +190,79 @@ function setQuestion(i){
   const q = DATA[qIndex];
   $("#pregunta").textContent = q.pregunta;
   $("#sesionView").textContent = $("#selSesion").selectedOptions[0].textContent.split(') ')[1];
-  $("#answers").innerHTML = q.respuestas.map((r,idx)=>`
-    <li class="answer hidden" data-pts="${r.puntos}" data-text="${r.texto.toLowerCase()}">
-      <div class="left">
-        <span class="badge">${idx+1}</span>
-        <span class="txt">${r.texto}</span>
-      </div>
-      <span class="pts">${r.puntos}</span>
-    </li>`).join("");
-  revealed=false; strikes=0; roundPoints=0; updateUI();
+
+  const max = Math.max(5, q.respuestas.length); // aseguro 5 renglones
+  const items = [];
+  for(let idx=0; idx<max; idx++){
+    const r = q.respuestas[idx];
+    if(r){
+      const aliases = (r.aliases||r.alias||[]).map(norm);
+      items.push(`<li class="answer hidden" data-pts="${r.puntos}" data-text="${norm(r.texto)}" data-alias="${aliases.join('|')}">
+        <div class="left"><span class="badge">${idx+1}</span><span class="txt">${r.texto}</span></div>
+        <span class="pts">${r.puntos}</span></li>`);
+    }else{
+      items.push(`<li class="answer placeholder hidden" data-pts="0" data-text="">
+        <div class="left"><span class="badge">${idx+1}</span><span class="txt">—</span></div>
+        <span class="pts">0</span></li>`);
+    }
+  }
+  $("#answers").innerHTML = items.join("");
+  strikes=0; roundPoints=0; updateUI();
+  stopTimer();
+  $("#timeView").textContent = "—";
 }
 
 function updateUI(){
   $("#puntosRonda").textContent = roundPoints;
   [1,2,3].forEach(n=>$("#x"+n).classList.toggle("on", n<=strikes));
   $("#multView").textContent = "x"+multiplier;
+  $("#scoreA").textContent = scoreA;
+  $("#scoreB").textContent = scoreB;
+  $("#turnA").classList.toggle("ok", activeTeam==='A');
+  $("#turnB").classList.toggle("ok", activeTeam==='B');
 }
 
-// --- validación muy simple (exacta + acentos/espacios) ---
-function norm(s){ return (s||"").toLowerCase().normalize("NFD").replace(/[^\w\s]/g,"").replace(/\s+/g," ").trim() }
+// --- normalización y similitud ---
+function norm(s){ return (s||"").toLowerCase().normalize("NFD").replace(/[\u0300-\u036f]/g,"").replace(/[^a-z0-9\s]/g,"").replace(/\s+/g," ").trim() }
+
+function dice(a,b){
+  if(a===b) return 1;
+  if(a.length<2||b.length<2) return 0;
+  const bigrams = s => {
+    const m=new Map();
+    for(let i=0;i<s.length-1;i++){
+      const bg=s.slice(i,i+2);
+      m.set(bg,(m.get(bg)||0)+1);
+    }
+    return m;
+  };
+  const A=bigrams(a), B=bigrams(b);
+  let overlap=0;
+  for(const [bg,ca] of A){
+    const cb=B.get(bg)||0;
+    overlap += Math.min(ca,cb);
+  }
+  const total=[...A.values()].reduce((x,y)=>x+y,0)+[...B.values()].reduce((x,y)=>x+y,0);
+  return (2*overlap)/total;
+}
+
+function isMatch(ans, li){
+  const base = li.dataset.text;
+  const aliases = (li.dataset.alias||"").split("|").filter(Boolean);
+  if(ans===base) return true;
+  if(aliases.includes(ans)) return true;
+  if(dice(ans, base) >= 0.88) return true; // umbral alto para evitar falsos positivos
+  const alt = ans.replace(/(es|s)$/,"");
+  if(alt && (alt===base || aliases.includes(alt))) return true;
+  return false;
+}
+
 function validar(){
   const ans = norm($("#txtRespuesta").value);
   if(!ans) return;
-  const li = Array.from(document.querySelectorAll("#answers .answer"))
-    .find(el=> norm(el.dataset.text) === ans);
-  if(li && li.classList.contains("hidden")){
+  const candidates = Array.from(document.querySelectorAll("#answers .answer.hidden"));
+  const li = candidates.find(el => isMatch(ans, el));
+  if(li){
     li.classList.remove("hidden");
     const pts = +li.dataset.pts;
     roundPoints += pts * multiplier;
@@ -175,17 +272,57 @@ function validar(){
   }
   $("#txtRespuesta").value="";
 }
-function strike(){ strikes = Math.min(3, strikes+1); updateUI(); }
+
+function strike(){
+  strikes = Math.min(3, strikes+1);
+  updateUI();
+}
+
 function revelarTodo(){
   document.querySelectorAll("#answers .answer").forEach(el=>el.classList.remove("hidden"));
 }
+
 function nuevaRonda(){
-  roundPoints=0; strikes=0; revealed=false; updateUI();
+  roundPoints=0; strikes=0; updateUI();
   setQuestion(qIndex);
+}
+
+/*** Temporizador ***/
+function startTimer(){
+  stopTimer();
+  tLeft = Math.max(5, +$("#inpSeg").value||30);
+  $("#timeView").textContent = tLeft+"s";
+  const tick = $("#tick");
+  const timeout = $("#timeout");
+  tTimer = setInterval(()=>{
+    tLeft--; $("#timeView").textContent = tLeft+"s";
+    if(tLeft===20){ try{ tick.loop=true; tick.play(); }catch(e){} }   // tick desde 20s
+    if(tLeft<=0){
+      try{ tick.pause(); tick.currentTime=0; timeout.play(); }catch(e){}
+      stopTimer();
+      strike(); // X automática al expirar
+    }
+  },1000);
+}
+function stopTimer(){
+  if(tTimer){ clearInterval(tTimer); tTimer=null; }
+  try{ const tick=$("#tick"); tick.pause(); tick.currentTime=0; }catch(e){}
+}
+
+/*** Puntos / equipos ***/
+function sumarEquipoActivo(){
+  if(activeTeam==='A'){ scoreA += roundPoints; }
+  else { scoreB += roundPoints; }
+  roundPoints=0; updateUI();
+}
+function cambiarEquipo(){
+  activeTeam = (activeTeam==='A')?'B':'A';
+  updateUI();
 }
 
 document.addEventListener("DOMContentLoaded",()=>{
   loadData();
+
   $("#selPregunta").addEventListener("change", e=>setQuestion(e.target.value));
   $("#selSesion").addEventListener("change", e=>$("#sesionView").textContent = e.target.selectedOptions[0].textContent.split(') ')[1]);
   $("#selMult").addEventListener("change", e=>{ multiplier = +e.target.value.replace("x",""); updateUI(); });
@@ -195,7 +332,23 @@ document.addEventListener("DOMContentLoaded",()=>{
   $("#btnRevelar").addEventListener("click", revelarTodo);
   $("#btnNueva").addEventListener("click", nuevaRonda);
   $("#btnBorrar").addEventListener("click", ()=>{ roundPoints=0; updateUI(); });
+
+  $("#btnTimer").addEventListener("click", startTimer);
+
+  $("#btnSumarEquipo").addEventListener("click", sumarEquipoActivo);
+  $("#btnCambiar").addEventListener("click", cambiarEquipo);
+  $("#turnA").addEventListener("click", ()=>{activeTeam='A'; updateUI();});
+  $("#turnB").addEventListener("click", ()=>{activeTeam='B'; updateUI();});
+
+  $("#plus10A").addEventListener("click", ()=>{ scoreA+=10; updateUI(); });
+  $("#minus10A").addEventListener("click", ()=>{ scoreA=Math.max(0,scoreA-10); updateUI(); });
+  $("#plus10B").addEventListener("click", ()=>{ scoreB+=10; updateUI(); });
+  $("#minus10B").addEventListener("click", ()=>{ scoreB=Math.max(0,scoreB-10); updateUI(); });
+
+  // Enter para validar
+  $("#txtRespuesta").addEventListener("keydown", e=>{ if(e.key==='Enter'){ validar(); }});
 });
 </script>
 </body>
 </html>
+
