@@ -22,11 +22,10 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-appl
 .row input[type="text"], .row input[type="number"], .row select{
   width:100%;padding:8px 10px;border-radius:10px;border:1px solid #345b85;background:#0e223a;color:#eaf1ff;outline:none
 }
-.btn{padding:8px 12px;border-radius:10px;border:1px solid #355c88;background:#113055;color:#eaf1ff;cursor:pointer}
+.btn{padding:8px 12px;border-radius:10px;border:1px solid #355c88;background:#113055;color:#eaf1ff;cursor:pointer;font-weight:700}
 .btn:disabled{opacity:.6;cursor:not-allowed}
 .btn.ok{border-color:#2a8b68;background:#0f2b24}
 .btn.bad{border-color:#8a2f33;background:#2a0d0f}
-.small{font-size:12px;color:var(--muted)}
 
 /* Tablero */
 .board{background:#0b1627;border:1px solid #173355;border-radius:14px;padding:16px;display:flex;flex-direction:column;gap:14px}
@@ -51,7 +50,7 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-appl
 .placeholder .pts{opacity:.35}
 
 .strikes{display:flex;gap:10px;justify-content:center}
-.x{width:44px;height:44px;border-radius:10px;background:#2a0d0f;border:1px solid #8a2f33;display:grid;place-items:center;font-size:22px;font-weight:900;opacity:.35}
+.x{width:44px;height:44px;border-radius:10px;background:#2a0d0f;border:1px solid #8a2f33;display:grid;place-items:center;font-size:22px;font-weight:900;opacity:.35;color:#fff}
 .x.on{opacity:1}
 
 .notice{font-size:12px;color:#9eb7d6;text-align:center}
@@ -61,6 +60,24 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-appl
 /* nuevo: botón “Cargar JSON” compacto */
 .file-btn{position:relative}
 .file-btn input{position:absolute;inset:0;opacity:0;cursor:pointer}
+
+/* Overlay de ganador */
+#winnerOverlay{
+  position:fixed; inset:0; display:none; align-items:center; justify-content:center;
+  background:rgba(0,0,0,.65); z-index:9999; text-align:center;
+}
+#winnerBox{
+  padding:24px 28px; border-radius:18px; background:#07111f; border:1px solid #2b4d77;
+  box-shadow:0 20px 80px rgba(0,0,0,.6);
+}
+#winnerBox img{max-width:400px; width:60%; height:auto; display:block; margin:0 auto 12px}
+#winnerBox h2{margin:6px 0 0; font-size:40px; color:#fff}
+#winnerBox h3{margin:10px 0 0; font-size:26px; color:#a8d0ff}
+@media (max-width:640px){
+  #winnerBox img{width:80%}
+  #winnerBox h2{font-size:28px}
+  #winnerBox h3{font-size:20px}
+}
 </style>
 </head>
 <body>
@@ -97,6 +114,10 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-appl
       <button id="btnTimer" class="btn">Activar</button>
     </div>
 
+    <div class="row"><label class="small">Meta (puntos para ganar)</label>
+      <input id="inpGoal" type="number" value="300" min="10" step="10">
+    </div>
+
     <div class="row"><label class="small">Respuesta del equipo activo</label></div>
     <div class="row">
       <input id="txtRespuesta" type="text" placeholder="Escribe la respuesta del equipo" />
@@ -123,9 +144,19 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-appl
 
     <div class="row">
       <button id="btnBorrar" class="btn">Borrar puntos</button>
+      <button id="btnResetScores" class="btn">Reset marcador</button>
     </div>
 
-    <p class="notice">Primero elige la pregunta, luego la sesión y quién está activo. Usa “Validar” para registrar respuestas.</p>
+    <div class="row" style="flex-wrap:wrap">
+      <span class="small" style="width:100%">Reproductor de sonidos</span>
+      <button class="btn" id="btnPlayCorrect">Correcto</button>
+      <button class="btn" id="btnPlayWrong">Incorrecto</button>
+      <button class="btn" id="btnPlayTick">Tick</button>
+      <button class="btn" id="btnPlayTimeup">TimeUp</button>
+      <button class="btn" id="btnPlayWinner">Ganador</button>
+    </div>
+
+    <p class="notice">Sugerencia: elige la pregunta, luego la sesión y el equipo activo. Usa “Validar” para registrar respuestas.</p>
   </aside>
 
   <main class="board">
@@ -161,11 +192,21 @@ body{margin:0;background:var(--bg);color:var(--text);font-family:system-ui,-appl
   </main>
 </div>
 
+<!-- Overlay ganador -->
+<div id="winnerOverlay">
+  <div id="winnerBox">
+    <img id="winnerImg" src="Ganador.png" alt="Ganador" onerror="this.style.display='none'">
+    <h2>¡Ganaste!</h2>
+    <h3 id="winnerName">Equipo</h3>
+  </div>
+</div>
+
 <!-- sonidos -->
 <audio id="sndCorrect" src="correcto.mp3" preload="auto"></audio>
 <audio id="sndWrong"   src="incorrecto.mp3" preload="auto"></audio>
 <audio id="tick"       src="tick.mp3" preload="auto"></audio>
 <audio id="timeout"    src="timeup.mp3" preload="auto"></audio>
+<audio id="sndWinner"  src="ganador.mp3" preload="auto"></audio>
 
 <script>
 let DATA=[];           // preguntas.json
@@ -176,6 +217,8 @@ let multiplier=1;      // multiplicador
 let activeTeam='A';
 let scoreA=0, scoreB=0;
 let robo=false;        // modo robo?
+
+let roundOwner='A', robbedFrom='A', roboAttempted=false; // control de ROBO
 
 // temporizador
 let tLeft=0, tTimer=null;
@@ -238,17 +281,18 @@ function setQuestion(i){
     const r = q?.respuestas[idx];
     if(r){
       const aliases = (r.aliases||r.alias||[]).map(norm);
-      items.push(`<li class="answer hidden" data-pts="${r.puntos}" data-text="${norm(r.texto)}" data-alias="${aliases.join('|')}">
-        <div class="left"><span class="badge">${idx+1}</span><span class="txt">${r.texto}</span></div>
-        <span class="pts">${r.puntos}</span></li>`);
+      items.push(`<li class="answer hidden" data-pts="\${r.puntos}" data-text="\${norm(r.texto)}" data-alias="\${aliases.join('|')}">
+        <div class="left"><span class="badge">\${idx+1}</span><span class="txt">\${r.texto}</span></div>
+        <span class="pts">\${r.puntos}</span></li>`);
     }else{
       items.push(`<li class="answer placeholder hidden" data-pts="0" data-text="">
-        <div class="left"><span class="badge">${idx+1}</span><span class="txt">—</span></div>
+        <div class="left"><span class="badge">\${idx+1}</span><span class="txt">—</span></div>
         <span class="pts">0</span></li>`);
     }
   }
   $("#answers").innerHTML = items.join("");
-  strikes=0; roundPoints=0; robo=false; updateUI();
+  strikes=0; roundPoints=0; robo=false; roboAttempted=false; roundOwner=activeTeam;
+  updateUI();
   stopTimer();
   $("#timeView").textContent = "—";
 }
@@ -292,7 +336,7 @@ function isMatch(ans, li){
 
 // --------- acciones ----------
 function validar(){
-  if(robo) return; // en robo validas con la mecánica que quieras; aquí bloqueamos para evitar confusiones
+  if(robo){ validarRobo(); return; }
   const ans = norm($("#txtRespuesta").value);
   if(!ans) return;
   const candidates = Array.from(document.querySelectorAll("#answers .answer.hidden"));
@@ -301,6 +345,7 @@ function validar(){
     li.classList.remove("hidden");
     const pts = +li.dataset.pts;
     roundPoints += pts * multiplier;
+    roundOwner = activeTeam; // el último en acertar “posee” la ronda
     play("#sndCorrect");
     updateUI();
   }else{
@@ -309,6 +354,38 @@ function validar(){
   $("#txtRespuesta").value="";
 }
 
+// Validación especial durante ROBO (un intento)
+function validarRobo(){
+  if(roboAttempted) return;
+  const ans = norm($("#txtRespuesta").value);
+  if(!ans) return;
+  const hidden = Array.from(document.querySelectorAll("#answers .answer.hidden"));
+  const li = hidden.find(el => isMatch(ans, el));
+
+  roboAttempted = true;
+  stopTimer();
+
+  if(li){
+    // acierta: roba todos los puntos de la ronda
+    li.classList.remove("hidden");
+    play("#sndCorrect");
+    addPointsTo(activeTeam, roundPoints);
+  }else{
+    // falla: puntos para quien llevaba la ronda
+    play("#sndWrong");
+    addPointsTo(robbedFrom, roundPoints);
+  }
+  roundPoints = 0;
+  updateUI();
+  $("#txtRespuesta").value="";
+  checkWinner();
+}
+
+function addPointsTo(team, pts){
+  if(team==='A') scoreA += pts; else scoreB += pts;
+}
+
+// STRIKE + paso a ROBO
 function strike(){
   strikes = Math.min(3, strikes+1);
   play("#sndWrong");
@@ -317,9 +394,10 @@ function strike(){
 }
 
 function autoToRobo(){
-  // cambia a modo ROBO y pasa el turno
+  // guarda dueño de la ronda y pasa turno
   stopTimer();
-  strikes=0; robo=true;
+  robbedFrom = roundOwner;
+  strikes=0; robo=true; roboAttempted=false;
   activeTeam = (activeTeam==='A')?'B':'A';
   $("#selSesion").value="robo";
   $("#sesionView").textContent="Robo";
@@ -332,7 +410,8 @@ function revelarTodo(){
 }
 
 function nuevaRonda(){
-  roundPoints=0; strikes=0; robo=false; updateUI();
+  roundPoints=0; strikes=0; robo=false; roboAttempted=false; roundOwner=activeTeam;
+  updateUI();
   setQuestion(qIndex);
   $("#sesionView").textContent = $("#selSesion").selectedOptions[0].textContent.split(") ")[1];
 }
@@ -342,13 +421,13 @@ function startTimer(){
   stopTimer();
   tLeft = Math.max(5, +$("#inpSeg").value||30);
   $("#timeView").textContent = tLeft+"s";
-  const tick = $("#tick");
+  const tickA = $("#tick");
   const timeout = $("#timeout");
   tTimer = setInterval(()=>{
     tLeft--; $("#timeView").textContent = tLeft+"s";
-    if(tLeft===20){ try{ tick.loop=true; tick.play(); }catch(e){} }   // tick desde 20s
+    if(tLeft===20){ try{ tickA.loop=true; tickA.play(); }catch(e){} }   // tick desde 20s
     if(tLeft<=0){
-      try{ tick.pause(); tick.currentTime=0; timeout.play(); }catch(e){}
+      try{ tickA.pause(); tickA.currentTime=0; timeout.play(); }catch(e){}
       stopTimer();
       strike(); // X automática al expirar
     }
@@ -356,7 +435,7 @@ function startTimer(){
 }
 function stopTimer(){
   if(tTimer){ clearInterval(tTimer); tTimer=null; }
-  try{ const tick=$("#tick"); tick.pause(); tick.currentTime=0; }catch(e){}
+  try{ const tickA=$("#tick"); tickA.pause(); tickA.currentTime=0; }catch(e){}
 }
 
 /*** Puntos / equipos ***/
@@ -364,10 +443,31 @@ function sumarEquipoActivo(){
   if(activeTeam==='A'){ scoreA += roundPoints; }
   else { scoreB += roundPoints; }
   roundPoints=0; updateUI();
+  checkWinner();
 }
 function cambiarEquipo(){
   activeTeam = (activeTeam==='A')?'B':'A';
   updateUI();
+}
+
+/*** Ganador ***/
+function checkWinner(){
+  const goal = Math.max(1, +$("#inpGoal").value||300);
+  let winName=null;
+  if(scoreA>=goal) winName = $("#teamA").value || "Equipo A";
+  if(scoreB>=goal) winName = $("#teamB").value || "Equipo B";
+  if(!winName) return;
+  // muestra overlay y resetea tras 10s
+  $("#winnerName").textContent = "¡Ganaste, " + winName + "!";
+  $("#winnerOverlay").style.display='flex';
+  play("#sndWinner");
+  setTimeout(()=>{
+    $("#winnerOverlay").style.display='none';
+    // nueva partida
+    scoreA=0; scoreB=0; roundPoints=0; strikes=0; robo=false; roboAttempted=false;
+    updateUI();
+    setQuestion(qIndex);
+  }, 10000);
 }
 
 // --------- wiring ----------
@@ -388,6 +488,7 @@ document.addEventListener("DOMContentLoaded",()=>{
   $("#btnRevelar").addEventListener("click", revelarTodo);
   $("#btnNueva").addEventListener("click", nuevaRonda);
   $("#btnBorrar").addEventListener("click", ()=>{ roundPoints=0; updateUI(); });
+  $("#btnResetScores").addEventListener("click", ()=>{ if(confirm('¿Resetear marcador de ambos equipos?')){ scoreA=0; scoreB=0; updateUI(); } });
 
   $("#btnTimer").addEventListener("click", startTimer);
 
@@ -396,13 +497,20 @@ document.addEventListener("DOMContentLoaded",()=>{
   $("#turnA").addEventListener("click", ()=>{activeTeam='A'; updateUI();});
   $("#turnB").addEventListener("click", ()=>{activeTeam='B'; updateUI();});
 
-  $("#plus10A").addEventListener("click", ()=>{ scoreA+=10; updateUI(); });
+  $("#plus10A").addEventListener("click", ()=>{ scoreA+=10; updateUI(); checkWinner(); });
   $("#minus10A").addEventListener("click", ()=>{ scoreA=Math.max(0,scoreA-10); updateUI(); });
-  $("#plus10B").addEventListener("click", ()=>{ scoreB+=10; updateUI(); });
+  $("#plus10B").addEventListener("click", ()=>{ scoreB+=10; updateUI(); checkWinner(); });
   $("#minus10B").addEventListener("click", ()=>{ scoreB=Math.max(0,scoreB-10); updateUI(); });
 
   // Enter para validar
   $("#txtRespuesta").addEventListener("keydown", e=>{ if(e.key==='Enter'){ validar(); }});
+
+  // Botones de sonidos
+  $("#btnPlayCorrect").addEventListener("click", ()=>play("#sndCorrect"));
+  $("#btnPlayWrong").addEventListener("click", ()=>play("#sndWrong"));
+  $("#btnPlayTick").addEventListener("click", ()=>{ const a=$("#tick"); try{a.currentTime=0; a.play(); setTimeout(()=>{a.pause();a.currentTime=0;},1200);}catch(e){} });
+  $("#btnPlayTimeup").addEventListener("click", ()=>play("#timeout"));
+  $("#btnPlayWinner").addEventListener("click", ()=>play("#sndWinner"));
 });
 </script>
 </body>
