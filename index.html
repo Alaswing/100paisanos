@@ -179,10 +179,25 @@ const $ = s => document.querySelector(s);
 async function loadData(){
   const r = await fetch('preguntas.json');
   DATA = await r.json();
+  // Normaliza esquema plano (texto1/puntos1 .. texto10/puntos10) a respuestas[]
+  DATA = DATA.map(q => {
+    if (Array.isArray(q.respuestas)) return q;
+    const resp = [];
+    for (let i=1;i<=10;i++){
+      const t = q["texto"+i];
+      const p = q["puntos"+i];
+      if (typeof t === "string" && t.trim().length){
+        const alias = q["aliases"+i] || q["alias"+i] || [];
+        resp.push({ texto: t.trim(), puntos: Number(p||0), aliases: Array.isArray(alias)?alias:[] });
+      }
+    }
+    return { ...q, respuestas: resp };
+  });
   // llenar selector
   $("#selPregunta").innerHTML = DATA.map((q,i)=>`<option value="${i}">${i+1}. ${q.pregunta}</option>`).join("");
   $("#selPregunta").value = qIndex;
   setQuestion(qIndex);
+  $("#sesionView").textContent = $("#selSesion").selectedOptions[0].textContent.split(") ")[1];
 }
 
 function setQuestion(i){
@@ -191,7 +206,7 @@ function setQuestion(i){
   $("#pregunta").textContent = q.pregunta;
   $("#sesionView").textContent = $("#selSesion").selectedOptions[0].textContent.split(') ')[1];
 
-  const max = Math.max(5, q.respuestas.length); // aseguro 5 renglones
+  const max = Math.max(5, (q.respuestas||[]).length); // aseguro 5 renglones
   const items = [];
   for(let idx=0; idx<max; idx++){
     const r = q.respuestas[idx];
@@ -285,6 +300,7 @@ function revelarTodo(){
 function nuevaRonda(){
   roundPoints=0; strikes=0; updateUI();
   setQuestion(qIndex);
+  $("#sesionView").textContent = $("#selSesion").selectedOptions[0].textContent.split(") ")[1];
 }
 
 /*** Temporizador ***/
@@ -351,4 +367,3 @@ document.addEventListener("DOMContentLoaded",()=>{
 </script>
 </body>
 </html>
-

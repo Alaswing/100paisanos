@@ -2,2801 +2,5201 @@
   {
     "id": "p001",
     "pregunta": "Si un extraterrestre es tu guía turístico del espacio ¿Dónde querrías ir?",
-    "texto1": "MARTE",
-    "puntos1": 38,
-    "texto2": "LUNA",
-    "puntos2": 35,
-    "texto3": "PLUTÓN",
-    "puntos3": 16,
-    "texto4": "SU PLANETA",
-    "puntos4": 8,
-    "texto5": "GALAXIAS",
-    "puntos5": 3
+    "respuestas": [
+      {
+        "texto": "MARTE",
+        "puntos": 38
+      },
+      {
+        "texto": "LUNA",
+        "puntos": 35
+      },
+      {
+        "texto": "PLUTÓN",
+        "puntos": 16
+      },
+      {
+        "texto": "SU PLANETA",
+        "puntos": 8
+      },
+      {
+        "texto": "GALAXIAS",
+        "puntos": 3
+      }
+    ]
   },
   {
     "id": "p002",
     "pregunta": "Amuleto que algunas personas llevan en la cartera.",
-    "texto1": "VIRGEN",
-    "puntos1": 38,
-    "texto2": "PATA DE CONEJO",
-    "puntos2": 31,
-    "texto3": "IMAGEN",
-    "puntos3": 23,
-    "texto4": "BILLETE DE 2 DÓLARES",
-    "puntos4": 5,
-    "texto5": "CRUCIFIJO",
-    "puntos5": 3
+    "respuestas": [
+      {
+        "texto": "VIRGEN",
+        "puntos": 38
+      },
+      {
+        "texto": "PATA DE CONEJO",
+        "puntos": 31
+      },
+      {
+        "texto": "IMAGEN",
+        "puntos": 23
+      },
+      {
+        "texto": "BILLETE DE 2 DÓLARES",
+        "puntos": 5
+      },
+      {
+        "texto": "CRUCIFIJO",
+        "puntos": 3
+      }
+    ]
   },
   {
     "id": "p003",
     "pregunta": "Animal que ves en la playa.",
-    "texto1": "PEZ",
-    "puntos1": 37,
-    "texto2": "GAVIOTA",
-    "puntos2": 24,
-    "texto3": "DELFÍN",
-    "puntos3": 17,
-    "texto4": "PERRO",
-    "puntos4": 16,
-    "texto5": "TIBURÓN",
-    "puntos5": 6
+    "respuestas": [
+      {
+        "texto": "PEZ",
+        "puntos": 37
+      },
+      {
+        "texto": "GAVIOTA",
+        "puntos": 24
+      },
+      {
+        "texto": "DELFÍN",
+        "puntos": 17
+      },
+      {
+        "texto": "PERRO",
+        "puntos": 16
+      },
+      {
+        "texto": "TIBURÓN",
+        "puntos": 6
+      }
+    ]
   },
   {
     "id": "p004",
     "pregunta": "Algo que es complicado hacer cuando tienes brackets en los dientes.",
-    "texto1": "COMER",
-    "puntos1": 64,
-    "texto2": "MASCAR CHICLE",
-    "puntos2": 21,
-    "texto3": "BESAR",
-    "puntos3": 9,
-    "texto4": "CHIFLAR",
-    "puntos4": 4,
-    "texto5": "HABLAR",
-    "puntos5": 2
+    "respuestas": [
+      {
+        "texto": "COMER",
+        "puntos": 64
+      },
+      {
+        "texto": "MASCAR CHICLE",
+        "puntos": 21
+      },
+      {
+        "texto": "BESAR",
+        "puntos": 9
+      },
+      {
+        "texto": "CHIFLAR",
+        "puntos": 4
+      },
+      {
+        "texto": "HABLAR",
+        "puntos": 2
+      }
+    ]
   },
   {
     "id": "p005",
     "pregunta": "¿De qué famoso te gustaría que hicieran un calendario sexy?",
-    "texto1": "WILLIAM LEVY",
-    "puntos1": 37,
-    "texto2": "DAVID ZEPEDA",
-    "puntos2": 33,
-    "texto3": "GABRIEL SOTO",
-    "puntos3": 13,
-    "texto4": "FERNANDO COLUNGA",
-    "puntos4": 10,
-    "texto5": "BRAD PITT",
-    "puntos5": 7
+    "respuestas": [
+      {
+        "texto": "WILLIAM LEVY",
+        "puntos": 37
+      },
+      {
+        "texto": "DAVID ZEPEDA",
+        "puntos": 33
+      },
+      {
+        "texto": "GABRIEL SOTO",
+        "puntos": 13
+      },
+      {
+        "texto": "FERNANDO COLUNGA",
+        "puntos": 10
+      },
+      {
+        "texto": "BRAD PITT",
+        "puntos": 7
+      }
+    ]
   },
   {
     "id": "p006",
     "pregunta": "¿De qué famosa te gustaría que hicieran un calendario sexy?",
-    "texto1": "KIM KARDASHIAN",
-    "puntos1": 59,
-    "texto2": "SHAKIRA",
-    "puntos2": 21,
-    "texto3": "JENNIFER LÓPEZ",
-    "puntos3": 10,
-    "texto4": "NINEL CONDE",
-    "puntos4": 6,
-    "texto5": "SOFÍA VERGARA",
-    "puntos5": 4
+    "respuestas": [
+      {
+        "texto": "KIM KARDASHIAN",
+        "puntos": 59
+      },
+      {
+        "texto": "SHAKIRA",
+        "puntos": 21
+      },
+      {
+        "texto": "JENNIFER LÓPEZ",
+        "puntos": 10
+      },
+      {
+        "texto": "NINEL CONDE",
+        "puntos": 6
+      },
+      {
+        "texto": "SOFÍA VERGARA",
+        "puntos": 4
+      }
+    ]
   },
   {
     "id": "p007",
     "pregunta": "Algo que la novia podría destruir el día de su boda si el novio no llega.",
-    "texto1": "VESTIDO",
-    "puntos1": 55,
-    "texto2": "RAMO",
-    "puntos2": 25,
-    "texto3": "PASTEL",
-    "puntos3": 10,
-    "texto4": "CARRO",
-    "puntos4": 6,
-    "texto5": "FLORES",
-    "puntos5": 4
+    "respuestas": [
+      {
+        "texto": "VESTIDO",
+        "puntos": 55
+      },
+      {
+        "texto": "RAMO",
+        "puntos": 25
+      },
+      {
+        "texto": "PASTEL",
+        "puntos": 10
+      },
+      {
+        "texto": "CARRO",
+        "puntos": 6
+      },
+      {
+        "texto": "FLORES",
+        "puntos": 4
+      }
+    ]
   },
   {
     "id": "p008",
     "pregunta": "Si tuvieras que vivir en el supermercado ¿Cuál sería tu departamento favorito?",
-    "texto1": "FRUTAS",
-    "puntos1": 37,
-    "texto2": "COMIDA",
-    "puntos2": 32,
-    "texto3": "PANADERÍA",
-    "puntos3": 18,
-    "texto4": "VERDURAS",
-    "puntos4": 7,
-    "texto5": "CONGELADO",
-    "puntos5": 6
+    "respuestas": [
+      {
+        "texto": "FRUTAS",
+        "puntos": 37
+      },
+      {
+        "texto": "COMIDA",
+        "puntos": 32
+      },
+      {
+        "texto": "PANADERÍA",
+        "puntos": 18
+      },
+      {
+        "texto": "VERDURAS",
+        "puntos": 7
+      },
+      {
+        "texto": "CONGELADO",
+        "puntos": 6
+      }
+    ]
   },
   {
     "id": "p009",
     "pregunta": "Si fueras Caperucita Roja, además de fruta ¿Qué llevarías en la canasta?",
-    "texto1": "PAN",
-    "puntos1": 36,
-    "texto2": "COMIDA",
-    "puntos2": 33,
-    "texto3": "FRUTA",
-    "puntos3": 13,
-    "texto4": "DULCES",
-    "puntos4": 10,
-    "texto5": "GALLETAS",
-    "puntos5": 8
+    "respuestas": [
+      {
+        "texto": "PAN",
+        "puntos": 36
+      },
+      {
+        "texto": "COMIDA",
+        "puntos": 33
+      },
+      {
+        "texto": "FRUTA",
+        "puntos": 13
+      },
+      {
+        "texto": "DULCES",
+        "puntos": 10
+      },
+      {
+        "texto": "GALLETAS",
+        "puntos": 8
+      }
+    ]
   },
   {
     "id": "p0010",
     "pregunta": "Si reencarnaras en un personaje de caricatura ¿Quién serías?",
-    "texto1": "MICKEY MOUSE",
-    "puntos1": 40,
-    "texto2": "BUGS BUNNY",
-    "puntos2": 33,
-    "texto3": "MINNIE MOUSE",
-    "puntos3": 10,
-    "texto4": "DORA",
-    "puntos4": 9,
-    "texto5": "PRINCESA",
-    "puntos5": 8
+    "respuestas": [
+      {
+        "texto": "MICKEY MOUSE",
+        "puntos": 40
+      },
+      {
+        "texto": "BUGS BUNNY",
+        "puntos": 33
+      },
+      {
+        "texto": "MINNIE MOUSE",
+        "puntos": 10
+      },
+      {
+        "texto": "DORA",
+        "puntos": 9
+      },
+      {
+        "texto": "PRINCESA",
+        "puntos": 8
+      }
+    ]
   },
   {
     "id": "p0011",
     "pregunta": "Menciona algo que te preguntan en una entrevista de trabajo.",
-    "texto1": "EXPERIENCIA",
-    "puntos1": 50,
-    "texto2": "EDAD",
-    "puntos2": 25,
-    "texto3": "NOMBRE",
-    "puntos3": 16,
-    "texto4": "TRABAJO ANTERIOR",
-    "puntos4": 5,
-    "texto5": "DOMICILIO",
-    "puntos5": 4
+    "respuestas": [
+      {
+        "texto": "EXPERIENCIA",
+        "puntos": 50
+      },
+      {
+        "texto": "EDAD",
+        "puntos": 25
+      },
+      {
+        "texto": "NOMBRE",
+        "puntos": 16
+      },
+      {
+        "texto": "TRABAJO ANTERIOR",
+        "puntos": 5
+      },
+      {
+        "texto": "DOMICILIO",
+        "puntos": 4
+      }
+    ]
   },
   {
     "id": "p0012",
     "pregunta": "Completa la frase: \"mi esposo cree que es el rey de....\"",
-    "texto1": "CASA",
-    "puntos1": 54,
-    "texto2": "MUNDO",
-    "puntos2": 32,
-    "texto3": "ROMA",
-    "puntos3": 7,
-    "texto4": "SELVA",
-    "puntos4": 5,
-    "texto5": "UNIVERSO",
-    "puntos5": 2
+    "respuestas": [
+      {
+        "texto": "CASA",
+        "puntos": 54
+      },
+      {
+        "texto": "MUNDO",
+        "puntos": 32
+      },
+      {
+        "texto": "ROMA",
+        "puntos": 7
+      },
+      {
+        "texto": "SELVA",
+        "puntos": 5
+      },
+      {
+        "texto": "UNIVERSO",
+        "puntos": 2
+      }
+    ]
   },
   {
     "id": "p0013",
     "pregunta": "Algo que te gusta oír al despertar.",
-    "texto1": "MÚSICA",
-    "puntos1": 40,
-    "texto2": "PÁJAROS",
-    "puntos2": 20,
-    "texto3": "GALLO",
-    "puntos3": 17,
-    "texto4": "BUENOS DÍAS",
-    "puntos4": 14,
-    "texto5": "CANTAR",
-    "puntos5": 9
+    "respuestas": [
+      {
+        "texto": "MÚSICA",
+        "puntos": 40
+      },
+      {
+        "texto": "PÁJAROS",
+        "puntos": 20
+      },
+      {
+        "texto": "GALLO",
+        "puntos": 17
+      },
+      {
+        "texto": "BUENOS DÍAS",
+        "puntos": 14
+      },
+      {
+        "texto": "CANTAR",
+        "puntos": 9
+      }
+    ]
   },
   {
     "id": "p0014",
     "pregunta": "Animal protagonista de las caricaturas.",
-    "texto1": "CONEJO",
-    "puntos1": 33,
-    "texto2": "PERRO",
-    "puntos2": 29,
-    "texto3": "GATO",
-    "puntos3": 17,
-    "texto4": "RATÓN",
-    "puntos4": 15,
-    "texto5": "PATO",
-    "puntos5": 6
+    "respuestas": [
+      {
+        "texto": "CONEJO",
+        "puntos": 33
+      },
+      {
+        "texto": "PERRO",
+        "puntos": 29
+      },
+      {
+        "texto": "GATO",
+        "puntos": 17
+      },
+      {
+        "texto": "RATÓN",
+        "puntos": 15
+      },
+      {
+        "texto": "PATO",
+        "puntos": 6
+      }
+    ]
   },
   {
     "id": "p0015",
     "pregunta": "Si vivieras en un cuento de hadas ¿A quién te encontrarías en el super?",
-    "texto1": "PRÍNCIPE",
-    "puntos1": 31,
-    "texto2": "BLANCA NIEVES",
-    "puntos2": 28,
-    "texto3": "CENICIENTA",
-    "puntos3": 18,
-    "texto4": "BRUJA",
-    "puntos4": 17,
-    "texto5": "SHREK",
-    "puntos5": 6
+    "respuestas": [
+      {
+        "texto": "PRÍNCIPE",
+        "puntos": 31
+      },
+      {
+        "texto": "BLANCA NIEVES",
+        "puntos": 28
+      },
+      {
+        "texto": "CENICIENTA",
+        "puntos": 18
+      },
+      {
+        "texto": "BRUJA",
+        "puntos": 17
+      },
+      {
+        "texto": "SHREK",
+        "puntos": 6
+      }
+    ]
   },
   {
     "id": "p0016",
     "pregunta": "¿Cuál sería la mejor forma de comenzar tu día?",
-    "texto1": "ORANDO",
-    "puntos1": 28,
-    "texto2": "BUEN DESAYUNO",
-    "puntos2": 22,
-    "texto3": "CAFÉ",
-    "puntos3": 21,
-    "texto4": "BAÑARSE",
-    "puntos4": 18,
-    "texto5": "EJERCICIO",
-    "puntos5": 11
+    "respuestas": [
+      {
+        "texto": "ORANDO",
+        "puntos": 28
+      },
+      {
+        "texto": "BUEN DESAYUNO",
+        "puntos": 22
+      },
+      {
+        "texto": "CAFÉ",
+        "puntos": 21
+      },
+      {
+        "texto": "BAÑARSE",
+        "puntos": 18
+      },
+      {
+        "texto": "EJERCICIO",
+        "puntos": 11
+      }
+    ]
   },
   {
     "id": "p0017",
     "pregunta": "Cantante famosa por su forma de vestir.",
-    "texto1": "LADY GAGA",
-    "puntos1": 40,
-    "texto2": "JENNIFER LÓPEZ",
-    "puntos2": 20,
-    "texto3": "SHAKIRA",
-    "puntos3": 16,
-    "texto4": "GLORIA TREVI",
-    "puntos4": 14,
-    "texto5": "JENNI RIVERA",
-    "puntos5": 10
+    "respuestas": [
+      {
+        "texto": "LADY GAGA",
+        "puntos": 40
+      },
+      {
+        "texto": "JENNIFER LÓPEZ",
+        "puntos": 20
+      },
+      {
+        "texto": "SHAKIRA",
+        "puntos": 16
+      },
+      {
+        "texto": "GLORIA TREVI",
+        "puntos": 14
+      },
+      {
+        "texto": "JENNI RIVERA",
+        "puntos": 10
+      }
+    ]
   },
   {
     "id": "p0018",
     "pregunta": "¿En qué puedes meter todo el cuerpo?",
-    "texto1": "BAÑERA",
-    "puntos1": 32,
-    "texto2": "ALBERCA",
-    "puntos2": 26,
-    "texto3": "CARRO",
-    "puntos3": 14,
-    "texto4": "AGUA",
-    "puntos4": 12,
-    "texto5": "BAÑO",
-    "puntos5": 16
+    "respuestas": [
+      {
+        "texto": "BAÑERA",
+        "puntos": 32
+      },
+      {
+        "texto": "ALBERCA",
+        "puntos": 26
+      },
+      {
+        "texto": "CARRO",
+        "puntos": 14
+      },
+      {
+        "texto": "AGUA",
+        "puntos": 12
+      },
+      {
+        "texto": "BAÑO",
+        "puntos": 16
+      }
+    ]
   },
   {
     "id": "p0019",
     "pregunta": "En un restaurante ¿Qué haces mientras esperas que te den una mesa?",
-    "texto1": "PLATICAR",
-    "puntos1": 41,
-    "texto2": "USAR CELULAR",
-    "puntos2": 17,
-    "texto3": "INTERNET",
-    "puntos3": 12,
-    "texto4": "ESPERAR",
-    "puntos4": 10,
-    "texto5": "TOMAR BEBIDAS",
-    "puntos5": 8
+    "respuestas": [
+      {
+        "texto": "PLATICAR",
+        "puntos": 41
+      },
+      {
+        "texto": "USAR CELULAR",
+        "puntos": 17
+      },
+      {
+        "texto": "INTERNET",
+        "puntos": 12
+      },
+      {
+        "texto": "ESPERAR",
+        "puntos": 10
+      },
+      {
+        "texto": "TOMAR BEBIDAS",
+        "puntos": 8
+      }
+    ]
   },
   {
     "id": "p0020",
     "pregunta": "¿Al lado de qué celebridad latina odiarías sentarte en el cine?",
-    "texto1": "THALÍA",
-    "puntos1": 29,
-    "texto2": "VICENTE FERNÁNDEZ",
-    "puntos2": 24,
-    "texto3": "PAQUITA LA DEL BARRIO",
-    "puntos3": 23,
-    "texto4": "JENNIFER LÓPEZ",
-    "puntos4": 19,
-    "texto5": "LUCERO",
-    "puntos5": 5
+    "respuestas": [
+      {
+        "texto": "THALÍA",
+        "puntos": 29
+      },
+      {
+        "texto": "VICENTE FERNÁNDEZ",
+        "puntos": 24
+      },
+      {
+        "texto": "PAQUITA LA DEL BARRIO",
+        "puntos": 23
+      },
+      {
+        "texto": "JENNIFER LÓPEZ",
+        "puntos": 19
+      },
+      {
+        "texto": "LUCERO",
+        "puntos": 5
+      }
+    ]
   },
   {
     "id": "p0021",
     "pregunta": "Si tu suegra fuera una bruja ¿Qué le regalarías para su cumpleaños?",
-    "texto1": "ESCOBA",
-    "puntos1": 36,
-    "texto2": "DISFRAZ",
-    "puntos2": 31,
-    "texto3": "BIBLIA",
-    "puntos3": 17,
-    "texto4": "FLORES",
-    "puntos4": 14,
-    "texto5": "MANZANA",
-    "puntos5": 2
+    "respuestas": [
+      {
+        "texto": "ESCOBA",
+        "puntos": 36
+      },
+      {
+        "texto": "DISFRAZ",
+        "puntos": 31
+      },
+      {
+        "texto": "BIBLIA",
+        "puntos": 17
+      },
+      {
+        "texto": "FLORES",
+        "puntos": 14
+      },
+      {
+        "texto": "MANZANA",
+        "puntos": 2
+      }
+    ]
   },
   {
     "id": "p0022",
     "pregunta": "Si tuvieras algún súper poder, ¿A quién se lo confesarías?",
-    "texto1": "PAREJA",
-    "puntos1": 35,
-    "texto2": "PAPÁS",
-    "puntos2": 23,
-    "texto3": "HIJOS",
-    "puntos3": 21,
-    "texto4": "NADIE",
-    "puntos4": 12,
-    "texto5": "AMIGA",
-    "puntos5": 9
+    "respuestas": [
+      {
+        "texto": "PAREJA",
+        "puntos": 35
+      },
+      {
+        "texto": "PAPÁS",
+        "puntos": 23
+      },
+      {
+        "texto": "HIJOS",
+        "puntos": 21
+      },
+      {
+        "texto": "NADIE",
+        "puntos": 12
+      },
+      {
+        "texto": "AMIGA",
+        "puntos": 9
+      }
+    ]
   },
   {
     "id": "p0023",
     "pregunta": "Menciona algo que se rellena.",
-    "texto1": "CHILE",
-    "puntos1": 31,
-    "texto2": "PAVO",
-    "puntos2": 20,
-    "texto3": "ALMOHADA",
-    "puntos3": 18,
-    "texto4": "PASTEL",
-    "puntos4": 16,
-    "texto5": "PAPA",
-    "puntos5": 15
+    "respuestas": [
+      {
+        "texto": "CHILE",
+        "puntos": 31
+      },
+      {
+        "texto": "PAVO",
+        "puntos": 20
+      },
+      {
+        "texto": "ALMOHADA",
+        "puntos": 18
+      },
+      {
+        "texto": "PASTEL",
+        "puntos": 16
+      },
+      {
+        "texto": "PAPA",
+        "puntos": 15
+      }
+    ]
   },
   {
     "id": "p0024",
     "pregunta": "¿Cuántas pestañas tienes?",
-    "texto1": "CINCUENTA",
-    "puntos1": 30,
-    "texto2": "CIEN",
-    "puntos2": 24,
-    "texto3": "VEINTE",
-    "puntos3": 20,
-    "texto4": "CUATRO",
-    "puntos4": 18,
-    "texto5": "TREINTA",
-    "puntos5": 8
+    "respuestas": [
+      {
+        "texto": "CINCUENTA",
+        "puntos": 30
+      },
+      {
+        "texto": "CIEN",
+        "puntos": 24
+      },
+      {
+        "texto": "VEINTE",
+        "puntos": 20
+      },
+      {
+        "texto": "CUATRO",
+        "puntos": 18
+      },
+      {
+        "texto": "TREINTA",
+        "puntos": 8
+      }
+    ]
   },
   {
     "id": "p0025",
     "pregunta": "Razón por la que te podrías pasar una luz roja.",
-    "texto1": "EMERGENCIA",
-    "puntos1": 33,
-    "texto2": "DISTRACCIÓN",
-    "puntos2": 30,
-    "texto3": "HABLAR POR TELÉFONO",
-    "puntos3": 18,
-    "texto4": "DESCUIDO",
-    "puntos4": 10,
-    "texto5": "MENSAJEANDO",
-    "puntos5": 9
+    "respuestas": [
+      {
+        "texto": "EMERGENCIA",
+        "puntos": 33
+      },
+      {
+        "texto": "DISTRACCIÓN",
+        "puntos": 30
+      },
+      {
+        "texto": "HABLAR POR TELÉFONO",
+        "puntos": 18
+      },
+      {
+        "texto": "DESCUIDO",
+        "puntos": 10
+      },
+      {
+        "texto": "MENSAJEANDO",
+        "puntos": 9
+      }
+    ]
   },
   {
     "id": "p0026",
     "pregunta": "Si tuviera la crisis de los 40's, ¿Qué compraría un hombre?",
-    "texto1": "CARRO",
-    "puntos1": 43,
-    "texto2": "MOTOCICLETA",
-    "puntos2": 20,
-    "texto3": "ROPA",
-    "puntos3": 18,
-    "texto4": "LICOR",
-    "puntos4": 12,
-    "texto5": "VITAMINAS",
-    "puntos5": 7
+    "respuestas": [
+      {
+        "texto": "CARRO",
+        "puntos": 43
+      },
+      {
+        "texto": "MOTOCICLETA",
+        "puntos": 20
+      },
+      {
+        "texto": "ROPA",
+        "puntos": 18
+      },
+      {
+        "texto": "LICOR",
+        "puntos": 12
+      },
+      {
+        "texto": "VITAMINAS",
+        "puntos": 7
+      }
+    ]
   },
   {
     "id": "p0027",
     "pregunta": "Menciona algo que es complicado hacer en la nieve.",
-    "texto1": "CAMINAR",
-    "puntos1": 33,
-    "texto2": "CORRER",
-    "puntos2": 24,
-    "texto3": "MANEJAR",
-    "puntos3": 23,
-    "texto4": "ESQUIAR",
-    "puntos4": 11,
-    "texto5": "FOGATA",
-    "puntos5": 9
+    "respuestas": [
+      {
+        "texto": "CAMINAR",
+        "puntos": 33
+      },
+      {
+        "texto": "CORRER",
+        "puntos": 24
+      },
+      {
+        "texto": "MANEJAR",
+        "puntos": 23
+      },
+      {
+        "texto": "ESQUIAR",
+        "puntos": 11
+      },
+      {
+        "texto": "FOGATA",
+        "puntos": 9
+      }
+    ]
   },
   {
     "id": "p0028",
     "pregunta": "¿A qué artista latino invitaría Lady Gaga a su fiesta de cumpleaños?",
-    "texto1": "RICKY MARTIN",
-    "puntos1": 30,
-    "texto2": "ALEJANDRO FDZ.",
-    "puntos2": 29,
-    "texto3": "LUIS MIGUEL",
-    "puntos3": 24,
-    "texto4": "JUAN GABRIEL",
-    "puntos4": 9,
-    "texto5": "PITBULL",
-    "puntos5": 8
+    "respuestas": [
+      {
+        "texto": "RICKY MARTIN",
+        "puntos": 30
+      },
+      {
+        "texto": "ALEJANDRO FDZ.",
+        "puntos": 29
+      },
+      {
+        "texto": "LUIS MIGUEL",
+        "puntos": 24
+      },
+      {
+        "texto": "JUAN GABRIEL",
+        "puntos": 9
+      },
+      {
+        "texto": "PITBULL",
+        "puntos": 8
+      }
+    ]
   },
   {
     "id": "p0029",
     "pregunta": "Si la Cenicienta visitara al psicólogo ¿De qué hablaría con él?",
-    "texto1": "PROBLEMAS",
-    "puntos1": 31,
-    "texto2": "PRÍNCIPE",
-    "puntos2": 22,
-    "texto3": "MADRASTRA",
-    "puntos3": 21,
-    "texto4": "TRAUMAS",
-    "puntos4": 18,
-    "texto5": "HADA MADRINA",
-    "puntos5": 8
+    "respuestas": [
+      {
+        "texto": "PROBLEMAS",
+        "puntos": 31
+      },
+      {
+        "texto": "PRÍNCIPE",
+        "puntos": 22
+      },
+      {
+        "texto": "MADRASTRA",
+        "puntos": 21
+      },
+      {
+        "texto": "TRAUMAS",
+        "puntos": 18
+      },
+      {
+        "texto": "HADA MADRINA",
+        "puntos": 8
+      }
+    ]
   },
   {
     "id": "p0030",
     "pregunta": "Si fueras un duende, A quién le harías travesuras?",
-    "texto1": "PAREJA",
-    "puntos1": 27,
-    "texto2": "HIJOS",
-    "puntos2": 24,
-    "texto3": "PAPÁS",
-    "puntos3": 20,
-    "texto4": "AMIGO",
-    "puntos4": 18,
-    "texto5": "HERMANOS",
-    "puntos5": 11
+    "respuestas": [
+      {
+        "texto": "PAREJA",
+        "puntos": 27
+      },
+      {
+        "texto": "HIJOS",
+        "puntos": 24
+      },
+      {
+        "texto": "PAPÁS",
+        "puntos": 20
+      },
+      {
+        "texto": "AMIGO",
+        "puntos": 18
+      },
+      {
+        "texto": "HERMANOS",
+        "puntos": 11
+      }
+    ]
   },
   {
     "id": "p0031",
     "pregunta": "Alimento que se vende en un café.",
-    "texto1": "PAN",
-    "puntos1": 42,
-    "texto2": "DONAS",
-    "puntos2": 31,
-    "texto3": "PASTEL",
-    "puntos3": 11,
-    "texto4": "GALLETAS",
-    "puntos4": 9,
-    "texto5": "SANDWICH",
-    "puntos5": 7
+    "respuestas": [
+      {
+        "texto": "PAN",
+        "puntos": 42
+      },
+      {
+        "texto": "DONAS",
+        "puntos": 31
+      },
+      {
+        "texto": "PASTEL",
+        "puntos": 11
+      },
+      {
+        "texto": "GALLETAS",
+        "puntos": 9
+      },
+      {
+        "texto": "SANDWICH",
+        "puntos": 7
+      }
+    ]
   },
   {
     "id": "p0032",
     "pregunta": "Si un boxeador hiciera una venta de garaje ¿Qué objetos encontrarías?",
-    "texto1": "GUANTES",
-    "puntos1": 73,
-    "texto2": "SHORTS",
-    "puntos2": 10,
-    "texto3": "CINTURONES",
-    "puntos3": 7,
-    "texto4": "COSTAL",
-    "puntos4": 6,
-    "texto5": "VENDAS",
-    "puntos5": 4
+    "respuestas": [
+      {
+        "texto": "GUANTES",
+        "puntos": 73
+      },
+      {
+        "texto": "SHORTS",
+        "puntos": 10
+      },
+      {
+        "texto": "CINTURONES",
+        "puntos": 7
+      },
+      {
+        "texto": "COSTAL",
+        "puntos": 6
+      },
+      {
+        "texto": "VENDAS",
+        "puntos": 4
+      }
+    ]
   },
   {
     "id": "p0033",
     "pregunta": "Si estuvieras desnudo en una isla desierta, ¿Con qué te cubrirías?",
-    "texto1": "HOJAS",
-    "puntos1": 82,
-    "texto2": "NADA",
-    "puntos2": 9,
-    "texto3": "MANOS",
-    "puntos3": 6,
-    "texto4": "ARENA",
-    "puntos4": 2,
-    "texto5": "CÁSCARAS DE COCO",
-    "puntos5": 1
+    "respuestas": [
+      {
+        "texto": "HOJAS",
+        "puntos": 82
+      },
+      {
+        "texto": "NADA",
+        "puntos": 9
+      },
+      {
+        "texto": "MANOS",
+        "puntos": 6
+      },
+      {
+        "texto": "ARENA",
+        "puntos": 2
+      },
+      {
+        "texto": "CÁSCARAS DE COCO",
+        "puntos": 1
+      }
+    ]
   },
   {
     "id": "p0034",
     "pregunta": "Forma de demostrar que quieres a alguien.",
-    "texto1": "BESOS",
-    "puntos1": 30,
-    "texto2": "ABRAZOS",
-    "puntos2": 28,
-    "texto3": "REGALO",
-    "puntos3": 19,
-    "texto4": "FLORES",
-    "puntos4": 16,
-    "texto5": "CARIÑO",
-    "puntos5": 7
+    "respuestas": [
+      {
+        "texto": "BESOS",
+        "puntos": 30
+      },
+      {
+        "texto": "ABRAZOS",
+        "puntos": 28
+      },
+      {
+        "texto": "REGALO",
+        "puntos": 19
+      },
+      {
+        "texto": "FLORES",
+        "puntos": 16
+      },
+      {
+        "texto": "CARIÑO",
+        "puntos": 7
+      }
+    ]
   },
   {
     "id": "p0035",
     "pregunta": "Además de huevos ¿Otro ingrediente para hacer un pastel?",
-    "texto1": "HARINA",
-    "puntos1": 48,
-    "texto2": "LECHE",
-    "puntos2": 39,
-    "texto3": "AZÚCAR",
-    "puntos3": 8,
-    "texto4": "FRUTA",
-    "puntos4": 3,
-    "texto5": "MANTEQUILLA",
-    "puntos5": 2
+    "respuestas": [
+      {
+        "texto": "HARINA",
+        "puntos": 48
+      },
+      {
+        "texto": "LECHE",
+        "puntos": 39
+      },
+      {
+        "texto": "AZÚCAR",
+        "puntos": 8
+      },
+      {
+        "texto": "FRUTA",
+        "puntos": 3
+      },
+      {
+        "texto": "MANTEQUILLA",
+        "puntos": 2
+      }
+    ]
   },
   {
     "id": "p0036",
     "pregunta": "Si tu hijo estuviera saliendo con alguien, ¿Qué artista latina te gustaría que fuera?",
-    "texto1": "GLORIA TREVI",
-    "puntos1": 73,
-    "texto2": "NINEL CONDE",
-    "puntos2": 16,
-    "texto3": "SHAKIRA",
-    "puntos3": 5,
-    "texto4": "JENNIFER LÓPEZ",
-    "puntos4": 4,
-    "texto5": "CRISTINA AGUILERA",
-    "puntos5": 2
+    "respuestas": [
+      {
+        "texto": "GLORIA TREVI",
+        "puntos": 73
+      },
+      {
+        "texto": "NINEL CONDE",
+        "puntos": 16
+      },
+      {
+        "texto": "SHAKIRA",
+        "puntos": 5
+      },
+      {
+        "texto": "JENNIFER LÓPEZ",
+        "puntos": 4
+      },
+      {
+        "texto": "CRISTINA AGUILERA",
+        "puntos": 2
+      }
+    ]
   },
   {
     "id": "p0037",
     "pregunta": "Si fueras Vicente Fernández ¿Qué animal sería el consentido de tu rancho?",
-    "texto1": "CABALLO",
-    "puntos1": 80,
-    "texto2": "PERRO",
-    "puntos2": 4,
-    "texto3": "GALLO",
-    "puntos3": 3,
-    "texto4": "LEÓN",
-    "puntos4": 2,
-    "texto5": "TORO",
-    "puntos5": 1
+    "respuestas": [
+      {
+        "texto": "CABALLO",
+        "puntos": 80
+      },
+      {
+        "texto": "PERRO",
+        "puntos": 4
+      },
+      {
+        "texto": "GALLO",
+        "puntos": 3
+      },
+      {
+        "texto": "LEÓN",
+        "puntos": 2
+      },
+      {
+        "texto": "TORO",
+        "puntos": 1
+      }
+    ]
   },
   {
     "id": "p0038",
     "pregunta": "Si tu hija te presenta a su novio, ¿Qué artista latino te gustaría que fuera?",
-    "texto1": "WILLIAM LEVY",
-    "puntos1": 55,
-    "texto2": "RICKY MARTIN",
-    "puntos2": 17,
-    "texto3": "CHAYANNE",
-    "puntos3": 15,
-    "texto4": "LUIS MIGUEL",
-    "puntos4": 9,
-    "texto5": "PRINCE ROYCE",
-    "puntos5": 4
+    "respuestas": [
+      {
+        "texto": "WILLIAM LEVY",
+        "puntos": 55
+      },
+      {
+        "texto": "RICKY MARTIN",
+        "puntos": 17
+      },
+      {
+        "texto": "CHAYANNE",
+        "puntos": 15
+      },
+      {
+        "texto": "LUIS MIGUEL",
+        "puntos": 9
+      },
+      {
+        "texto": "PRINCE ROYCE",
+        "puntos": 4
+      }
+    ]
   },
   {
     "id": "p0039",
     "pregunta": "Color de camisa más usado por los hombres.",
-    "texto1": "AZUL",
-    "puntos1": 43,
-    "texto2": "BLANCO",
-    "puntos2": 29,
-    "texto3": "NEGRO",
-    "puntos3": 25,
-    "texto4": "GRIS",
-    "puntos4": 2,
-    "texto5": "ROJO",
-    "puntos5": 1
+    "respuestas": [
+      {
+        "texto": "AZUL",
+        "puntos": 43
+      },
+      {
+        "texto": "BLANCO",
+        "puntos": 29
+      },
+      {
+        "texto": "NEGRO",
+        "puntos": 25
+      },
+      {
+        "texto": "GRIS",
+        "puntos": 2
+      },
+      {
+        "texto": "ROJO",
+        "puntos": 1
+      }
+    ]
   },
   {
     "id": "p0040",
     "pregunta": "Si pudieras regresar en el tiempo, ¿En qué década te gustaría vivir?",
-    "texto1": "OCHENTAS",
-    "puntos1": 37,
-    "texto2": "SETENTAS",
-    "puntos2": 31,
-    "texto3": "SESENTAS",
-    "puntos3": 24,
-    "texto4": "CINCUENTAS",
-    "puntos4": 7,
-    "texto5": "NOVENTAS",
-    "puntos5": 1
+    "respuestas": [
+      {
+        "texto": "OCHENTAS",
+        "puntos": 37
+      },
+      {
+        "texto": "SETENTAS",
+        "puntos": 31
+      },
+      {
+        "texto": "SESENTAS",
+        "puntos": 24
+      },
+      {
+        "texto": "CINCUENTAS",
+        "puntos": 7
+      },
+      {
+        "texto": "NOVENTAS",
+        "puntos": 1
+      }
+    ]
   },
   {
     "id": "p0041",
     "pregunta": "Si el presidente Obama y su esposa discutieran ¿Sobre qué tema sería?",
-    "texto1": "INMIGRACIÓN",
-    "puntos1": 32,
-    "texto2": "HIJOS",
-    "puntos2": 27,
-    "texto3": "ECONOMÍA",
-    "puntos3": 14,
-    "texto4": "INFIDELIDAD",
-    "puntos4": 8,
-    "texto5": "POLÍTICA",
-    "puntos5": 7
+    "respuestas": [
+      {
+        "texto": "INMIGRACIÓN",
+        "puntos": 32
+      },
+      {
+        "texto": "HIJOS",
+        "puntos": 27
+      },
+      {
+        "texto": "ECONOMÍA",
+        "puntos": 14
+      },
+      {
+        "texto": "INFIDELIDAD",
+        "puntos": 8
+      },
+      {
+        "texto": "POLÍTICA",
+        "puntos": 7
+      }
+    ]
   },
   {
     "id": "p0042",
     "pregunta": "Si Vicente Fernández fuera tu papá ¿Qué te regalaría el día de tu boda?",
-    "texto1": "CABALLO",
-    "puntos1": 56,
-    "texto2": "RANCHO",
-    "puntos2": 18,
-    "texto3": "CASA",
-    "puntos3": 13,
-    "texto4": "CARRO",
-    "puntos4": 8,
-    "texto5": "CANCIÓN",
-    "puntos5": 5
+    "respuestas": [
+      {
+        "texto": "CABALLO",
+        "puntos": 56
+      },
+      {
+        "texto": "RANCHO",
+        "puntos": 18
+      },
+      {
+        "texto": "CASA",
+        "puntos": 13
+      },
+      {
+        "texto": "CARRO",
+        "puntos": 8
+      },
+      {
+        "texto": "CANCIÓN",
+        "puntos": 5
+      }
+    ]
   },
   {
     "id": "p0043",
     "pregunta": "Si fueras un extraterrestre, ¿De qué color serías?",
-    "texto1": "VERDE",
-    "puntos1": 46,
-    "texto2": "AZUL",
-    "puntos2": 21,
-    "texto3": "BLANCO",
-    "puntos3": 13,
-    "texto4": "ROJO",
-    "puntos4": 11,
-    "texto5": "CAFÉ",
-    "puntos5": 9
+    "respuestas": [
+      {
+        "texto": "VERDE",
+        "puntos": 46
+      },
+      {
+        "texto": "AZUL",
+        "puntos": 21
+      },
+      {
+        "texto": "BLANCO",
+        "puntos": 13
+      },
+      {
+        "texto": "ROJO",
+        "puntos": 11
+      },
+      {
+        "texto": "CAFÉ",
+        "puntos": 9
+      }
+    ]
   },
   {
     "id": "p0044",
     "pregunta": "Algo que no debes hacer cuando te detiene un policía de tránsito.",
-    "texto1": "CORRER",
-    "puntos1": 34,
-    "texto2": "HUIR",
-    "puntos2": 26,
-    "texto3": "BAJARSE",
-    "puntos3": 16,
-    "texto4": "ALEGAR",
-    "puntos4": 15,
-    "texto5": "MENTIR",
-    "puntos5": 9
+    "respuestas": [
+      {
+        "texto": "CORRER",
+        "puntos": 34
+      },
+      {
+        "texto": "HUIR",
+        "puntos": 26
+      },
+      {
+        "texto": "BAJARSE",
+        "puntos": 16
+      },
+      {
+        "texto": "ALEGAR",
+        "puntos": 15
+      },
+      {
+        "texto": "MENTIR",
+        "puntos": 9
+      }
+    ]
   },
   {
     "id": "p0045",
     "pregunta": "Cada cuánto enceras el auto.",
-    "texto1": "UN MES",
-    "puntos1": 47,
-    "texto2": "CADA AÑO",
-    "puntos2": 20,
-    "texto3": "NUNCA",
-    "puntos3": 18,
-    "texto4": "SEIS MESES",
-    "puntos4": 8,
-    "texto5": "DOS MESES",
-    "puntos5": 7
+    "respuestas": [
+      {
+        "texto": "UN MES",
+        "puntos": 47
+      },
+      {
+        "texto": "CADA AÑO",
+        "puntos": 20
+      },
+      {
+        "texto": "NUNCA",
+        "puntos": 18
+      },
+      {
+        "texto": "SEIS MESES",
+        "puntos": 8
+      },
+      {
+        "texto": "DOS MESES",
+        "puntos": 7
+      }
+    ]
   },
   {
     "id": "p0046",
     "pregunta": "¿Cuánto tiempo puedes pasar sin cambiarte la ropa interior?",
-    "texto1": "UN DÍA",
-    "puntos1": 82,
-    "texto2": "DOS DÍAS",
-    "puntos2": 8,
-    "texto3": "TRES DÍAS",
-    "puntos3": 7,
-    "texto4": "CUATRO DÍAS",
-    "puntos4": 2,
-    "texto5": "DOCE HORAS",
-    "puntos5": 1
+    "respuestas": [
+      {
+        "texto": "UN DÍA",
+        "puntos": 82
+      },
+      {
+        "texto": "DOS DÍAS",
+        "puntos": 8
+      },
+      {
+        "texto": "TRES DÍAS",
+        "puntos": 7
+      },
+      {
+        "texto": "CUATRO DÍAS",
+        "puntos": 2
+      },
+      {
+        "texto": "DOCE HORAS",
+        "puntos": 1
+      }
+    ]
   },
   {
     "id": "p0047",
     "pregunta": "¿En qué lugar usas chanclas?",
-    "texto1": "PLAYA",
-    "puntos1": 59,
-    "texto2": "CASA",
-    "puntos2": 16,
-    "texto3": "BAÑO",
-    "puntos3": 14,
-    "texto4": "PIES",
-    "puntos4": 8,
-    "texto5": "REGADERA",
-    "puntos5": 3
+    "respuestas": [
+      {
+        "texto": "PLAYA",
+        "puntos": 59
+      },
+      {
+        "texto": "CASA",
+        "puntos": 16
+      },
+      {
+        "texto": "BAÑO",
+        "puntos": 14
+      },
+      {
+        "texto": "PIES",
+        "puntos": 8
+      },
+      {
+        "texto": "REGADERA",
+        "puntos": 3
+      }
+    ]
   },
   {
     "id": "p0048",
     "pregunta": "Cuando sales de viaje, ¿Qué es lo peor que podrías olvidar?",
-    "texto1": "DINERO",
-    "puntos1": 50,
-    "texto2": "PASAPORTE",
-    "puntos2": 27,
-    "texto3": "ROPA",
-    "puntos3": 11,
-    "texto4": "CEPILLO DENTAL",
-    "puntos4": 8,
-    "texto5": "CARTERA",
-    "puntos5": 4
+    "respuestas": [
+      {
+        "texto": "DINERO",
+        "puntos": 50
+      },
+      {
+        "texto": "PASAPORTE",
+        "puntos": 27
+      },
+      {
+        "texto": "ROPA",
+        "puntos": 11
+      },
+      {
+        "texto": "CEPILLO DENTAL",
+        "puntos": 8
+      },
+      {
+        "texto": "CARTERA",
+        "puntos": 4
+      }
+    ]
   },
   {
     "id": "p0049",
     "pregunta": "Algo que si se cae, se rompe (si dicen vidrio especificar qué artículo).",
-    "texto1": "VASO",
-    "puntos1": 40,
-    "texto2": "PLATO",
-    "puntos2": 31,
-    "texto3": "ESPEJO",
-    "puntos3": 24,
-    "texto4": "JARRÓN",
-    "puntos4": 4,
-    "texto5": "HUEVOS",
-    "puntos5": 1
+    "respuestas": [
+      {
+        "texto": "VASO",
+        "puntos": 40
+      },
+      {
+        "texto": "PLATO",
+        "puntos": 31
+      },
+      {
+        "texto": "ESPEJO",
+        "puntos": 24
+      },
+      {
+        "texto": "JARRÓN",
+        "puntos": 4
+      },
+      {
+        "texto": "HUEVOS",
+        "puntos": 1
+      }
+    ]
   },
   {
     "id": "p0050",
     "pregunta": "Si Maradona vendiera sus objetos personales ¿Qué te gustaría comprar?",
-    "texto1": "TENIS",
-    "puntos1": 80,
-    "texto2": "BALÓN",
-    "puntos2": 10,
-    "texto3": "CAMISETA",
-    "puntos3": 5,
-    "texto4": "NADA",
-    "puntos4": 3,
-    "texto5": "CALCETINES",
-    "puntos5": 2
+    "respuestas": [
+      {
+        "texto": "TENIS",
+        "puntos": 80
+      },
+      {
+        "texto": "BALÓN",
+        "puntos": 10
+      },
+      {
+        "texto": "CAMISETA",
+        "puntos": 5
+      },
+      {
+        "texto": "NADA",
+        "puntos": 3
+      },
+      {
+        "texto": "CALCETINES",
+        "puntos": 2
+      }
+    ]
   },
   {
     "id": "p0051",
     "pregunta": "Algo que puedes hacer con la nieve",
-    "texto1": "MUÑECO",
-    "puntos1": 29,
-    "texto2": "JUGAR",
-    "puntos2": 28,
-    "texto3": "BOLA",
-    "puntos3": 17,
-    "texto4": "COMER",
-    "puntos4": 25,
-    "texto5": "FIGURAS",
-    "puntos5": 12
+    "respuestas": [
+      {
+        "texto": "MUÑECO",
+        "puntos": 29
+      },
+      {
+        "texto": "JUGAR",
+        "puntos": 28
+      },
+      {
+        "texto": "BOLA",
+        "puntos": 17
+      },
+      {
+        "texto": "COMER",
+        "puntos": 25
+      },
+      {
+        "texto": "FIGURAS",
+        "puntos": 12
+      }
+    ]
   },
   {
     "id": "p0052",
     "pregunta": "Algo que te pasa cuando estas enfermo",
-    "texto1": "DOLOR",
-    "puntos1": 27,
-    "texto2": "FIEBRE",
-    "puntos2": 23,
-    "texto3": "DEPRESIÓN",
-    "puntos3": 22,
-    "texto4": "TOS",
-    "puntos4": 2,
-    "texto5": "TRISTEZA",
-    "puntos5": 9
+    "respuestas": [
+      {
+        "texto": "DOLOR",
+        "puntos": 27
+      },
+      {
+        "texto": "FIEBRE",
+        "puntos": 23
+      },
+      {
+        "texto": "DEPRESIÓN",
+        "puntos": 22
+      },
+      {
+        "texto": "TOS",
+        "puntos": 2
+      },
+      {
+        "texto": "TRISTEZA",
+        "puntos": 9
+      }
+    ]
   },
   {
     "id": "p0053",
     "pregunta": "Si te quedaras encerrado en un elevador ¿Qué harías?",
-    "texto1": "GRITAR",
-    "puntos1": 40,
-    "texto2": "PRESIONAR LA ALARMA",
-    "puntos2": 20,
-    "texto3": "ESPERAR",
-    "puntos3": 19,
-    "texto4": "LLAMAR",
-    "puntos4": 13,
-    "texto5": "MANTENER CALMA",
-    "puntos5": 8
+    "respuestas": [
+      {
+        "texto": "GRITAR",
+        "puntos": 40
+      },
+      {
+        "texto": "PRESIONAR LA ALARMA",
+        "puntos": 20
+      },
+      {
+        "texto": "ESPERAR",
+        "puntos": 19
+      },
+      {
+        "texto": "LLAMAR",
+        "puntos": 13
+      },
+      {
+        "texto": "MANTENER CALMA",
+        "puntos": 8
+      }
+    ]
   },
   {
     "id": "p0054",
     "pregunta": "Algo que caracteriza a un bombero",
-    "texto1": "UNIFORME",
-    "puntos1": 40,
-    "texto2": "CASCO",
-    "puntos2": 32,
-    "texto3": "MANGUERA",
-    "puntos3": 13,
-    "texto4": "FUEGO",
-    "puntos4": 10,
-    "texto5": "VALOR",
-    "puntos5": 5
+    "respuestas": [
+      {
+        "texto": "UNIFORME",
+        "puntos": 40
+      },
+      {
+        "texto": "CASCO",
+        "puntos": 32
+      },
+      {
+        "texto": "MANGUERA",
+        "puntos": 13
+      },
+      {
+        "texto": "FUEGO",
+        "puntos": 10
+      },
+      {
+        "texto": "VALOR",
+        "puntos": 5
+      }
+    ]
   },
   {
     "id": "p0055",
     "pregunta": "Si tus zapatos hablaran ¿Qué dirían?",
-    "texto1": "QUIERO DESCANSAR",
-    "puntos1": 38,
-    "texto2": "COMPRA OTROS",
-    "puntos2": 25,
-    "texto3": "LÁVAME",
-    "puntos3": 22,
-    "texto4": "CAMINA",
-    "puntos4": 9,
-    "texto5": "PESAS",
-    "puntos5": 6
+    "respuestas": [
+      {
+        "texto": "QUIERO DESCANSAR",
+        "puntos": 38
+      },
+      {
+        "texto": "COMPRA OTROS",
+        "puntos": 25
+      },
+      {
+        "texto": "LÁVAME",
+        "puntos": 22
+      },
+      {
+        "texto": "CAMINA",
+        "puntos": 9
+      },
+      {
+        "texto": "PESAS",
+        "puntos": 6
+      }
+    ]
   },
   {
     "id": "p0056",
     "pregunta": "Menciona un evento en el que hay fuegos artificiales.",
-    "texto1": "INDEPENDENCIA",
-    "puntos1": 69,
-    "texto2": "AÑO NUEVO",
-    "puntos2": 11,
-    "texto3": "CARNAVAL",
-    "puntos3": 10,
-    "texto4": "FERIA",
-    "puntos4": 9,
-    "texto5": "BEISBOL",
-    "puntos5": 1
+    "respuestas": [
+      {
+        "texto": "INDEPENDENCIA",
+        "puntos": 69
+      },
+      {
+        "texto": "AÑO NUEVO",
+        "puntos": 11
+      },
+      {
+        "texto": "CARNAVAL",
+        "puntos": 10
+      },
+      {
+        "texto": "FERIA",
+        "puntos": 9
+      },
+      {
+        "texto": "BEISBOL",
+        "puntos": 1
+      }
+    ]
   },
   {
     "id": "p0057",
     "pregunta": "Lugar donde hay una lista de espera",
-    "texto1": "DOCTOR",
-    "puntos1": 31,
-    "texto2": "RESTAURANTE",
-    "puntos2": 24,
-    "texto3": "HOSPITAL",
-    "puntos3": 23,
-    "texto4": "AEROPUERTO",
-    "puntos4": 16,
-    "texto5": "BANCO",
-    "puntos5": 6
+    "respuestas": [
+      {
+        "texto": "DOCTOR",
+        "puntos": 31
+      },
+      {
+        "texto": "RESTAURANTE",
+        "puntos": 24
+      },
+      {
+        "texto": "HOSPITAL",
+        "puntos": 23
+      },
+      {
+        "texto": "AEROPUERTO",
+        "puntos": 16
+      },
+      {
+        "texto": "BANCO",
+        "puntos": 6
+      }
+    ]
   },
   {
     "id": "p0058",
     "pregunta": "Lugar donde podrías dormir con o junto con gente desconocida",
-    "texto1": "HOTEL",
-    "puntos1": 31,
-    "texto2": "HOSPITAL",
-    "puntos2": 28,
-    "texto3": "ALBERGUE",
-    "puntos3": 19,
-    "texto4": "AEROPUERTO",
-    "puntos4": 12,
-    "texto5": "CAMPAMENTO",
-    "puntos5": 10
+    "respuestas": [
+      {
+        "texto": "HOTEL",
+        "puntos": 31
+      },
+      {
+        "texto": "HOSPITAL",
+        "puntos": 28
+      },
+      {
+        "texto": "ALBERGUE",
+        "puntos": 19
+      },
+      {
+        "texto": "AEROPUERTO",
+        "puntos": 12
+      },
+      {
+        "texto": "CAMPAMENTO",
+        "puntos": 10
+      }
+    ]
   },
   {
     "id": "p0059",
     "pregunta": "Color de bufanda",
-    "texto1": "NEGRO",
-    "puntos1": 41,
-    "texto2": "ROJO",
-    "puntos2": 23,
-    "texto3": "AZUL",
-    "puntos3": 15,
-    "texto4": "CAFÉ",
-    "puntos4": 13,
-    "texto5": "BLANCO",
-    "puntos5": 8
+    "respuestas": [
+      {
+        "texto": "NEGRO",
+        "puntos": 41
+      },
+      {
+        "texto": "ROJO",
+        "puntos": 23
+      },
+      {
+        "texto": "AZUL",
+        "puntos": 15
+      },
+      {
+        "texto": "CAFÉ",
+        "puntos": 13
+      },
+      {
+        "texto": "BLANCO",
+        "puntos": 8
+      }
+    ]
   },
   {
     "id": "p0060",
     "pregunta": "Si fueras caminando con tu suegra y ella se cayera, Qué harías?",
-    "texto1": "LEVANTARLA",
-    "puntos1": 52,
-    "texto2": "AYUDAR",
-    "puntos2": 27,
-    "texto3": "ME RIO",
-    "puntos3": 12,
-    "texto4": "DEJARLA",
-    "puntos4": 8,
-    "texto5": "CORRO",
-    "puntos5": 1
+    "respuestas": [
+      {
+        "texto": "LEVANTARLA",
+        "puntos": 52
+      },
+      {
+        "texto": "AYUDAR",
+        "puntos": 27
+      },
+      {
+        "texto": "ME RIO",
+        "puntos": 12
+      },
+      {
+        "texto": "DEJARLA",
+        "puntos": 8
+      },
+      {
+        "texto": "CORRO",
+        "puntos": 1
+      }
+    ]
   },
   {
     "id": "p0061",
     "pregunta": "Cómo te das cuenta de que tu hijo quiere pedirte algo?",
-    "texto1": "CARIÑO",
-    "puntos1": 37,
-    "texto2": "COMPORTAMIENTO",
-    "puntos2": 27,
-    "texto3": "MIRADA",
-    "puntos3": 15,
-    "texto4": "TONO",
-    "puntos4": 13,
-    "texto5": "PIDE",
-    "puntos5": 8
+    "respuestas": [
+      {
+        "texto": "CARIÑO",
+        "puntos": 37
+      },
+      {
+        "texto": "COMPORTAMIENTO",
+        "puntos": 27
+      },
+      {
+        "texto": "MIRADA",
+        "puntos": 15
+      },
+      {
+        "texto": "TONO",
+        "puntos": 13
+      },
+      {
+        "texto": "PIDE",
+        "puntos": 8
+      }
+    ]
   },
   {
     "id": "p0062",
     "pregunta": "Menciona algo que el cuerpo humano tiene en gran cantidad",
-    "texto1": "AGUA",
-    "puntos1": 38,
-    "texto2": "CABELLO",
-    "puntos2": 22,
-    "texto3": "SANGRE",
-    "puntos3": 17,
-    "texto4": "GRASA",
-    "puntos4": 14,
-    "texto5": "LÍQUIDO",
-    "puntos5": 9
+    "respuestas": [
+      {
+        "texto": "AGUA",
+        "puntos": 38
+      },
+      {
+        "texto": "CABELLO",
+        "puntos": 22
+      },
+      {
+        "texto": "SANGRE",
+        "puntos": 17
+      },
+      {
+        "texto": "GRASA",
+        "puntos": 14
+      },
+      {
+        "texto": "LÍQUIDO",
+        "puntos": 9
+      }
+    ]
   },
   {
     "id": "p0063",
     "pregunta": "Si existiera una universidad para reinas de belleza, Qué enseñarían?",
-    "texto1": "MAQUILLAJE",
-    "puntos1": 30,
-    "texto2": "CAMINAR",
-    "puntos2": 24,
-    "texto3": "MODALES",
-    "puntos3": 20,
-    "texto4": "BELLEZA",
-    "puntos4": 18,
-    "texto5": "MATEMÁTICAS",
-    "puntos5": 8
+    "respuestas": [
+      {
+        "texto": "MAQUILLAJE",
+        "puntos": 30
+      },
+      {
+        "texto": "CAMINAR",
+        "puntos": 24
+      },
+      {
+        "texto": "MODALES",
+        "puntos": 20
+      },
+      {
+        "texto": "BELLEZA",
+        "puntos": 18
+      },
+      {
+        "texto": "MATEMÁTICAS",
+        "puntos": 8
+      }
+    ]
   },
   {
     "id": "p0064",
     "pregunta": "A que edad aprendiste a bailar?",
-    "texto1": "QUINCE",
-    "puntos1": 31,
-    "texto2": "CATORCE",
-    "puntos2": 28,
-    "texto3": "DIEZ",
-    "puntos3": 20,
-    "texto4": "CINCO",
-    "puntos4": 11,
-    "texto5": "DOCE HORAS",
-    "puntos5": 10
+    "respuestas": [
+      {
+        "texto": "QUINCE",
+        "puntos": 31
+      },
+      {
+        "texto": "CATORCE",
+        "puntos": 28
+      },
+      {
+        "texto": "DIEZ",
+        "puntos": 20
+      },
+      {
+        "texto": "CINCO",
+        "puntos": 11
+      },
+      {
+        "texto": "DOCE HORAS",
+        "puntos": 10
+      }
+    ]
   },
   {
     "id": "p0065",
     "pregunta": "Algo de Willyam Levy que te gustaria que tuviera tu pareja.",
-    "texto1": "CUERPO",
-    "puntos1": 55,
-    "texto2": "OJO",
-    "puntos2": 23,
-    "texto3": "ABDOMEN",
-    "puntos3": 12,
-    "texto4": "MÚSCULOS",
-    "puntos4": 6,
-    "texto5": "CABELLO",
-    "puntos5": 4
+    "respuestas": [
+      {
+        "texto": "CUERPO",
+        "puntos": 55
+      },
+      {
+        "texto": "OJO",
+        "puntos": 23
+      },
+      {
+        "texto": "ABDOMEN",
+        "puntos": 12
+      },
+      {
+        "texto": "MÚSCULOS",
+        "puntos": 6
+      },
+      {
+        "texto": "CABELLO",
+        "puntos": 4
+      }
+    ]
   },
   {
     "id": "p0066",
     "pregunta": "Algo de tu casa que un fantasma prendería y apagaría para espantarte",
-    "texto1": "LUZ",
-    "puntos1": 54,
-    "texto2": "TELEVISIÓN",
-    "puntos2": 16,
-    "texto3": "LÁMPARA",
-    "puntos3": 15,
-    "texto4": "RADIO",
-    "puntos4": 13,
-    "texto5": "ESTUFA",
-    "puntos5": 2
+    "respuestas": [
+      {
+        "texto": "LUZ",
+        "puntos": 54
+      },
+      {
+        "texto": "TELEVISIÓN",
+        "puntos": 16
+      },
+      {
+        "texto": "LÁMPARA",
+        "puntos": 15
+      },
+      {
+        "texto": "RADIO",
+        "puntos": 13
+      },
+      {
+        "texto": "ESTUFA",
+        "puntos": 2
+      }
+    ]
   },
   {
     "id": "p0067",
     "pregunta": "Otra forma de decir \"casa\"",
-    "texto1": "HOGAR",
-    "puntos1": 80,
-    "texto2": "CANTÓN",
-    "puntos2": 9,
-    "texto3": "VIVIENDA",
-    "puntos3": 5,
-    "texto4": "CHOZA",
-    "puntos4": 4,
-    "texto5": "APARTAMENTO",
-    "puntos5": 2
+    "respuestas": [
+      {
+        "texto": "HOGAR",
+        "puntos": 80
+      },
+      {
+        "texto": "CANTÓN",
+        "puntos": 9
+      },
+      {
+        "texto": "VIVIENDA",
+        "puntos": 5
+      },
+      {
+        "texto": "CHOZA",
+        "puntos": 4
+      },
+      {
+        "texto": "APARTAMENTO",
+        "puntos": 2
+      }
+    ]
   },
   {
     "id": "p0068",
     "pregunta": "Alfo que caracteriza a un pato",
-    "texto1": "PICO",
-    "puntos1": 50,
-    "texto2": "PATAS",
-    "puntos2": 18,
-    "texto3": "SONIDO",
-    "puntos3": 14,
-    "texto4": "PLUMAS",
-    "puntos4": 11,
-    "texto5": "CAMINAR",
-    "puntos5": 7
+    "respuestas": [
+      {
+        "texto": "PICO",
+        "puntos": 50
+      },
+      {
+        "texto": "PATAS",
+        "puntos": 18
+      },
+      {
+        "texto": "SONIDO",
+        "puntos": 14
+      },
+      {
+        "texto": "PLUMAS",
+        "puntos": 11
+      },
+      {
+        "texto": "CAMINAR",
+        "puntos": 7
+      }
+    ]
   },
   {
     "id": "p0069",
     "pregunta": "Menciona algo en lo que no te importaría gastar mucho dinero",
-    "texto1": "COMIDA",
-    "puntos1": 31,
-    "texto2": "ROPA",
-    "puntos2": 27,
-    "texto3": "CASA",
-    "puntos3": 19,
-    "texto4": "HIJOS",
-    "puntos4": 15,
-    "texto5": "SALUD",
-    "puntos5": 8
+    "respuestas": [
+      {
+        "texto": "COMIDA",
+        "puntos": 31
+      },
+      {
+        "texto": "ROPA",
+        "puntos": 27
+      },
+      {
+        "texto": "CASA",
+        "puntos": 19
+      },
+      {
+        "texto": "HIJOS",
+        "puntos": 15
+      },
+      {
+        "texto": "SALUD",
+        "puntos": 8
+      }
+    ]
   },
   {
     "id": "p0070",
     "pregunta": "Qué cantante famoso te gustaría ver en el carnaval de la \"Calle Ocho\"?",
-    "texto1": "PIT BULL",
-    "puntos1": 31,
-    "texto2": "ENRIQUE IGLESIAS",
-    "puntos2": 28,
-    "texto3": "JENNIFER LÓPEZ",
-    "puntos3": 23,
-    "texto4": "RICKY MARTIN",
-    "puntos4": 11,
-    "texto5": "SHAKIRA",
-    "puntos5": 7
+    "respuestas": [
+      {
+        "texto": "PIT BULL",
+        "puntos": 31
+      },
+      {
+        "texto": "ENRIQUE IGLESIAS",
+        "puntos": 28
+      },
+      {
+        "texto": "JENNIFER LÓPEZ",
+        "puntos": 23
+      },
+      {
+        "texto": "RICKY MARTIN",
+        "puntos": 11
+      },
+      {
+        "texto": "SHAKIRA",
+        "puntos": 7
+      }
+    ]
   },
   {
     "id": "p0071",
     "pregunta": "Si te tuvieran que encerrar en un negocio por un mes, Cuál escogerías?",
-    "texto1": "SUPERMERCADO",
-    "puntos1": 46,
-    "texto2": "TIENDA DE ROPA",
-    "puntos2": 22,
-    "texto3": "BAR",
-    "puntos3": 19,
-    "texto4": "CENTRO COMERCIAL",
-    "puntos4": 7,
-    "texto5": "PANADERÍA",
-    "puntos5": 6
+    "respuestas": [
+      {
+        "texto": "SUPERMERCADO",
+        "puntos": 46
+      },
+      {
+        "texto": "TIENDA DE ROPA",
+        "puntos": 22
+      },
+      {
+        "texto": "BAR",
+        "puntos": 19
+      },
+      {
+        "texto": "CENTRO COMERCIAL",
+        "puntos": 7
+      },
+      {
+        "texto": "PANADERÍA",
+        "puntos": 6
+      }
+    ]
   },
   {
     "id": "p0072",
     "pregunta": "Si cambiara de número telefónico, Cómo le avisas a tus contactos?",
-    "texto1": "HABLANDO ANTES",
-    "puntos1": 37,
-    "texto2": "CORREO ELECTRÓNICO",
-    "puntos2": 31,
-    "texto3": "FACEBOOK",
-    "puntos3": 24,
-    "texto4": "CELULAR",
-    "puntos4": 6,
-    "texto5": "INTERNET",
-    "puntos5": 3
+    "respuestas": [
+      {
+        "texto": "HABLANDO ANTES",
+        "puntos": 37
+      },
+      {
+        "texto": "CORREO ELECTRÓNICO",
+        "puntos": 31
+      },
+      {
+        "texto": "FACEBOOK",
+        "puntos": 24
+      },
+      {
+        "texto": "CELULAR",
+        "puntos": 6
+      },
+      {
+        "texto": "INTERNET",
+        "puntos": 3
+      }
+    ]
   },
   {
     "id": "p0073",
     "pregunta": "Si tu coche pudiera hablar, Qué te diría?",
-    "texto1": "LÁVAME",
-    "puntos1": 46,
-    "texto2": "DAME GASOLINA",
-    "puntos2": 25,
-    "texto3": "CUÍDAME",
-    "puntos3": 17,
-    "texto4": "DÉJAME DESCANSAR",
-    "puntos4": 8,
-    "texto5": "DESPACIO",
-    "puntos5": 4
+    "respuestas": [
+      {
+        "texto": "LÁVAME",
+        "puntos": 46
+      },
+      {
+        "texto": "DAME GASOLINA",
+        "puntos": 25
+      },
+      {
+        "texto": "CUÍDAME",
+        "puntos": 17
+      },
+      {
+        "texto": "DÉJAME DESCANSAR",
+        "puntos": 8
+      },
+      {
+        "texto": "DESPACIO",
+        "puntos": 4
+      }
+    ]
   },
   {
     "id": "p0074",
     "pregunta": "Si en una cita amorosa olvidaras el nombre de tu galán, Cómo le dirías?",
-    "texto1": "MI AMOR",
-    "puntos1": 63,
-    "texto2": "CARIÑO",
-    "puntos2": 17,
-    "texto3": "TÚ",
-    "puntos3": 13,
-    "texto4": "BEBE",
-    "puntos4": 4,
-    "texto5": "CORAZÓN",
-    "puntos5": 3
+    "respuestas": [
+      {
+        "texto": "MI AMOR",
+        "puntos": 63
+      },
+      {
+        "texto": "CARIÑO",
+        "puntos": 17
+      },
+      {
+        "texto": "TÚ",
+        "puntos": 13
+      },
+      {
+        "texto": "BEBE",
+        "puntos": 4
+      },
+      {
+        "texto": "CORAZÓN",
+        "puntos": 3
+      }
+    ]
   },
   {
     "id": "p0075",
     "pregunta": "Durante el día, persona con la que hablas más por teléfono",
-    "texto1": "PAREJA",
-    "puntos1": 28,
-    "texto2": "PAPÁS",
-    "puntos2": 26,
-    "texto3": "HIJOS",
-    "puntos3": 23,
-    "texto4": "HERMANOS",
-    "puntos4": 14,
-    "texto5": "AMIGOS",
-    "puntos5": 9
+    "respuestas": [
+      {
+        "texto": "PAREJA",
+        "puntos": 28
+      },
+      {
+        "texto": "PAPÁS",
+        "puntos": 26
+      },
+      {
+        "texto": "HIJOS",
+        "puntos": 23
+      },
+      {
+        "texto": "HERMANOS",
+        "puntos": 14
+      },
+      {
+        "texto": "AMIGOS",
+        "puntos": 9
+      }
+    ]
   },
   {
     "id": "p0076",
     "pregunta": "Si hicieran una ersión latina de James Bond, Qué actor lo haría?",
-    "texto1": "WILLIAM LEVY",
-    "puntos1": 36,
-    "texto2": "EUGENIO DERBÉZ",
-    "puntos2": 21,
-    "texto3": "ANTONIO BANDERAS",
-    "puntos3": 17,
-    "texto4": "FERNANDO COLUNGA",
-    "puntos4": 15,
-    "texto5": "RICKY MARTIN",
-    "puntos5": 11
+    "respuestas": [
+      {
+        "texto": "WILLIAM LEVY",
+        "puntos": 36
+      },
+      {
+        "texto": "EUGENIO DERBÉZ",
+        "puntos": 21
+      },
+      {
+        "texto": "ANTONIO BANDERAS",
+        "puntos": 17
+      },
+      {
+        "texto": "FERNANDO COLUNGA",
+        "puntos": 15
+      },
+      {
+        "texto": "RICKY MARTIN",
+        "puntos": 11
+      }
+    ]
   },
   {
     "id": "p0077",
     "pregunta": "Si la Mujer Maravilla se casara, Con qué super héroe crees que lo haría?",
-    "texto1": "SUPERMAN",
-    "puntos1": 69,
-    "texto2": "BATMAN",
-    "puntos2": 26,
-    "texto3": "CAPITAN AMÉRICA",
-    "puntos3": 7,
-    "texto4": "HOMBRE ARAÑA",
-    "puntos4": 6,
-    "texto5": "HULK",
-    "puntos5": 4
+    "respuestas": [
+      {
+        "texto": "SUPERMAN",
+        "puntos": 69
+      },
+      {
+        "texto": "BATMAN",
+        "puntos": 26
+      },
+      {
+        "texto": "CAPITAN AMÉRICA",
+        "puntos": 7
+      },
+      {
+        "texto": "HOMBRE ARAÑA",
+        "puntos": 6
+      },
+      {
+        "texto": "HULK",
+        "puntos": 4
+      }
+    ]
   },
   {
     "id": "p0078",
     "pregunta": "De qué forma le avisas a tu familia que estás embarazada?",
-    "texto1": "PLÁTICA",
-    "puntos1": 72,
-    "texto2": "TELÉFONO",
-    "puntos2": 10,
-    "texto3": "FACEBOOK",
-    "puntos3": 7,
-    "texto4": "MENSAJE TEXTO",
-    "puntos4": 6,
-    "texto5": "REUNIÓN FAMILIAR",
-    "puntos5": 5
+    "respuestas": [
+      {
+        "texto": "PLÁTICA",
+        "puntos": 72
+      },
+      {
+        "texto": "TELÉFONO",
+        "puntos": 10
+      },
+      {
+        "texto": "FACEBOOK",
+        "puntos": 7
+      },
+      {
+        "texto": "MENSAJE TEXTO",
+        "puntos": 6
+      },
+      {
+        "texto": "REUNIÓN FAMILIAR",
+        "puntos": 5
+      }
+    ]
   },
   {
     "id": "p0079",
     "pregunta": "En las películas, Cuál es la palabra más común que dice el juez?",
-    "texto1": "ORDEN",
-    "puntos1": 28,
-    "texto2": "CULPABLE",
-    "puntos2": 26,
-    "texto3": "CASO CERRADO",
-    "puntos3": 25,
-    "texto4": "SILENCIO",
-    "puntos4": 3,
-    "texto5": "SENTENCIADO",
-    "puntos5": 2
+    "respuestas": [
+      {
+        "texto": "ORDEN",
+        "puntos": 28
+      },
+      {
+        "texto": "CULPABLE",
+        "puntos": 26
+      },
+      {
+        "texto": "CASO CERRADO",
+        "puntos": 25
+      },
+      {
+        "texto": "SILENCIO",
+        "puntos": 3
+      },
+      {
+        "texto": "SENTENCIADO",
+        "puntos": 2
+      }
+    ]
   },
   {
     "id": "p0080",
     "pregunta": "Menciona algo que puedes encontrar en un casino",
-    "texto1": "TRAGAMONEDAS",
-    "puntos1": 40,
-    "texto2": "BARAJA",
-    "puntos2": 33,
-    "texto3": "DINERO",
-    "puntos3": 10,
-    "texto4": "FICHAS",
-    "puntos4": 9,
-    "texto5": "PERSONAS",
-    "puntos5": 8
+    "respuestas": [
+      {
+        "texto": "TRAGAMONEDAS",
+        "puntos": 40
+      },
+      {
+        "texto": "BARAJA",
+        "puntos": 33
+      },
+      {
+        "texto": "DINERO",
+        "puntos": 10
+      },
+      {
+        "texto": "FICHAS",
+        "puntos": 9
+      },
+      {
+        "texto": "PERSONAS",
+        "puntos": 8
+      }
+    ]
   },
   {
     "id": "p0081",
     "pregunta": "Algo que caracteriza a un militar",
-    "texto1": "UNIFORME",
-    "puntos1": 58,
-    "texto2": "ARMA",
-    "puntos2": 19,
-    "texto3": "BOTAS",
-    "puntos3": 14,
-    "texto4": "TRAJE",
-    "puntos4": 5,
-    "texto5": "CORTE DE PELO",
-    "puntos5": 4
+    "respuestas": [
+      {
+        "texto": "UNIFORME",
+        "puntos": 58
+      },
+      {
+        "texto": "ARMA",
+        "puntos": 19
+      },
+      {
+        "texto": "BOTAS",
+        "puntos": 14
+      },
+      {
+        "texto": "TRAJE",
+        "puntos": 5
+      },
+      {
+        "texto": "CORTE DE PELO",
+        "puntos": 4
+      }
+    ]
   },
   {
     "id": "p0082",
     "pregunta": "A qué persona le cederías tu asiento en el autobús?",
-    "texto1": "ANCIANO",
-    "puntos1": 57,
-    "texto2": "DAMAS",
-    "puntos2": 17,
-    "texto3": "EMBARAZADAS",
-    "puntos3": 15,
-    "texto4": "DISCAPACITADOS",
-    "puntos4": 8,
-    "texto5": "NIÑOS",
-    "puntos5": 3
+    "respuestas": [
+      {
+        "texto": "ANCIANO",
+        "puntos": 57
+      },
+      {
+        "texto": "DAMAS",
+        "puntos": 17
+      },
+      {
+        "texto": "EMBARAZADAS",
+        "puntos": 15
+      },
+      {
+        "texto": "DISCAPACITADOS",
+        "puntos": 8
+      },
+      {
+        "texto": "NIÑOS",
+        "puntos": 3
+      }
+    ]
   },
   {
     "id": "p0083",
     "pregunta": "Prenda de vestir que puedes usar cuando hace frío o calor",
-    "texto1": "PANTALÓN",
-    "puntos1": 42,
-    "texto2": "SUÉTER",
-    "puntos2": 26,
-    "texto3": "ROPA INTERIOR",
-    "puntos3": 13,
-    "texto4": "CAMISA",
-    "puntos4": 12,
-    "texto5": "PLAYERA",
-    "puntos5": 7
+    "respuestas": [
+      {
+        "texto": "PANTALÓN",
+        "puntos": 42
+      },
+      {
+        "texto": "SUÉTER",
+        "puntos": 26
+      },
+      {
+        "texto": "ROPA INTERIOR",
+        "puntos": 13
+      },
+      {
+        "texto": "CAMISA",
+        "puntos": 12
+      },
+      {
+        "texto": "PLAYERA",
+        "puntos": 7
+      }
+    ]
   },
   {
     "id": "p0084",
     "pregunta": "Si te atraparan en los años 50´s, Que extrañarias de la actualidad?",
-    "texto1": "TECNOLOGÍA",
-    "puntos1": 40,
-    "texto2": "TELÉFONO",
-    "puntos2": 29,
-    "texto3": "INTERNET",
-    "puntos3": 20,
-    "texto4": "COMPUTADORA",
-    "puntos4": 8,
-    "texto5": "COMUNICACIÓN",
-    "puntos5": 3
+    "respuestas": [
+      {
+        "texto": "TECNOLOGÍA",
+        "puntos": 40
+      },
+      {
+        "texto": "TELÉFONO",
+        "puntos": 29
+      },
+      {
+        "texto": "INTERNET",
+        "puntos": 20
+      },
+      {
+        "texto": "COMPUTADORA",
+        "puntos": 8
+      },
+      {
+        "texto": "COMUNICACIÓN",
+        "puntos": 3
+      }
+    ]
   },
   {
     "id": "p0085",
     "pregunta": "Artista del que podrías escuchar su  música todo el día",
-    "texto1": "JUSTIN BIEBER",
-    "puntos1": 30,
-    "texto2": "VICENTE FDEZ",
-    "puntos2": 22,
-    "texto3": "MARC ANTHONY",
-    "puntos3": 20,
-    "texto4": "ROBERTO CARLOS",
-    "puntos4": 16,
-    "texto5": "SHAKIRA",
-    "puntos5": 12
+    "respuestas": [
+      {
+        "texto": "JUSTIN BIEBER",
+        "puntos": 30
+      },
+      {
+        "texto": "VICENTE FDEZ",
+        "puntos": 22
+      },
+      {
+        "texto": "MARC ANTHONY",
+        "puntos": 20
+      },
+      {
+        "texto": "ROBERTO CARLOS",
+        "puntos": 16
+      },
+      {
+        "texto": "SHAKIRA",
+        "puntos": 12
+      }
+    ]
   },
   {
     "id": "p0086",
     "pregunta": "Si fueras Blanca Nieves, A qué enanito seguirías en Twitter?",
-    "texto1": "GRUÑON",
-    "puntos1": 52,
-    "texto2": "TONTÍN",
-    "puntos2": 23,
-    "texto3": "DORMILÓN",
-    "puntos3": 12,
-    "texto4": "FELÍZ",
-    "puntos4": 8,
-    "texto5": "TODOS",
-    "puntos5": 5
+    "respuestas": [
+      {
+        "texto": "GRUÑON",
+        "puntos": 52
+      },
+      {
+        "texto": "TONTÍN",
+        "puntos": 23
+      },
+      {
+        "texto": "DORMILÓN",
+        "puntos": 12
+      },
+      {
+        "texto": "FELÍZ",
+        "puntos": 8
+      },
+      {
+        "texto": "TODOS",
+        "puntos": 5
+      }
+    ]
   },
   {
     "id": "p0087",
     "pregunta": "Si un maniquí pudiera hablar, Qué diría sobre su trabajo o función?",
-    "texto1": "ABURRIDO",
-    "puntos1": 39,
-    "texto2": "CANSADO",
-    "puntos2": 23,
-    "texto3": "EXCELENTE",
-    "puntos3": 15,
-    "texto4": "FÁCIL",
-    "puntos4": 13,
-    "texto5": "FLOJO",
-    "puntos5": 10
+    "respuestas": [
+      {
+        "texto": "ABURRIDO",
+        "puntos": 39
+      },
+      {
+        "texto": "CANSADO",
+        "puntos": 23
+      },
+      {
+        "texto": "EXCELENTE",
+        "puntos": 15
+      },
+      {
+        "texto": "FÁCIL",
+        "puntos": 13
+      },
+      {
+        "texto": "FLOJO",
+        "puntos": 10
+      }
+    ]
   },
   {
     "id": "p0088",
     "pregunta": "Si fueras un luchador, A quién te gustaría aplicarle una llave?",
-    "texto1": "PAREJA",
-    "puntos1": 36,
-    "texto2": "OPONENTE",
-    "puntos2": 22,
-    "texto3": "SUEGRA",
-    "puntos3": 21,
-    "texto4": "HERMANO/A",
-    "puntos4": 16,
-    "texto5": "AMIGOS",
-    "puntos5": 5
+    "respuestas": [
+      {
+        "texto": "PAREJA",
+        "puntos": 36
+      },
+      {
+        "texto": "OPONENTE",
+        "puntos": 22
+      },
+      {
+        "texto": "SUEGRA",
+        "puntos": 21
+      },
+      {
+        "texto": "HERMANO/A",
+        "puntos": 16
+      },
+      {
+        "texto": "AMIGOS",
+        "puntos": 5
+      }
+    ]
   },
   {
     "id": "p0089",
     "pregunta": "Algo que has estado tentado a hacer, y te arepientes al último momento",
-    "texto1": "COMPRAR",
-    "puntos1": 31,
-    "texto2": "SALTAR",
-    "puntos2": 24,
-    "texto3": "VIAJAR",
-    "puntos3": 19,
-    "texto4": "INFIEL",
-    "puntos4": 18,
-    "texto5": "ROBAR",
-    "puntos5": 8
+    "respuestas": [
+      {
+        "texto": "COMPRAR",
+        "puntos": 31
+      },
+      {
+        "texto": "SALTAR",
+        "puntos": 24
+      },
+      {
+        "texto": "VIAJAR",
+        "puntos": 19
+      },
+      {
+        "texto": "INFIEL",
+        "puntos": 18
+      },
+      {
+        "texto": "ROBAR",
+        "puntos": 8
+      }
+    ]
   },
   {
     "id": "p0090",
     "pregunta": "Color de calcetines",
-    "texto1": "BANCO",
-    "puntos1": 45,
-    "texto2": "NEGRO",
-    "puntos2": 42,
-    "texto3": "CAFÉ",
-    "puntos3": 6,
-    "texto4": "AZUL",
-    "puntos4": 5,
-    "texto5": "ROJO",
-    "puntos5": 2
+    "respuestas": [
+      {
+        "texto": "BANCO",
+        "puntos": 45
+      },
+      {
+        "texto": "NEGRO",
+        "puntos": 42
+      },
+      {
+        "texto": "CAFÉ",
+        "puntos": 6
+      },
+      {
+        "texto": "AZUL",
+        "puntos": 5
+      },
+      {
+        "texto": "ROJO",
+        "puntos": 2
+      }
+    ]
   },
   {
     "id": "p0091",
     "pregunta": "Estampado más común en un vestido",
-    "texto1": "FLORES",
-    "puntos1": 79,
-    "texto2": "RAYAS",
-    "puntos2": 8,
-    "texto3": "ROJO",
-    "puntos3": 6,
-    "texto4": "ANIMAL",
-    "puntos4": 4,
-    "texto5": "BOLAS",
-    "puntos5": 3
+    "respuestas": [
+      {
+        "texto": "FLORES",
+        "puntos": 79
+      },
+      {
+        "texto": "RAYAS",
+        "puntos": 8
+      },
+      {
+        "texto": "ROJO",
+        "puntos": 6
+      },
+      {
+        "texto": "ANIMAL",
+        "puntos": 4
+      },
+      {
+        "texto": "BOLAS",
+        "puntos": 3
+      }
+    ]
   },
   {
     "id": "p0092",
     "pregunta": "Si una bruja se descuida mientras vuela, Contra qué podría chocar?",
-    "texto1": "ÁRBOL",
-    "puntos1": 40,
-    "texto2": "PARED",
-    "puntos2": 19,
-    "texto3": "POSTE",
-    "puntos3": 16,
-    "texto4": "AVIÓN",
-    "puntos4": 14,
-    "texto5": "EDIFICIO",
-    "puntos5": 11
+    "respuestas": [
+      {
+        "texto": "ÁRBOL",
+        "puntos": 40
+      },
+      {
+        "texto": "PARED",
+        "puntos": 19
+      },
+      {
+        "texto": "POSTE",
+        "puntos": 16
+      },
+      {
+        "texto": "AVIÓN",
+        "puntos": 14
+      },
+      {
+        "texto": "EDIFICIO",
+        "puntos": 11
+      }
+    ]
   },
   {
     "id": "p0093",
     "pregunta": "Algo que relacionas con el boliche",
-    "texto1": "BOLA",
-    "puntos1": 47,
-    "texto2": "PELOTA",
-    "puntos2": 26,
-    "texto3": "PINOS",
-    "puntos3": 16,
-    "texto4": "JUEGO",
-    "puntos4": 6,
-    "texto5": "ZAPATOS",
-    "puntos5": 5
+    "respuestas": [
+      {
+        "texto": "BOLA",
+        "puntos": 47
+      },
+      {
+        "texto": "PELOTA",
+        "puntos": 26
+      },
+      {
+        "texto": "PINOS",
+        "puntos": 16
+      },
+      {
+        "texto": "JUEGO",
+        "puntos": 6
+      },
+      {
+        "texto": "ZAPATOS",
+        "puntos": 5
+      }
+    ]
   },
   {
     "id": "p0094",
     "pregunta": "A qué edad sufriste tu primera decepción amorosa?",
-    "texto1": "QUINCE AÑOS",
-    "puntos1": 46,
-    "texto2": "CATORCE AÑOS",
-    "puntos2": 25,
-    "texto3": "DIECISEIS AÑOS",
-    "puntos3": 11,
-    "texto4": "DIECISIETE AÑOS",
-    "puntos4": 10,
-    "texto5": "DIECIOCHO AÑOS",
-    "puntos5": 8
+    "respuestas": [
+      {
+        "texto": "QUINCE AÑOS",
+        "puntos": 46
+      },
+      {
+        "texto": "CATORCE AÑOS",
+        "puntos": 25
+      },
+      {
+        "texto": "DIECISEIS AÑOS",
+        "puntos": 11
+      },
+      {
+        "texto": "DIECISIETE AÑOS",
+        "puntos": 10
+      },
+      {
+        "texto": "DIECIOCHO AÑOS",
+        "puntos": 8
+      }
+    ]
   },
   {
     "id": "p0095",
     "pregunta": "En las películas de terror, Qué es lo más común que hay debajo de la cama?",
-    "texto1": "MONSTRUO",
-    "puntos1": 42,
-    "texto2": "FANTASMA",
-    "puntos2": 37,
-    "texto3": "PERSONA",
-    "puntos3": 11,
-    "texto4": "MANO",
-    "puntos4": 9,
-    "texto5": "MUERTO",
-    "puntos5": 1
+    "respuestas": [
+      {
+        "texto": "MONSTRUO",
+        "puntos": 42
+      },
+      {
+        "texto": "FANTASMA",
+        "puntos": 37
+      },
+      {
+        "texto": "PERSONA",
+        "puntos": 11
+      },
+      {
+        "texto": "MANO",
+        "puntos": 9
+      },
+      {
+        "texto": "MUERTO",
+        "puntos": 1
+      }
+    ]
   },
   {
     "id": "p0096",
     "pregunta": "Si no tuvieras que trabajar, Qué harias de tu vida?",
-    "texto1": "VIAJAR",
-    "puntos1": 50,
-    "texto2": "DEPORTE",
-    "puntos2": 16,
-    "texto3": "AYUDAR",
-    "puntos3": 15,
-    "texto4": "DESCANSAR",
-    "puntos4": 14,
-    "texto5": "PASEAR",
-    "puntos5": 5
+    "respuestas": [
+      {
+        "texto": "VIAJAR",
+        "puntos": 50
+      },
+      {
+        "texto": "DEPORTE",
+        "puntos": 16
+      },
+      {
+        "texto": "AYUDAR",
+        "puntos": 15
+      },
+      {
+        "texto": "DESCANSAR",
+        "puntos": 14
+      },
+      {
+        "texto": "PASEAR",
+        "puntos": 5
+      }
+    ]
   },
   {
     "id": "p0097",
     "pregunta": "Si fureras un príncipe, A qué princesa de cuentos seguirías en Twitter?",
-    "texto1": "CENICIENTA",
-    "puntos1": 73,
-    "texto2": "BLANCA NIEVES",
-    "puntos2": 13,
-    "texto3": "ARIEL",
-    "puntos3": 9,
-    "texto4": "BELLA",
-    "puntos4": 3,
-    "texto5": "DIANA",
-    "puntos5": 2
+    "respuestas": [
+      {
+        "texto": "CENICIENTA",
+        "puntos": 73
+      },
+      {
+        "texto": "BLANCA NIEVES",
+        "puntos": 13
+      },
+      {
+        "texto": "ARIEL",
+        "puntos": 9
+      },
+      {
+        "texto": "BELLA",
+        "puntos": 3
+      },
+      {
+        "texto": "DIANA",
+        "puntos": 2
+      }
+    ]
   },
   {
     "id": "p0098",
     "pregunta": "Qué haces cuando te duelen mucho los pies?",
-    "texto1": "SOBAR",
-    "puntos1": 56,
-    "texto2": "DESCANSAR",
-    "puntos2": 21,
-    "texto3": "ELEVARLOS",
-    "puntos3": 10,
-    "texto4": "METO EN AGUA CALIENTE",
-    "puntos4": 9,
-    "texto5": "ACOSTARSE",
-    "puntos5": 4
+    "respuestas": [
+      {
+        "texto": "SOBAR",
+        "puntos": 56
+      },
+      {
+        "texto": "DESCANSAR",
+        "puntos": 21
+      },
+      {
+        "texto": "ELEVARLOS",
+        "puntos": 10
+      },
+      {
+        "texto": "METO EN AGUA CALIENTE",
+        "puntos": 9
+      },
+      {
+        "texto": "ACOSTARSE",
+        "puntos": 4
+      }
+    ]
   },
   {
     "id": "p0099",
     "pregunta": "Qué deporte te gustaría que practicara tu esposa?",
-    "texto1": "VOLEIBOL",
-    "puntos1": 87,
-    "texto2": "FUTBOL",
-    "puntos2": 5,
-    "texto3": "NATACIÓN",
-    "puntos3": 4,
-    "texto4": "TENIS",
-    "puntos4": 3,
-    "texto5": "BALONCESTO",
-    "puntos5": 1
+    "respuestas": [
+      {
+        "texto": "VOLEIBOL",
+        "puntos": 87
+      },
+      {
+        "texto": "FUTBOL",
+        "puntos": 5
+      },
+      {
+        "texto": "NATACIÓN",
+        "puntos": 4
+      },
+      {
+        "texto": "TENIS",
+        "puntos": 3
+      },
+      {
+        "texto": "BALONCESTO",
+        "puntos": 1
+      }
+    ]
   },
   {
     "id": "p00100",
     "pregunta": "Forma en la que estás en contacto con tus seres queridos",
-    "texto1": "TELÉFONO",
-    "puntos1": 85,
-    "texto2": "REDES SOCIALES",
-    "puntos2": 8,
-    "texto3": "INTERNET",
-    "puntos3": 4,
-    "texto4": "COMPARTIR",
-    "puntos4": 2,
-    "texto5": "MENSAJES",
-    "puntos5": 1
+    "respuestas": [
+      {
+        "texto": "TELÉFONO",
+        "puntos": 85
+      },
+      {
+        "texto": "REDES SOCIALES",
+        "puntos": 8
+      },
+      {
+        "texto": "INTERNET",
+        "puntos": 4
+      },
+      {
+        "texto": "COMPARTIR",
+        "puntos": 2
+      },
+      {
+        "texto": "MENSAJES",
+        "puntos": 1
+      }
+    ]
   },
   {
     "id": "p00101",
     "pregunta": "Cuando se acaba una canción en un concierto, Qué haces?",
-    "texto1": "APLAUDIR",
-    "puntos1": 49,
-    "texto2": "GRITAS",
-    "puntos2": 20,
-    "texto3": "ESPERAR OTRA",
-    "puntos3": 16,
-    "texto4": "RETIRARSE",
-    "puntos4": 12,
-    "texto5": "ABUCHEAR",
-    "puntos5": 3
+    "respuestas": [
+      {
+        "texto": "APLAUDIR",
+        "puntos": 49
+      },
+      {
+        "texto": "GRITAS",
+        "puntos": 20
+      },
+      {
+        "texto": "ESPERAR OTRA",
+        "puntos": 16
+      },
+      {
+        "texto": "RETIRARSE",
+        "puntos": 12
+      },
+      {
+        "texto": "ABUCHEAR",
+        "puntos": 3
+      }
+    ]
   },
   {
     "id": "p00102",
     "pregunta": "Sin mencionar marcas, bebida que empieza con la letra c",
-    "texto1": "COLA",
-    "puntos1": 37,
-    "texto2": "CERVEZA",
-    "puntos2": 27,
-    "texto3": "CAFÉ",
-    "puntos3": 25,
-    "texto4": "CHOCOLATE",
-    "puntos4": 8,
-    "texto5": "COCO",
-    "puntos5": 3
+    "respuestas": [
+      {
+        "texto": "COLA",
+        "puntos": 37
+      },
+      {
+        "texto": "CERVEZA",
+        "puntos": 27
+      },
+      {
+        "texto": "CAFÉ",
+        "puntos": 25
+      },
+      {
+        "texto": "CHOCOLATE",
+        "puntos": 8
+      },
+      {
+        "texto": "COCO",
+        "puntos": 3
+      }
+    ]
   },
   {
     "id": "p00103",
     "pregunta": "Menciona algo que las personas tienen que correr para atraparlo",
-    "texto1": "ANIMAL",
-    "puntos1": 63,
-    "texto2": "PELOTA",
-    "puntos2": 17,
-    "texto3": "AUTOBÚS",
-    "puntos3": 10,
-    "texto4": "NIÑOS",
-    "puntos4": 6,
-    "texto5": "LADRÓN",
-    "puntos5": 4
+    "respuestas": [
+      {
+        "texto": "ANIMAL",
+        "puntos": 63
+      },
+      {
+        "texto": "PELOTA",
+        "puntos": 17
+      },
+      {
+        "texto": "AUTOBÚS",
+        "puntos": 10
+      },
+      {
+        "texto": "NIÑOS",
+        "puntos": 6
+      },
+      {
+        "texto": "LADRÓN",
+        "puntos": 4
+      }
+    ]
   },
   {
     "id": "p00104",
     "pregunta": "Si fueras hechichera, En qué electrodoméstico conviertes a tu marido?",
-    "texto1": "REFRIGERADOR",
-    "puntos1": 37,
-    "texto2": "LICUADORA",
-    "puntos2": 26,
-    "texto3": "MICROHONDAS",
-    "puntos3": 20,
-    "texto4": "PLANCHA",
-    "puntos4": 10,
-    "texto5": "LAVADORA",
-    "puntos5": 7
+    "respuestas": [
+      {
+        "texto": "REFRIGERADOR",
+        "puntos": 37
+      },
+      {
+        "texto": "LICUADORA",
+        "puntos": 26
+      },
+      {
+        "texto": "MICROHONDAS",
+        "puntos": 20
+      },
+      {
+        "texto": "PLANCHA",
+        "puntos": 10
+      },
+      {
+        "texto": "LAVADORA",
+        "puntos": 7
+      }
+    ]
   },
   {
     "id": "p00105",
     "pregunta": "Menciona algo de lo que te puedes arrepentir",
-    "texto1": "MENTIR",
-    "puntos1": 30,
-    "texto2": "CASARME",
-    "puntos2": 23,
-    "texto3": "MATAR",
-    "puntos3": 20,
-    "texto4": "PECAR",
-    "puntos4": 19,
-    "texto5": "COMER EN EXCESO",
-    "puntos5": 8
+    "respuestas": [
+      {
+        "texto": "MENTIR",
+        "puntos": 30
+      },
+      {
+        "texto": "CASARME",
+        "puntos": 23
+      },
+      {
+        "texto": "MATAR",
+        "puntos": 20
+      },
+      {
+        "texto": "PECAR",
+        "puntos": 19
+      },
+      {
+        "texto": "COMER EN EXCESO",
+        "puntos": 8
+      }
+    ]
   },
   {
     "id": "p00106",
     "pregunta": "Deporte en el que los uniformes dejan ver los encantos de quien los usa",
-    "texto1": "FUTBOL",
-    "puntos1": 38,
-    "texto2": "NATACIÓN",
-    "puntos2": 36,
-    "texto3": "BEISBOL",
-    "puntos3": 10,
-    "texto4": "VOLEIBOL",
-    "puntos4": 9,
-    "texto5": "BALONCESTO",
-    "puntos5": 5
+    "respuestas": [
+      {
+        "texto": "FUTBOL",
+        "puntos": 38
+      },
+      {
+        "texto": "NATACIÓN",
+        "puntos": 36
+      },
+      {
+        "texto": "BEISBOL",
+        "puntos": 10
+      },
+      {
+        "texto": "VOLEIBOL",
+        "puntos": 9
+      },
+      {
+        "texto": "BALONCESTO",
+        "puntos": 5
+      }
+    ]
   },
   {
     "id": "p00107",
     "pregunta": "Algo que tus vecinos hacen muy temprano y te puede molestar",
-    "texto1": "RUIDO",
-    "puntos1": 40,
-    "texto2": "MÚSICA FUERTE",
-    "puntos2": 23,
-    "texto3": "CORTAR SU PASTO",
-    "puntos3": 16,
-    "texto4": "ENCENDER AUTO",
-    "puntos4": 14,
-    "texto5": "GRITAR",
-    "puntos5": 7
+    "respuestas": [
+      {
+        "texto": "RUIDO",
+        "puntos": 40
+      },
+      {
+        "texto": "MÚSICA FUERTE",
+        "puntos": 23
+      },
+      {
+        "texto": "CORTAR SU PASTO",
+        "puntos": 16
+      },
+      {
+        "texto": "ENCENDER AUTO",
+        "puntos": 14
+      },
+      {
+        "texto": "GRITAR",
+        "puntos": 7
+      }
+    ]
   },
   {
     "id": "p00108",
     "pregunta": "Razón por la que usarías escaleras en lugar de un elevador",
-    "texto1": "EJERCICIO",
-    "puntos1": 49,
-    "texto2": "MIEDO",
-    "puntos2": 14,
-    "texto3": "DESCOMPUESTO",
-    "puntos3": 12,
-    "texto4": "INCENDIO",
-    "puntos4": 11,
-    "texto5": "TEMBLOR",
-    "puntos5": 8
+    "respuestas": [
+      {
+        "texto": "EJERCICIO",
+        "puntos": 49
+      },
+      {
+        "texto": "MIEDO",
+        "puntos": 14
+      },
+      {
+        "texto": "DESCOMPUESTO",
+        "puntos": 12
+      },
+      {
+        "texto": "INCENDIO",
+        "puntos": 11
+      },
+      {
+        "texto": "TEMBLOR",
+        "puntos": 8
+      }
+    ]
   },
   {
     "id": "p00109",
     "pregunta": "Si tuvieras la barriga de Santa Claus, Qué te costaría trabajo hacer?",
-    "texto1": "AGACHAR",
-    "puntos1": 49,
-    "texto2": "CORRER",
-    "puntos2": 21,
-    "texto3": "EJERCICIO",
-    "puntos3": 18,
-    "texto4": "ABROCHAR ZAPATOS",
-    "puntos4": 7,
-    "texto5": "CAMINAR",
-    "puntos5": 5
+    "respuestas": [
+      {
+        "texto": "AGACHAR",
+        "puntos": 49
+      },
+      {
+        "texto": "CORRER",
+        "puntos": 21
+      },
+      {
+        "texto": "EJERCICIO",
+        "puntos": 18
+      },
+      {
+        "texto": "ABROCHAR ZAPATOS",
+        "puntos": 7
+      },
+      {
+        "texto": "CAMINAR",
+        "puntos": 5
+      }
+    ]
   },
   {
     "id": "p00110",
     "pregunta": "Deporte en el que tienes que saltar muy alto",
-    "texto1": "BALONCESTO",
-    "puntos1": 62,
-    "texto2": "SALTO DE GARROCHA",
-    "puntos2": 12,
-    "texto3": "SALTO DE ALTURA",
-    "puntos3": 13,
-    "texto4": "TRAMPOLÍN",
-    "puntos4": 7,
-    "texto5": "VOLIBOL",
-    "puntos5": 6
+    "respuestas": [
+      {
+        "texto": "BALONCESTO",
+        "puntos": 62
+      },
+      {
+        "texto": "SALTO DE GARROCHA",
+        "puntos": 12
+      },
+      {
+        "texto": "SALTO DE ALTURA",
+        "puntos": 13
+      },
+      {
+        "texto": "TRAMPOLÍN",
+        "puntos": 7
+      },
+      {
+        "texto": "VOLIBOL",
+        "puntos": 6
+      }
+    ]
   },
   {
     "id": "p00111",
     "pregunta": "Además de confianza, Qué no debe faltar en tu relación?",
-    "texto1": "AMOR",
-    "puntos1": 40,
-    "texto2": "COMUNICACIÓN",
-    "puntos2": 27,
-    "texto3": "RESPETO",
-    "puntos3": 18,
-    "texto4": "SEGURIDAD",
-    "puntos4": 9,
-    "texto5": "COMPRENSIÓN",
-    "puntos5": 6
+    "respuestas": [
+      {
+        "texto": "AMOR",
+        "puntos": 40
+      },
+      {
+        "texto": "COMUNICACIÓN",
+        "puntos": 27
+      },
+      {
+        "texto": "RESPETO",
+        "puntos": 18
+      },
+      {
+        "texto": "SEGURIDAD",
+        "puntos": 9
+      },
+      {
+        "texto": "COMPRENSIÓN",
+        "puntos": 6
+      }
+    ]
   },
   {
     "id": "p00112",
     "pregunta": "Razón por la que cambiarías un regalo",
-    "texto1": "NO ME GUSTA",
-    "puntos1": 44,
-    "texto2": "TALLA",
-    "puntos2": 43,
-    "texto3": "DEFECTUOSO",
-    "puntos3": 7,
-    "texto4": "COLOR",
-    "puntos4": 5,
-    "texto5": "DISGUSTO",
-    "puntos5": 4
+    "respuestas": [
+      {
+        "texto": "NO ME GUSTA",
+        "puntos": 44
+      },
+      {
+        "texto": "TALLA",
+        "puntos": 43
+      },
+      {
+        "texto": "DEFECTUOSO",
+        "puntos": 7
+      },
+      {
+        "texto": "COLOR",
+        "puntos": 5
+      },
+      {
+        "texto": "DISGUSTO",
+        "puntos": 4
+      }
+    ]
   },
   {
     "id": "p00113",
     "pregunta": "Cuál es tu mes favorito para hacer un día de campo?",
-    "texto1": "FEBRERO",
-    "puntos1": 39,
-    "texto2": "JULIO",
-    "puntos2": 35,
-    "texto3": "MARZO",
-    "puntos3": 12,
-    "texto4": "MAYO",
-    "puntos4": 9,
-    "texto5": "JUNIO",
-    "puntos5": 6
+    "respuestas": [
+      {
+        "texto": "FEBRERO",
+        "puntos": 39
+      },
+      {
+        "texto": "JULIO",
+        "puntos": 35
+      },
+      {
+        "texto": "MARZO",
+        "puntos": 12
+      },
+      {
+        "texto": "MAYO",
+        "puntos": 9
+      },
+      {
+        "texto": "JUNIO",
+        "puntos": 6
+      }
+    ]
   },
   {
     "id": "p00114",
     "pregunta": "Quién no te gustaría que te viera desnudo?",
-    "texto1": "PAPÁS",
-    "puntos1": 35,
-    "texto2": "HIJOS",
-    "puntos2": 30,
-    "texto3": "NADIE",
-    "puntos3": 20,
-    "texto4": "VECINOS",
-    "puntos4": 8,
-    "texto5": "EXTRAÑO",
-    "puntos5": 7
+    "respuestas": [
+      {
+        "texto": "PAPÁS",
+        "puntos": 35
+      },
+      {
+        "texto": "HIJOS",
+        "puntos": 30
+      },
+      {
+        "texto": "NADIE",
+        "puntos": 20
+      },
+      {
+        "texto": "VECINOS",
+        "puntos": 8
+      },
+      {
+        "texto": "EXTRAÑO",
+        "puntos": 7
+      }
+    ]
   },
   {
     "id": "p00115",
     "pregunta": "Si tu ropa interior pudiera hablar, qué te diría?",
-    "texto1": "CÁMBIAME",
-    "puntos1": 35,
-    "texto2": "LÁVAME",
-    "puntos2": 26,
-    "texto3": "BÁÑATE",
-    "puntos3": 18,
-    "texto4": "HUELE MAL",
-    "puntos4": 16,
-    "texto5": "NADA",
-    "puntos5": 5
+    "respuestas": [
+      {
+        "texto": "CÁMBIAME",
+        "puntos": 35
+      },
+      {
+        "texto": "LÁVAME",
+        "puntos": 26
+      },
+      {
+        "texto": "BÁÑATE",
+        "puntos": 18
+      },
+      {
+        "texto": "HUELE MAL",
+        "puntos": 16
+      },
+      {
+        "texto": "NADA",
+        "puntos": 5
+      }
+    ]
   },
   {
     "id": "p00116",
     "pregunta": "A quién invitaría Santa Claus a su fiesta de cumpleaños?",
-    "texto1": "REYES MAGOS",
-    "puntos1": 30,
-    "texto2": "NIÑOS",
-    "puntos2": 20,
-    "texto3": "DUENDES",
-    "puntos3": 19,
-    "texto4": "JESÚS",
-    "puntos4": 18,
-    "texto5": "RENOS",
-    "puntos5": 13
+    "respuestas": [
+      {
+        "texto": "REYES MAGOS",
+        "puntos": 30
+      },
+      {
+        "texto": "NIÑOS",
+        "puntos": 20
+      },
+      {
+        "texto": "DUENDES",
+        "puntos": 19
+      },
+      {
+        "texto": "JESÚS",
+        "puntos": 18
+      },
+      {
+        "texto": "RENOS",
+        "puntos": 13
+      }
+    ]
   },
   {
     "id": "p00117",
     "pregunta": "Algo que las mujeres le hacen a su cabello y los hombres no.",
-    "texto1": "PINTAR",
-    "puntos1": 32,
-    "texto2": "ALACIAR",
-    "puntos2": 27,
-    "texto3": "RIZOS",
-    "puntos3": 24,
-    "texto4": "PERMANENTE",
-    "puntos4": 10,
-    "texto5": "PEINADOS",
-    "puntos5": 7
+    "respuestas": [
+      {
+        "texto": "PINTAR",
+        "puntos": 32
+      },
+      {
+        "texto": "ALACIAR",
+        "puntos": 27
+      },
+      {
+        "texto": "RIZOS",
+        "puntos": 24
+      },
+      {
+        "texto": "PERMANENTE",
+        "puntos": 10
+      },
+      {
+        "texto": "PEINADOS",
+        "puntos": 7
+      }
+    ]
   },
   {
     "id": "p00118",
     "pregunta": "Regalo que te sorptrendería en tu aniversario de bodas",
-    "texto1": "CARRO",
-    "puntos1": 27,
-    "texto2": "VIAJE",
-    "puntos2": 23,
-    "texto3": "JOYAS",
-    "puntos3": 20,
-    "texto4": "CASAS",
-    "puntos4": 18,
-    "texto5": "DINERO",
-    "puntos5": 12
+    "respuestas": [
+      {
+        "texto": "CARRO",
+        "puntos": 27
+      },
+      {
+        "texto": "VIAJE",
+        "puntos": 23
+      },
+      {
+        "texto": "JOYAS",
+        "puntos": 20
+      },
+      {
+        "texto": "CASAS",
+        "puntos": 18
+      },
+      {
+        "texto": "DINERO",
+        "puntos": 12
+      }
+    ]
   },
   {
     "id": "p00119",
     "pregunta": "Si puedieras hablar con un animal de la selva, Cuál sería?",
-    "texto1": "LEÓN",
-    "puntos1": 64,
-    "texto2": "CHANGO",
-    "puntos2": 13,
-    "texto3": "TIGRE",
-    "puntos3": 12,
-    "texto4": "JIRAFA",
-    "puntos4": 6,
-    "texto5": "ELEFANTE",
-    "puntos5": 5
+    "respuestas": [
+      {
+        "texto": "LEÓN",
+        "puntos": 64
+      },
+      {
+        "texto": "CHANGO",
+        "puntos": 13
+      },
+      {
+        "texto": "TIGRE",
+        "puntos": 12
+      },
+      {
+        "texto": "JIRAFA",
+        "puntos": 6
+      },
+      {
+        "texto": "ELEFANTE",
+        "puntos": 5
+      }
+    ]
   },
   {
     "id": "p00120",
     "pregunta": "Menciona algo que si deja de funcionar en tu casa, te pone de mal humor",
-    "texto1": "TELEVISIÓN",
-    "puntos1": 41,
-    "texto2": "INTERNET",
-    "puntos2": 38,
-    "texto3": "ESTUFA",
-    "puntos3": 13,
-    "texto4": "LUZ",
-    "puntos4": 5,
-    "texto5": "RADIO",
-    "puntos5": 3
+    "respuestas": [
+      {
+        "texto": "TELEVISIÓN",
+        "puntos": 41
+      },
+      {
+        "texto": "INTERNET",
+        "puntos": 38
+      },
+      {
+        "texto": "ESTUFA",
+        "puntos": 13
+      },
+      {
+        "texto": "LUZ",
+        "puntos": 5
+      },
+      {
+        "texto": "RADIO",
+        "puntos": 3
+      }
+    ]
   },
   {
     "id": "p00121",
     "pregunta": "Sin me ncionar marcas, Alimento que usualmente compras en caja?",
-    "texto1": "CEREAL",
-    "puntos1": 54,
-    "texto2": "GALLETAS",
-    "puntos2": 24,
-    "texto3": "AVENA",
-    "puntos3": 11,
-    "texto4": "PASTA",
-    "puntos4": 9,
-    "texto5": "CARNE",
-    "puntos5": 2
+    "respuestas": [
+      {
+        "texto": "CEREAL",
+        "puntos": 54
+      },
+      {
+        "texto": "GALLETAS",
+        "puntos": 24
+      },
+      {
+        "texto": "AVENA",
+        "puntos": 11
+      },
+      {
+        "texto": "PASTA",
+        "puntos": 9
+      },
+      {
+        "texto": "CARNE",
+        "puntos": 2
+      }
+    ]
   },
   {
     "id": "p00122",
     "pregunta": "Color de ropa que más usas en invierno",
-    "texto1": "NEGRO",
-    "puntos1": 61,
-    "texto2": "AZÚL",
-    "puntos2": 15,
-    "texto3": "GRIS",
-    "puntos3": 9,
-    "texto4": "ROJO",
-    "puntos4": 8,
-    "texto5": "BLANCO",
-    "puntos5": 7
+    "respuestas": [
+      {
+        "texto": "NEGRO",
+        "puntos": 61
+      },
+      {
+        "texto": "AZÚL",
+        "puntos": 15
+      },
+      {
+        "texto": "GRIS",
+        "puntos": 9
+      },
+      {
+        "texto": "ROJO",
+        "puntos": 8
+      },
+      {
+        "texto": "BLANCO",
+        "puntos": 7
+      }
+    ]
   },
   {
     "id": "p00123",
     "pregunta": "Cuando compras un celular, Qué es lo que mas te importa?",
-    "texto1": "PRECIO",
-    "puntos1": 42,
-    "texto2": "WIFI",
-    "puntos2": 26,
-    "texto3": "BUENAS CONDICIONES",
-    "puntos3": 13,
-    "texto4": "CÁMARA",
-    "puntos4": 12,
-    "texto5": "COLOR",
-    "puntos5": 7
+    "respuestas": [
+      {
+        "texto": "PRECIO",
+        "puntos": 42
+      },
+      {
+        "texto": "WIFI",
+        "puntos": 26
+      },
+      {
+        "texto": "BUENAS CONDICIONES",
+        "puntos": 13
+      },
+      {
+        "texto": "CÁMARA",
+        "puntos": 12
+      },
+      {
+        "texto": "COLOR",
+        "puntos": 7
+      }
+    ]
   },
   {
     "id": "p00124",
     "pregunta": "Otra forma de decir novia o novio",
-    "texto1": "PAREJA",
-    "puntos1": 42,
-    "texto2": "AMOR",
-    "puntos2": 26,
-    "texto3": "AMIGO",
-    "puntos3": 21,
-    "texto4": "PROMETIDO",
-    "puntos4": 6,
-    "texto5": "CHAVA",
-    "puntos5": 5
+    "respuestas": [
+      {
+        "texto": "PAREJA",
+        "puntos": 42
+      },
+      {
+        "texto": "AMOR",
+        "puntos": 26
+      },
+      {
+        "texto": "AMIGO",
+        "puntos": 21
+      },
+      {
+        "texto": "PROMETIDO",
+        "puntos": 6
+      },
+      {
+        "texto": "CHAVA",
+        "puntos": 5
+      }
+    ]
   },
   {
     "id": "p00125",
     "pregunta": "Cómo bajas el calor en un día muy soleado?",
-    "texto1": "AGUA",
-    "puntos1": 53,
-    "texto2": "AIRE ACONDICIONADO",
-    "puntos2": 22,
-    "texto3": "BAÑO",
-    "puntos3": 12,
-    "texto4": "CERVEZA",
-    "puntos4": 8,
-    "texto5": "NADANDO",
-    "puntos5": 5
+    "respuestas": [
+      {
+        "texto": "AGUA",
+        "puntos": 53
+      },
+      {
+        "texto": "AIRE ACONDICIONADO",
+        "puntos": 22
+      },
+      {
+        "texto": "BAÑO",
+        "puntos": 12
+      },
+      {
+        "texto": "CERVEZA",
+        "puntos": 8
+      },
+      {
+        "texto": "NADANDO",
+        "puntos": 5
+      }
+    ]
   },
   {
     "id": "p00126",
     "pregunta": "Algo que comprarías por internet para evitar que te miren raro",
-    "texto1": "ROPA INTERIOR",
-    "puntos1": 28,
-    "texto2": "ROPA",
-    "puntos2": 26,
-    "texto3": "ART.PARA ADULTOS",
-    "puntos3": 23,
-    "texto4": "JUGUETE",
-    "puntos4": 13,
-    "texto5": "ART. ÍNTIMOS",
-    "puntos5": 10
+    "respuestas": [
+      {
+        "texto": "ROPA INTERIOR",
+        "puntos": 28
+      },
+      {
+        "texto": "ROPA",
+        "puntos": 26
+      },
+      {
+        "texto": "ART.PARA ADULTOS",
+        "puntos": 23
+      },
+      {
+        "texto": "JUGUETE",
+        "puntos": 13
+      },
+      {
+        "texto": "ART. ÍNTIMOS",
+        "puntos": 10
+      }
+    ]
   },
   {
     "id": "p00127",
     "pregunta": "Cuantos dientes tienes",
-    "texto1": "VEINTE",
-    "puntos1": 28,
-    "texto2": "TREINTA Y DOS",
-    "puntos2": 22,
-    "texto3": "VEINTICINCO",
-    "puntos3": 18,
-    "texto4": "VEINTIOCHO",
-    "puntos4": 17,
-    "texto5": "TREINTA",
-    "puntos5": 15
+    "respuestas": [
+      {
+        "texto": "VEINTE",
+        "puntos": 28
+      },
+      {
+        "texto": "TREINTA Y DOS",
+        "puntos": 22
+      },
+      {
+        "texto": "VEINTICINCO",
+        "puntos": 18
+      },
+      {
+        "texto": "VEINTIOCHO",
+        "puntos": 17
+      },
+      {
+        "texto": "TREINTA",
+        "puntos": 15
+      }
+    ]
   },
   {
     "id": "p00128",
     "pregunta": "En una rifa, Qué te gustaría ganar?",
-    "texto1": "DINERO",
-    "puntos1": 55,
-    "texto2": "CARRO",
-    "puntos2": 35,
-    "texto3": "CASA",
-    "puntos3": 5,
-    "texto4": "LOTERÍA",
-    "puntos4": 3,
-    "texto5": "VIAJE",
-    "puntos5": 2
+    "respuestas": [
+      {
+        "texto": "DINERO",
+        "puntos": 55
+      },
+      {
+        "texto": "CARRO",
+        "puntos": 35
+      },
+      {
+        "texto": "CASA",
+        "puntos": 5
+      },
+      {
+        "texto": "LOTERÍA",
+        "puntos": 3
+      },
+      {
+        "texto": "VIAJE",
+        "puntos": 2
+      }
+    ]
   },
   {
     "id": "p00129",
     "pregunta": "Si encontraras la fuente de la juventud, Con quien no la compartirías?",
-    "texto1": "PAREJA",
-    "puntos1": 40,
-    "texto2": "ENEMIGOS",
-    "puntos2": 33,
-    "texto3": "SUEGROS",
-    "puntos3": 10,
-    "texto4": "AMIGA",
-    "puntos4": 9,
-    "texto5": "GENTE MALA",
-    "puntos5": 8
+    "respuestas": [
+      {
+        "texto": "PAREJA",
+        "puntos": 40
+      },
+      {
+        "texto": "ENEMIGOS",
+        "puntos": 33
+      },
+      {
+        "texto": "SUEGROS",
+        "puntos": 10
+      },
+      {
+        "texto": "AMIGA",
+        "puntos": 9
+      },
+      {
+        "texto": "GENTE MALA",
+        "puntos": 8
+      }
+    ]
   },
   {
     "id": "p00130",
     "pregunta": "A qué persona le has dicho una mentira piadosa",
-    "texto1": "ESPOSA",
-    "puntos1": 80,
-    "texto2": "MADRE",
-    "puntos2": 11,
-    "texto3": "HERMANOS",
-    "puntos3": 5,
-    "texto4": "PADRE",
-    "puntos4": 3,
-    "texto5": "PRIMO",
-    "puntos5": 1
+    "respuestas": [
+      {
+        "texto": "ESPOSA",
+        "puntos": 80
+      },
+      {
+        "texto": "MADRE",
+        "puntos": 11
+      },
+      {
+        "texto": "HERMANOS",
+        "puntos": 5
+      },
+      {
+        "texto": "PADRE",
+        "puntos": 3
+      },
+      {
+        "texto": "PRIMO",
+        "puntos": 1
+      }
+    ]
   },
   {
     "id": "p00131",
     "pregunta": "Qué tema es el más gracioso que has visto en las redes sociales",
-    "texto1": "CHISTES",
-    "puntos1": 29,
-    "texto2": "CAÍDAS",
-    "puntos2": 25,
-    "texto3": "ANIMALES",
-    "puntos3": 20,
-    "texto4": "CHESPIRITO",
-    "puntos4": 16,
-    "texto5": "POLÍTICA",
-    "puntos5": 10
+    "respuestas": [
+      {
+        "texto": "CHISTES",
+        "puntos": 29
+      },
+      {
+        "texto": "CAÍDAS",
+        "puntos": 25
+      },
+      {
+        "texto": "ANIMALES",
+        "puntos": 20
+      },
+      {
+        "texto": "CHESPIRITO",
+        "puntos": 16
+      },
+      {
+        "texto": "POLÍTICA",
+        "puntos": 10
+      }
+    ]
   },
   {
     "id": "p00132",
     "pregunta": "Cuántos amigos tienes en el facebook?",
-    "texto1": "NO TENGO",
-    "puntos1": 30,
-    "texto2": "CIEN",
-    "puntos2": 19,
-    "texto3": "DOSCIENTOS",
-    "puntos3": 18,
-    "texto4": "VEINTE",
-    "puntos4": 17,
-    "texto5": "CINCUENTA",
-    "puntos5": 16
+    "respuestas": [
+      {
+        "texto": "NO TENGO",
+        "puntos": 30
+      },
+      {
+        "texto": "CIEN",
+        "puntos": 19
+      },
+      {
+        "texto": "DOSCIENTOS",
+        "puntos": 18
+      },
+      {
+        "texto": "VEINTE",
+        "puntos": 17
+      },
+      {
+        "texto": "CINCUENTA",
+        "puntos": 16
+      }
+    ]
   },
   {
     "id": "p00133",
     "pregunta": "instrumento musical que tocas con ambas manos",
-    "texto1": "PIANO",
-    "puntos1": 53,
-    "texto2": "GUITARRA",
-    "puntos2": 25,
-    "texto3": "BATERÍA",
-    "puntos3": 10,
-    "texto4": "FLAUTA",
-    "puntos4": 7,
-    "texto5": "TAMBORES",
-    "puntos5": 5
+    "respuestas": [
+      {
+        "texto": "PIANO",
+        "puntos": 53
+      },
+      {
+        "texto": "GUITARRA",
+        "puntos": 25
+      },
+      {
+        "texto": "BATERÍA",
+        "puntos": 10
+      },
+      {
+        "texto": "FLAUTA",
+        "puntos": 7
+      },
+      {
+        "texto": "TAMBORES",
+        "puntos": 5
+      }
+    ]
   },
   {
     "id": "p00134",
     "pregunta": "Cuando eras niño, Cuánto dinero te dejaba el ratón o el hada de los dientes?",
-    "texto1": "10 PESOS",
-    "puntos1": 38,
-    "texto2": "NADA",
-    "puntos2": 29,
-    "texto3": "50 PESOS",
-    "puntos3": 18,
-    "texto4": "5 PESOS",
-    "puntos4": 8,
-    "texto5": "25 PESOS",
-    "puntos5": 7
+    "respuestas": [
+      {
+        "texto": "10 PESOS",
+        "puntos": 38
+      },
+      {
+        "texto": "NADA",
+        "puntos": 29
+      },
+      {
+        "texto": "50 PESOS",
+        "puntos": 18
+      },
+      {
+        "texto": "5 PESOS",
+        "puntos": 8
+      },
+      {
+        "texto": "25 PESOS",
+        "puntos": 7
+      }
+    ]
   },
   {
     "id": "p00135",
     "pregunta": "Si estuvieras en el tráfico y te dieran ganas de ira al baño, Qué harías?",
-    "texto1": "AGUANTARME",
-    "puntos1": 59,
-    "texto2": "ORILLARSE",
-    "puntos2": 13,
-    "texto3": "BOTELLA",
-    "puntos3": 11,
-    "texto4": "BUSCAR BAÑO",
-    "puntos4": 9,
-    "texto5": "ESTACIONARME",
-    "puntos5": 8
+    "respuestas": [
+      {
+        "texto": "AGUANTARME",
+        "puntos": 59
+      },
+      {
+        "texto": "ORILLARSE",
+        "puntos": 13
+      },
+      {
+        "texto": "BOTELLA",
+        "puntos": 11
+      },
+      {
+        "texto": "BUSCAR BAÑO",
+        "puntos": 9
+      },
+      {
+        "texto": "ESTACIONARME",
+        "puntos": 8
+      }
+    ]
   },
   {
     "id": "p00136",
     "pregunta": "Qué ritmo aprendiste a bailar por primera vez?",
-    "texto1": "CUMBIA",
-    "puntos1": 40,
-    "texto2": "SALSA",
-    "puntos2": 37,
-    "texto3": "MERENGUE",
-    "puntos3": 15,
-    "texto4": "BANDA",
-    "puntos4": 5,
-    "texto5": "DISCO",
-    "puntos5": 3
+    "respuestas": [
+      {
+        "texto": "CUMBIA",
+        "puntos": 40
+      },
+      {
+        "texto": "SALSA",
+        "puntos": 37
+      },
+      {
+        "texto": "MERENGUE",
+        "puntos": 15
+      },
+      {
+        "texto": "BANDA",
+        "puntos": 5
+      },
+      {
+        "texto": "DISCO",
+        "puntos": 3
+      }
+    ]
   },
   {
     "id": "p00137",
     "pregunta": "Si se te acaba el papel de baño, Qué haces?",
-    "texto1": "COMPRAR MÁS",
-    "puntos1": 41,
-    "texto2": "AGARRAR OTRO",
-    "puntos2": 22,
-    "texto3": "GRITO POR OTRO",
-    "puntos3": 19,
-    "texto4": "BAÑARSE",
-    "puntos4": 10,
-    "texto5": "SERVILLETAS",
-    "puntos5": 8
+    "respuestas": [
+      {
+        "texto": "COMPRAR MÁS",
+        "puntos": 41
+      },
+      {
+        "texto": "AGARRAR OTRO",
+        "puntos": 22
+      },
+      {
+        "texto": "GRITO POR OTRO",
+        "puntos": 19
+      },
+      {
+        "texto": "BAÑARSE",
+        "puntos": 10
+      },
+      {
+        "texto": "SERVILLETAS",
+        "puntos": 8
+      }
+    ]
   },
   {
     "id": "p00138",
     "pregunta": "Además de la iglesia, lugar común para casarse",
-    "texto1": "PLAYA",
-    "puntos1": 36,
-    "texto2": "ANTE EL JUEZ",
-    "puntos2": 21,
-    "texto3": "REGISTRO CIVIL",
-    "puntos3": 17,
-    "texto4": "CASAS",
-    "puntos4": 15,
-    "texto5": "CORTE",
-    "puntos5": 11
+    "respuestas": [
+      {
+        "texto": "PLAYA",
+        "puntos": 36
+      },
+      {
+        "texto": "ANTE EL JUEZ",
+        "puntos": 21
+      },
+      {
+        "texto": "REGISTRO CIVIL",
+        "puntos": 17
+      },
+      {
+        "texto": "CASAS",
+        "puntos": 15
+      },
+      {
+        "texto": "CORTE",
+        "puntos": 11
+      }
+    ]
   },
   {
     "id": "p00139",
     "pregunta": "Motivo por el que pedirías un préstamo bancario?",
-    "texto1": "CASA NUEVA",
-    "puntos1": 39,
-    "texto2": "CARRO NUEVO",
-    "puntos2": 22,
-    "texto3": "DEUDAS",
-    "puntos3": 15,
-    "texto4": "EMERGENCIA",
-    "puntos4": 13,
-    "texto5": "ESCUELA",
-    "puntos5": 11
+    "respuestas": [
+      {
+        "texto": "CASA NUEVA",
+        "puntos": 39
+      },
+      {
+        "texto": "CARRO NUEVO",
+        "puntos": 22
+      },
+      {
+        "texto": "DEUDAS",
+        "puntos": 15
+      },
+      {
+        "texto": "EMERGENCIA",
+        "puntos": 13
+      },
+      {
+        "texto": "ESCUELA",
+        "puntos": 11
+      }
+    ]
   },
   {
     "id": "p00140",
     "pregunta": "Si fueras Santa Claus y la casa no tuviera chimenea, Por dónde entrarías?",
-    "texto1": "PUERTA",
-    "puntos1": 57,
-    "texto2": "VENTANA",
-    "puntos2": 23,
-    "texto3": "TECHO",
-    "puntos3": 10,
-    "texto4": "PATIO",
-    "puntos4": 9,
-    "texto5": "COLADERA",
-    "puntos5": 1
+    "respuestas": [
+      {
+        "texto": "PUERTA",
+        "puntos": 57
+      },
+      {
+        "texto": "VENTANA",
+        "puntos": 23
+      },
+      {
+        "texto": "TECHO",
+        "puntos": 10
+      },
+      {
+        "texto": "PATIO",
+        "puntos": 9
+      },
+      {
+        "texto": "COLADERA",
+        "puntos": 1
+      }
+    ]
   },
   {
     "id": "p00141",
     "pregunta": "Cómo te das cuenta que una persona con la que hablas no te pone interés?",
-    "texto1": "NO ME MIRA",
-    "puntos1": 31,
-    "texto2": "ME IGNORA",
-    "puntos2": 22,
-    "texto3": "VOLTEA LA CARA",
-    "puntos3": 21,
-    "texto4": "ME PREGUNTA OTRA VEZ",
-    "puntos4": 18,
-    "texto5": "USA TELÉFONO",
-    "puntos5": 8
+    "respuestas": [
+      {
+        "texto": "NO ME MIRA",
+        "puntos": 31
+      },
+      {
+        "texto": "ME IGNORA",
+        "puntos": 22
+      },
+      {
+        "texto": "VOLTEA LA CARA",
+        "puntos": 21
+      },
+      {
+        "texto": "ME PREGUNTA OTRA VEZ",
+        "puntos": 18
+      },
+      {
+        "texto": "USA TELÉFONO",
+        "puntos": 8
+      }
+    ]
   },
   {
     "id": "p00142",
     "pregunta": "Cuando te asoleas mucho, Qué parte del cuerpo suele quemarse más?",
-    "texto1": "CARA",
-    "puntos1": 40,
-    "texto2": "ESPALDA",
-    "puntos2": 33,
-    "texto3": "HOMBROS",
-    "puntos3": 10,
-    "texto4": "CUELLO",
-    "puntos4": 9,
-    "texto5": "BRAZOS",
-    "puntos5": 8
+    "respuestas": [
+      {
+        "texto": "CARA",
+        "puntos": 40
+      },
+      {
+        "texto": "ESPALDA",
+        "puntos": 33
+      },
+      {
+        "texto": "HOMBROS",
+        "puntos": 10
+      },
+      {
+        "texto": "CUELLO",
+        "puntos": 9
+      },
+      {
+        "texto": "BRAZOS",
+        "puntos": 8
+      }
+    ]
   },
   {
     "id": "p00143",
     "pregunta": "Ropa o accesorio que utilizas para hacer ejercicio",
-    "texto1": "SHORT",
-    "puntos1": 41,
-    "texto2": "PANTS",
-    "puntos2": 36,
-    "texto3": "TENIS",
-    "puntos3": 10,
-    "texto4": "LICRA",
-    "puntos4": 7,
-    "texto5": "PLAYERA",
-    "puntos5": 6
+    "respuestas": [
+      {
+        "texto": "SHORT",
+        "puntos": 41
+      },
+      {
+        "texto": "PANTS",
+        "puntos": 36
+      },
+      {
+        "texto": "TENIS",
+        "puntos": 10
+      },
+      {
+        "texto": "LICRA",
+        "puntos": 7
+      },
+      {
+        "texto": "PLAYERA",
+        "puntos": 6
+      }
+    ]
   },
   {
     "id": "p00144",
     "pregunta": "Algo para lo que cierras los ojos",
-    "texto1": "DORMIR",
-    "puntos1": 80,
-    "texto2": "BESOS",
-    "puntos2": 11,
-    "texto3": "SUSTO",
-    "puntos3": 5,
-    "texto4": "ESTORNUDAR",
-    "puntos4": 3,
-    "texto5": "LUZ",
-    "puntos5": 1
+    "respuestas": [
+      {
+        "texto": "DORMIR",
+        "puntos": 80
+      },
+      {
+        "texto": "BESOS",
+        "puntos": 11
+      },
+      {
+        "texto": "SUSTO",
+        "puntos": 5
+      },
+      {
+        "texto": "ESTORNUDAR",
+        "puntos": 3
+      },
+      {
+        "texto": "LUZ",
+        "puntos": 1
+      }
+    ]
   },
   {
     "id": "p00145",
     "pregunta": "Transporte que te daría mucho miedo si fallara",
-    "texto1": "AVIÓN",
-    "puntos1": 33,
-    "texto2": "CARRO",
-    "puntos2": 31,
-    "texto3": "TREN",
-    "puntos3": 20,
-    "texto4": "BARCO",
-    "puntos4": 11,
-    "texto5": "HELICÓPTERO",
-    "puntos5": 5
+    "respuestas": [
+      {
+        "texto": "AVIÓN",
+        "puntos": 33
+      },
+      {
+        "texto": "CARRO",
+        "puntos": 31
+      },
+      {
+        "texto": "TREN",
+        "puntos": 20
+      },
+      {
+        "texto": "BARCO",
+        "puntos": 11
+      },
+      {
+        "texto": "HELICÓPTERO",
+        "puntos": 5
+      }
+    ]
   },
   {
     "id": "p00146",
     "pregunta": "De qué te puedes enterar en un programa de radio por la mañana?",
-    "texto1": "NOTICIAS",
-    "puntos1": 59,
-    "texto2": "CLIMA",
-    "puntos2": 20,
-    "texto3": "TRÁFICO",
-    "puntos3": 10,
-    "texto4": "CHISMES",
-    "puntos4": 8,
-    "texto5": "ACCIDENTES",
-    "puntos5": 3
+    "respuestas": [
+      {
+        "texto": "NOTICIAS",
+        "puntos": 59
+      },
+      {
+        "texto": "CLIMA",
+        "puntos": 20
+      },
+      {
+        "texto": "TRÁFICO",
+        "puntos": 10
+      },
+      {
+        "texto": "CHISMES",
+        "puntos": 8
+      },
+      {
+        "texto": "ACCIDENTES",
+        "puntos": 3
+      }
+    ]
   },
   {
     "id": "p00147",
     "pregunta": "Además de tu teléfono, Qué otra serie de numeros debes recordar?",
-    "texto1": "CLAVE",
-    "puntos1": 34,
-    "texto2": "NO. SEG. SOC.",
-    "puntos2": 26,
-    "texto3": "DIRECCIÓN",
-    "puntos3": 15,
-    "texto4": "EMERGENCIA",
-    "puntos4": 13,
-    "texto5": "FECHA DE NACIMIENTO",
-    "puntos5": 12
+    "respuestas": [
+      {
+        "texto": "CLAVE",
+        "puntos": 34
+      },
+      {
+        "texto": "NO. SEG. SOC.",
+        "puntos": 26
+      },
+      {
+        "texto": "DIRECCIÓN",
+        "puntos": 15
+      },
+      {
+        "texto": "EMERGENCIA",
+        "puntos": 13
+      },
+      {
+        "texto": "FECHA DE NACIMIENTO",
+        "puntos": 12
+      }
+    ]
   },
   {
     "id": "p00148",
     "pregunta": "Si te perdieras por días en un desierto, Qué te gustaría encontrarte?",
-    "texto1": "AGUA",
-    "puntos1": 66,
-    "texto2": "COMIDA",
-    "puntos2": 20,
-    "texto3": "GENTE",
-    "puntos3": 6,
-    "texto4": "AYUDA",
-    "puntos4": 5,
-    "texto5": "LAGOS",
-    "puntos5": 3
+    "respuestas": [
+      {
+        "texto": "AGUA",
+        "puntos": 66
+      },
+      {
+        "texto": "COMIDA",
+        "puntos": 20
+      },
+      {
+        "texto": "GENTE",
+        "puntos": 6
+      },
+      {
+        "texto": "AYUDA",
+        "puntos": 5
+      },
+      {
+        "texto": "LAGOS",
+        "puntos": 3
+      }
+    ]
   },
   {
     "id": "p00149",
     "pregunta": "Si William Levy tocara a tu puerta, Qué harías?",
-    "texto1": "ABRIR",
-    "puntos1": 38,
-    "texto2": "GRITO",
-    "puntos2": 20,
-    "texto3": "ABRAZARLO",
-    "puntos3": 19,
-    "texto4": "DEJARLO PASAR",
-    "puntos4": 13,
-    "texto5": "TOMAR FOTO",
-    "puntos5": 10
+    "respuestas": [
+      {
+        "texto": "ABRIR",
+        "puntos": 38
+      },
+      {
+        "texto": "GRITO",
+        "puntos": 20
+      },
+      {
+        "texto": "ABRAZARLO",
+        "puntos": 19
+      },
+      {
+        "texto": "DEJARLO PASAR",
+        "puntos": 13
+      },
+      {
+        "texto": "TOMAR FOTO",
+        "puntos": 10
+      }
+    ]
   },
   {
     "id": "p00150",
     "pregunta": "Si transportas vidrio en cajas, Qué escribirías en ellas para protegerlas?",
-    "texto1": "FRÁGIL",
-    "puntos1": 74,
-    "texto2": "CUIDADO",
-    "puntos2": 17,
-    "texto3": "OBJETOS DE VIDRIO",
-    "puntos3": 4,
-    "texto4": "DELICADO",
-    "puntos4": 3,
-    "texto5": "PRECAUCIÓN",
-    "puntos5": 2
+    "respuestas": [
+      {
+        "texto": "FRÁGIL",
+        "puntos": 74
+      },
+      {
+        "texto": "CUIDADO",
+        "puntos": 17
+      },
+      {
+        "texto": "OBJETOS DE VIDRIO",
+        "puntos": 4
+      },
+      {
+        "texto": "DELICADO",
+        "puntos": 3
+      },
+      {
+        "texto": "PRECAUCIÓN",
+        "puntos": 2
+      }
+    ]
   },
   {
     "id": "p00151",
     "pregunta": "En qué te fijarías para elegir un entrenador personal?",
-    "texto1": "CUERPO",
-    "puntos1": 30,
-    "texto2": "FÍSICO",
-    "puntos2": 20,
-    "texto3": "MÚSCULOS",
-    "puntos3": 19,
-    "texto4": "ACTITUD",
-    "puntos4": 16,
-    "texto5": "EXPERIENCIA",
-    "puntos5": 15
+    "respuestas": [
+      {
+        "texto": "CUERPO",
+        "puntos": 30
+      },
+      {
+        "texto": "FÍSICO",
+        "puntos": 20
+      },
+      {
+        "texto": "MÚSCULOS",
+        "puntos": 19
+      },
+      {
+        "texto": "ACTITUD",
+        "puntos": 16
+      },
+      {
+        "texto": "EXPERIENCIA",
+        "puntos": 15
+      }
+    ]
   },
   {
     "id": "p00152",
     "pregunta": "Si los superhéroes tuvieran twitter, Cuál tendría mas seguidores",
-    "texto1": "BATMAN",
-    "puntos1": 33,
-    "texto2": "SUPERMAN",
-    "puntos2": 31,
-    "texto3": "HOMBRE ARAÑA",
-    "puntos3": 20,
-    "texto4": "IRON MAN",
-    "puntos4": 11,
-    "texto5": "HULK",
-    "puntos5": 5
+    "respuestas": [
+      {
+        "texto": "BATMAN",
+        "puntos": 33
+      },
+      {
+        "texto": "SUPERMAN",
+        "puntos": 31
+      },
+      {
+        "texto": "HOMBRE ARAÑA",
+        "puntos": 20
+      },
+      {
+        "texto": "IRON MAN",
+        "puntos": 11
+      },
+      {
+        "texto": "HULK",
+        "puntos": 5
+      }
+    ]
   },
   {
     "id": "p00153",
     "pregunta": "Cuando haces pipí, Qué puedes salpicar",
-    "texto1": "INODORO",
-    "puntos1": 80,
-    "texto2": "PISO",
-    "puntos2": 11,
-    "texto3": "ROPA",
-    "puntos3": 5,
-    "texto4": "AGUA",
-    "puntos4": 3,
-    "texto5": "BASURA",
-    "puntos5": 1
+    "respuestas": [
+      {
+        "texto": "INODORO",
+        "puntos": 80
+      },
+      {
+        "texto": "PISO",
+        "puntos": 11
+      },
+      {
+        "texto": "ROPA",
+        "puntos": 5
+      },
+      {
+        "texto": "AGUA",
+        "puntos": 3
+      },
+      {
+        "texto": "BASURA",
+        "puntos": 1
+      }
+    ]
   },
   {
     "id": "p00154",
     "pregunta": "Antes de slair a una cita, Qué le pides a tus papás?",
-    "texto1": "PERMISO",
-    "puntos1": 53,
-    "texto2": "DINERO",
-    "puntos2": 28,
-    "texto3": "BENDICIÓN",
-    "puntos3": 14,
-    "texto4": "CARRO",
-    "puntos4": 3,
-    "texto5": "CUIDARSE",
-    "puntos5": 2
+    "respuestas": [
+      {
+        "texto": "PERMISO",
+        "puntos": 53
+      },
+      {
+        "texto": "DINERO",
+        "puntos": 28
+      },
+      {
+        "texto": "BENDICIÓN",
+        "puntos": 14
+      },
+      {
+        "texto": "CARRO",
+        "puntos": 3
+      },
+      {
+        "texto": "CUIDARSE",
+        "puntos": 2
+      }
+    ]
   },
   {
     "id": "p00155",
     "pregunta": "Cuando extrañas mucho a alguien, Qué le mandas?",
-    "texto1": "MENSAJE",
-    "puntos1": 41,
-    "texto2": "FLORES",
-    "puntos2": 22,
-    "texto3": "CARTA",
-    "puntos3": 15,
-    "texto4": "TARJETA",
-    "puntos4": 13,
-    "texto5": "SALUDOS",
-    "puntos5": 9
+    "respuestas": [
+      {
+        "texto": "MENSAJE",
+        "puntos": 41
+      },
+      {
+        "texto": "FLORES",
+        "puntos": 22
+      },
+      {
+        "texto": "CARTA",
+        "puntos": 15
+      },
+      {
+        "texto": "TARJETA",
+        "puntos": 13
+      },
+      {
+        "texto": "SALUDOS",
+        "puntos": 9
+      }
+    ]
   },
   {
     "id": "p00156",
     "pregunta": "Cuantas veces masticas un bocado antes de pasártelo?",
-    "texto1": "CINCO",
-    "puntos1": 28,
-    "texto2": "DIEZ",
-    "puntos2": 24,
-    "texto3": "TRES",
-    "puntos3": 23,
-    "texto4": "OCHO",
-    "puntos4": 17,
-    "texto5": "DOS",
-    "puntos5": 8
+    "respuestas": [
+      {
+        "texto": "CINCO",
+        "puntos": 28
+      },
+      {
+        "texto": "DIEZ",
+        "puntos": 24
+      },
+      {
+        "texto": "TRES",
+        "puntos": 23
+      },
+      {
+        "texto": "OCHO",
+        "puntos": 17
+      },
+      {
+        "texto": "DOS",
+        "puntos": 8
+      }
+    ]
   },
   {
     "id": "p00157",
     "pregunta": "Cómo te das cuenta que una persona esta enojada?",
-    "texto1": "EXPRESIÓN EN ROSTRO",
-    "puntos1": 37,
-    "texto2": "GRITAS",
-    "puntos2": 31,
-    "texto3": "ACTITUD",
-    "puntos3": 24,
-    "texto4": "MIRADA",
-    "puntos4": 5,
-    "texto5": "TONO DE VOZ",
-    "puntos5": 3
+    "respuestas": [
+      {
+        "texto": "EXPRESIÓN EN ROSTRO",
+        "puntos": 37
+      },
+      {
+        "texto": "GRITAS",
+        "puntos": 31
+      },
+      {
+        "texto": "ACTITUD",
+        "puntos": 24
+      },
+      {
+        "texto": "MIRADA",
+        "puntos": 5
+      },
+      {
+        "texto": "TONO DE VOZ",
+        "puntos": 3
+      }
+    ]
   },
   {
     "id": "p00158",
     "pregunta": "Cómo le dejas saber a tu pareja que estás pensando en ella cuando están lejos?",
-    "texto1": "MENSAJE",
-    "puntos1": 71,
-    "texto2": "LLAMADA",
-    "puntos2": 20,
-    "texto3": "CARTA DE AMOR",
-    "puntos3": 4,
-    "texto4": "FACEBOOK",
-    "puntos4": 3,
-    "texto5": "DEDICAR CANCIÓN",
-    "puntos5": 2
+    "respuestas": [
+      {
+        "texto": "MENSAJE",
+        "puntos": 71
+      },
+      {
+        "texto": "LLAMADA",
+        "puntos": 20
+      },
+      {
+        "texto": "CARTA DE AMOR",
+        "puntos": 4
+      },
+      {
+        "texto": "FACEBOOK",
+        "puntos": 3
+      },
+      {
+        "texto": "DEDICAR CANCIÓN",
+        "puntos": 2
+      }
+    ]
   },
   {
     "id": "p00159",
     "pregunta": "Cuando escuchas una canción romántica, Qué sentimientos tienes?",
-    "texto1": "AMOR",
-    "puntos1": 29,
-    "texto2": "NOSTALGIA",
-    "puntos2": 26,
-    "texto3": "ALEGRÍA",
-    "puntos3": 24,
-    "texto4": "RECUERDOS",
-    "puntos4": 13,
-    "texto5": "TRISTEZA",
-    "puntos5": 8
+    "respuestas": [
+      {
+        "texto": "AMOR",
+        "puntos": 29
+      },
+      {
+        "texto": "NOSTALGIA",
+        "puntos": 26
+      },
+      {
+        "texto": "ALEGRÍA",
+        "puntos": 24
+      },
+      {
+        "texto": "RECUERDOS",
+        "puntos": 13
+      },
+      {
+        "texto": "TRISTEZA",
+        "puntos": 8
+      }
+    ]
   },
   {
     "id": "p00160",
     "pregunta": "Bebida que tomas en la playa",
-    "texto1": "CERVEZA",
-    "puntos1": 40,
-    "texto2": "PIÑA COLADA",
-    "puntos2": 19,
-    "texto3": "AGUA",
-    "puntos3": 15,
-    "texto4": "AGUA DE COCO",
-    "puntos4": 14,
-    "texto5": "SODA",
-    "puntos5": 12
+    "respuestas": [
+      {
+        "texto": "CERVEZA",
+        "puntos": 40
+      },
+      {
+        "texto": "PIÑA COLADA",
+        "puntos": 19
+      },
+      {
+        "texto": "AGUA",
+        "puntos": 15
+      },
+      {
+        "texto": "AGUA DE COCO",
+        "puntos": 14
+      },
+      {
+        "texto": "SODA",
+        "puntos": 12
+      }
+    ]
   },
   {
     "id": "p00161",
     "pregunta": "Sabor de una malteada",
-    "texto1": "FRESA",
-    "puntos1": 49,
-    "texto2": "CHOCOLATE",
-    "puntos2": 22,
-    "texto3": "VAINILLA",
-    "puntos3": 21,
-    "texto4": "PLÁTANO",
-    "puntos4": 6,
-    "texto5": "CAFÉ",
-    "puntos5": 2
+    "respuestas": [
+      {
+        "texto": "FRESA",
+        "puntos": 49
+      },
+      {
+        "texto": "CHOCOLATE",
+        "puntos": 22
+      },
+      {
+        "texto": "VAINILLA",
+        "puntos": 21
+      },
+      {
+        "texto": "PLÁTANO",
+        "puntos": 6
+      },
+      {
+        "texto": "CAFÉ",
+        "puntos": 2
+      }
+    ]
   },
   {
     "id": "p00162",
     "pregunta": "Color de un abrigo",
-    "texto1": "NERO",
-    "puntos1": 59,
-    "texto2": "AZUL",
-    "puntos2": 15,
-    "texto3": "GRIS",
-    "puntos3": 12,
-    "texto4": "CAFÉ",
-    "puntos4": 11,
-    "texto5": "ROJO",
-    "puntos5": 7
+    "respuestas": [
+      {
+        "texto": "NERO",
+        "puntos": 59
+      },
+      {
+        "texto": "AZUL",
+        "puntos": 15
+      },
+      {
+        "texto": "GRIS",
+        "puntos": 12
+      },
+      {
+        "texto": "CAFÉ",
+        "puntos": 11
+      },
+      {
+        "texto": "ROJO",
+        "puntos": 7
+      }
+    ]
   },
   {
     "id": "p00163",
     "pregunta": "Algo que puedes hacer alrededor de una fogata",
-    "texto1": "ASAR BOMBONES",
-    "puntos1": 36,
-    "texto2": "PLATICAR",
-    "puntos2": 34,
-    "texto3": "CALENTARSE",
-    "puntos3": 24,
-    "texto4": "BAILAR",
-    "puntos4": 4,
-    "texto5": "ASAR COMIDA",
-    "puntos5": 2
+    "respuestas": [
+      {
+        "texto": "ASAR BOMBONES",
+        "puntos": 36
+      },
+      {
+        "texto": "PLATICAR",
+        "puntos": 34
+      },
+      {
+        "texto": "CALENTARSE",
+        "puntos": 24
+      },
+      {
+        "texto": "BAILAR",
+        "puntos": 4
+      },
+      {
+        "texto": "ASAR COMIDA",
+        "puntos": 2
+      }
+    ]
   },
   {
     "id": "p00164",
     "pregunta": "Lugar en el que si usas lentes de sol, te verían raro",
-    "texto1": "CINE",
-    "puntos1": 32,
-    "texto2": "DISCOTECA",
-    "puntos2": 25,
-    "texto3": "IGLESIA",
-    "puntos3": 22,
-    "texto4": "NOCHE",
-    "puntos4": 11,
-    "texto5": "TIENDA",
-    "puntos5": 10
+    "respuestas": [
+      {
+        "texto": "CINE",
+        "puntos": 32
+      },
+      {
+        "texto": "DISCOTECA",
+        "puntos": 25
+      },
+      {
+        "texto": "IGLESIA",
+        "puntos": 22
+      },
+      {
+        "texto": "NOCHE",
+        "puntos": 11
+      },
+      {
+        "texto": "TIENDA",
+        "puntos": 10
+      }
+    ]
   },
   {
     "id": "p00165",
     "pregunta": "Menciona una parte específica del cuerpo que cambia con la edad",
-    "texto1": "CARA",
-    "puntos1": 44,
-    "texto2": "PIEL",
-    "puntos2": 19,
-    "texto3": "MANOS",
-    "puntos3": 8,
-    "texto4": "CABELLO",
-    "puntos4": 7,
-    "texto5": "PELO",
-    "puntos5": 5
+    "respuestas": [
+      {
+        "texto": "CARA",
+        "puntos": 44
+      },
+      {
+        "texto": "PIEL",
+        "puntos": 19
+      },
+      {
+        "texto": "MANOS",
+        "puntos": 8
+      },
+      {
+        "texto": "CABELLO",
+        "puntos": 7
+      },
+      {
+        "texto": "PELO",
+        "puntos": 5
+      }
+    ]
   },
   {
     "id": "p00166",
     "pregunta": "Sin marcas, menciona un producto que se promociona en una avenida",
-    "texto1": "COMIDA",
-    "puntos1": 37,
-    "texto2": "BEBIDAS",
-    "puntos2": 29,
-    "texto3": "ROPA",
-    "puntos3": 14,
-    "texto4": "LICOR",
-    "puntos4": 12,
-    "texto5": "TELÉFONOS",
-    "puntos5": 8
+    "respuestas": [
+      {
+        "texto": "COMIDA",
+        "puntos": 37
+      },
+      {
+        "texto": "BEBIDAS",
+        "puntos": 29
+      },
+      {
+        "texto": "ROPA",
+        "puntos": 14
+      },
+      {
+        "texto": "LICOR",
+        "puntos": 12
+      },
+      {
+        "texto": "TELÉFONOS",
+        "puntos": 8
+      }
+    ]
   },
   {
     "id": "p00167",
     "pregunta": "Palabra en inglés que mas escuchas",
-    "texto1": "THANK YOU",
-    "puntos1": 36,
-    "texto2": "HELLO",
-    "puntos2": 33,
-    "texto3": "OK",
-    "puntos3": 17,
-    "texto4": "YES",
-    "puntos4": 12,
-    "texto5": "BYE",
-    "puntos5": 2
+    "respuestas": [
+      {
+        "texto": "THANK YOU",
+        "puntos": 36
+      },
+      {
+        "texto": "HELLO",
+        "puntos": 33
+      },
+      {
+        "texto": "OK",
+        "puntos": 17
+      },
+      {
+        "texto": "YES",
+        "puntos": 12
+      },
+      {
+        "texto": "BYE",
+        "puntos": 2
+      }
+    ]
   },
   {
     "id": "p00168",
     "pregunta": "Utensilio de cocina que compras una vez al año",
-    "texto1": "SARTÉN",
-    "puntos1": 37,
-    "texto2": "CUBIERTOS",
-    "puntos2": 27,
-    "texto3": "CUCHILLO",
-    "puntos3": 25,
-    "texto4": "OLLAS",
-    "puntos4": 9,
-    "texto5": "PLATOS",
-    "puntos5": 2
+    "respuestas": [
+      {
+        "texto": "SARTÉN",
+        "puntos": 37
+      },
+      {
+        "texto": "CUBIERTOS",
+        "puntos": 27
+      },
+      {
+        "texto": "CUCHILLO",
+        "puntos": 25
+      },
+      {
+        "texto": "OLLAS",
+        "puntos": 9
+      },
+      {
+        "texto": "PLATOS",
+        "puntos": 2
+      }
+    ]
   },
   {
     "id": "p00169",
     "pregunta": "Si un extraterrestre te llevara a su planeta, Qué le preguntarías?",
-    "texto1": "PARA QUÉ",
-    "puntos1": 36,
-    "texto2": "QUÉ COMEN",
-    "puntos2": 26,
-    "texto3": "DÓNDE ESTOY",
-    "puntos3": 17,
-    "texto4": "PORQUÉ A MI",
-    "puntos4": 16,
-    "texto5": "CÓMO VIVEN",
-    "puntos5": 5
+    "respuestas": [
+      {
+        "texto": "PARA QUÉ",
+        "puntos": 36
+      },
+      {
+        "texto": "QUÉ COMEN",
+        "puntos": 26
+      },
+      {
+        "texto": "DÓNDE ESTOY",
+        "puntos": 17
+      },
+      {
+        "texto": "PORQUÉ A MI",
+        "puntos": 16
+      },
+      {
+        "texto": "CÓMO VIVEN",
+        "puntos": 5
+      }
+    ]
   },
   {
     "id": "p00170",
     "pregunta": "Cuando eras niño, A qué hora te acostaban tus padres?",
-    "texto1": "OCHO",
-    "puntos1": 46,
-    "texto2": "NUEVE",
-    "puntos2": 30,
-    "texto3": "DIEZ",
-    "puntos3": 11,
-    "texto4": "SIETE",
-    "puntos4": 9,
-    "texto5": "SEIS MESES",
-    "puntos5": 4
+    "respuestas": [
+      {
+        "texto": "OCHO",
+        "puntos": 46
+      },
+      {
+        "texto": "NUEVE",
+        "puntos": 30
+      },
+      {
+        "texto": "DIEZ",
+        "puntos": 11
+      },
+      {
+        "texto": "SIETE",
+        "puntos": 9
+      },
+      {
+        "texto": "SEIS MESES",
+        "puntos": 4
+      }
+    ]
   },
   {
     "id": "p00171",
     "pregunta": "Si Ninel Conde fuera mesera y la cuenta $20 dls, Cuánto le das de propina?",
-    "texto1": "CINCO DOLARES",
-    "puntos1": 80,
-    "texto2": "VEINTE DOLARES",
-    "puntos2": 8,
-    "texto3": "UN DÓLAR",
-    "puntos3": 7,
-    "texto4": "CIEN DOLARES",
-    "puntos4": 3,
-    "texto5": "DOS DÓLARES",
-    "puntos5": 2
+    "respuestas": [
+      {
+        "texto": "CINCO DOLARES",
+        "puntos": 80
+      },
+      {
+        "texto": "VEINTE DOLARES",
+        "puntos": 8
+      },
+      {
+        "texto": "UN DÓLAR",
+        "puntos": 7
+      },
+      {
+        "texto": "CIEN DOLARES",
+        "puntos": 3
+      },
+      {
+        "texto": "DOS DÓLARES",
+        "puntos": 2
+      }
+    ]
   },
   {
     "id": "p00172",
     "pregunta": "Cuando un hombre tiene barba, Qué te molesta en tu cara cuando besa?",
-    "texto1": "LABIOS",
-    "puntos1": 48,
-    "texto2": "MEJILLA",
-    "puntos2": 24,
-    "texto3": "CARA",
-    "puntos3": 11,
-    "texto4": "NARIZ",
-    "puntos4": 9,
-    "texto5": "CUELLO",
-    "puntos5": 8
+    "respuestas": [
+      {
+        "texto": "LABIOS",
+        "puntos": 48
+      },
+      {
+        "texto": "MEJILLA",
+        "puntos": 24
+      },
+      {
+        "texto": "CARA",
+        "puntos": 11
+      },
+      {
+        "texto": "NARIZ",
+        "puntos": 9
+      },
+      {
+        "texto": "CUELLO",
+        "puntos": 8
+      }
+    ]
   },
   {
     "id": "p00173",
     "pregunta": "Cuando estas en laplaya, Qué es lo que mas disfrutas ver?",
-    "texto1": "ATARDECER",
-    "puntos1": 26,
-    "texto2": "MUJERES",
-    "puntos2": 24,
-    "texto3": "MAR",
-    "puntos3": 19,
-    "texto4": "TRAJES DE BAÑO",
-    "puntos4": 18,
-    "texto5": "NIETOS",
-    "puntos5": 13
+    "respuestas": [
+      {
+        "texto": "ATARDECER",
+        "puntos": 26
+      },
+      {
+        "texto": "MUJERES",
+        "puntos": 24
+      },
+      {
+        "texto": "MAR",
+        "puntos": 19
+      },
+      {
+        "texto": "TRAJES DE BAÑO",
+        "puntos": 18
+      },
+      {
+        "texto": "NIETOS",
+        "puntos": 13
+      }
+    ]
   },
   {
     "id": "p00174",
     "pregunta": "Menciona algo de la cocina que se rompe fácilmente",
-    "texto1": "PLATOS",
-    "puntos1": 47,
-    "texto2": "VASO",
-    "puntos2": 41,
-    "texto3": "HUEVOS",
-    "puntos3": 6,
-    "texto4": "TASA",
-    "puntos4": 4,
-    "texto5": "LICUADORA",
-    "puntos5": 2
+    "respuestas": [
+      {
+        "texto": "PLATOS",
+        "puntos": 47
+      },
+      {
+        "texto": "VASO",
+        "puntos": 41
+      },
+      {
+        "texto": "HUEVOS",
+        "puntos": 6
+      },
+      {
+        "texto": "TASA",
+        "puntos": 4
+      },
+      {
+        "texto": "LICUADORA",
+        "puntos": 2
+      }
+    ]
   },
   {
     "id": "p00175",
     "pregunta": "El día de tu boda, Qué flor elegirías para tu ramo?",
-    "texto1": "ROSA",
-    "puntos1": 33,
-    "texto2": "BLANCO",
-    "puntos2": 26,
-    "texto3": "ALCATRAZ",
-    "puntos3": 22,
-    "texto4": "MARGARITAS",
-    "puntos4": 14,
-    "texto5": "CLAVEÑ",
-    "puntos5": 5
+    "respuestas": [
+      {
+        "texto": "ROSA",
+        "puntos": 33
+      },
+      {
+        "texto": "BLANCO",
+        "puntos": 26
+      },
+      {
+        "texto": "ALCATRAZ",
+        "puntos": 22
+      },
+      {
+        "texto": "MARGARITAS",
+        "puntos": 14
+      },
+      {
+        "texto": "CLAVEÑ",
+        "puntos": 5
+      }
+    ]
   },
   {
     "id": "p00176",
     "pregunta": "Al camarón que se durmió, Cómo lo cocinaron?",
-    "texto1": "DIABLA",
-    "puntos1": 44,
-    "texto2": "HERVICO",
-    "puntos2": 46,
-    "texto3": "COCKTEL",
-    "puntos3": 7,
-    "texto4": "FRITO",
-    "puntos4": 5,
-    "texto5": "DORMIDO",
-    "puntos5": 4
+    "respuestas": [
+      {
+        "texto": "DIABLA",
+        "puntos": 44
+      },
+      {
+        "texto": "HERVICO",
+        "puntos": 46
+      },
+      {
+        "texto": "COCKTEL",
+        "puntos": 7
+      },
+      {
+        "texto": "FRITO",
+        "puntos": 5
+      },
+      {
+        "texto": "DORMIDO",
+        "puntos": 4
+      }
+    ]
   },
   {
     "id": "p00177",
     "pregunta": "Además de postes, Qué puedes encontrar en las banquetas o aceras?",
-    "texto1": "BASURA",
-    "puntos1": 27,
-    "texto2": "PERSONAS",
-    "puntos2": 24,
-    "texto3": "ÁRBOL",
-    "puntos3": 23,
-    "texto4": "BANCA",
-    "puntos4": 18,
-    "texto5": "HIDRANTES",
-    "puntos5": 8
+    "respuestas": [
+      {
+        "texto": "BASURA",
+        "puntos": 27
+      },
+      {
+        "texto": "PERSONAS",
+        "puntos": 24
+      },
+      {
+        "texto": "ÁRBOL",
+        "puntos": 23
+      },
+      {
+        "texto": "BANCA",
+        "puntos": 18
+      },
+      {
+        "texto": "HIDRANTES",
+        "puntos": 8
+      }
+    ]
   },
   {
     "id": "p00178",
     "pregunta": "Menciona algo que cargas con mucho cuidado",
-    "texto1": "BEBE",
-    "puntos1": 38,
-    "texto2": "BOLSO",
-    "puntos2": 37,
-    "texto3": "NIÑOS",
-    "puntos3": 12,
-    "texto4": "CARTERA",
-    "puntos4": 10,
-    "texto5": "DINERO",
-    "puntos5": 3
+    "respuestas": [
+      {
+        "texto": "BEBE",
+        "puntos": 38
+      },
+      {
+        "texto": "BOLSO",
+        "puntos": 37
+      },
+      {
+        "texto": "NIÑOS",
+        "puntos": 12
+      },
+      {
+        "texto": "CARTERA",
+        "puntos": 10
+      },
+      {
+        "texto": "DINERO",
+        "puntos": 3
+      }
+    ]
   },
   {
     "id": "p00179",
     "pregunta": "Qué necesitan las plantas o flores para crecer?",
-    "texto1": "AGUA",
-    "puntos1": 82,
-    "texto2": "SOL",
-    "puntos2": 11,
-    "texto3": "ABONO",
-    "puntos3": 4,
-    "texto4": "FERTILIZANTE",
-    "puntos4": 2,
-    "texto5": "TIERRA",
-    "puntos5": 1
+    "respuestas": [
+      {
+        "texto": "AGUA",
+        "puntos": 82
+      },
+      {
+        "texto": "SOL",
+        "puntos": 11
+      },
+      {
+        "texto": "ABONO",
+        "puntos": 4
+      },
+      {
+        "texto": "FERTILIZANTE",
+        "puntos": 2
+      },
+      {
+        "texto": "TIERRA",
+        "puntos": 1
+      }
+    ]
   },
   {
     "id": "p00180",
     "pregunta": "Algo que utilizas para cubrir tus orejas",
-    "texto1": "GORRO",
-    "puntos1": 55,
-    "texto2": "AUDÍFONOS",
-    "puntos2": 23,
-    "texto3": "GORRA",
-    "puntos3": 15,
-    "texto4": "OREJERAS",
-    "puntos4": 4,
-    "texto5": "TAPONES",
-    "puntos5": 3
+    "respuestas": [
+      {
+        "texto": "GORRO",
+        "puntos": 55
+      },
+      {
+        "texto": "AUDÍFONOS",
+        "puntos": 23
+      },
+      {
+        "texto": "GORRA",
+        "puntos": 15
+      },
+      {
+        "texto": "OREJERAS",
+        "puntos": 4
+      },
+      {
+        "texto": "TAPONES",
+        "puntos": 3
+      }
+    ]
   },
   {
     "id": "p00181",
     "pregunta": "Además de la oficina, En qué otro lugar puedes encontrar una cafetera?",
-    "texto1": "COCINA",
-    "puntos1": 40,
-    "texto2": "CASARME",
-    "puntos2": 18,
-    "texto3": "RESTAURANTE",
-    "puntos3": 16,
-    "texto4": "CAFETERÍA",
-    "puntos4": 15,
-    "texto5": "HOSPITAL",
-    "puntos5": 11
+    "respuestas": [
+      {
+        "texto": "COCINA",
+        "puntos": 40
+      },
+      {
+        "texto": "CASARME",
+        "puntos": 18
+      },
+      {
+        "texto": "RESTAURANTE",
+        "puntos": 16
+      },
+      {
+        "texto": "CAFETERÍA",
+        "puntos": 15
+      },
+      {
+        "texto": "HOSPITAL",
+        "puntos": 11
+      }
+    ]
   },
   {
     "id": "p00182",
     "pregunta": "Cuando vas a una cena con tus amigos casados, Qué te preguntan?",
-    "texto1": "TIENES NOVIO (A)",
-    "puntos1": 40,
-    "texto2": "CÓMO ESTAS",
-    "puntos2": 36,
-    "texto3": "CUÁNDO TE CASAS",
-    "puntos3": 13,
-    "texto4": "Y TU PAREJA",
-    "puntos4": 6,
-    "texto5": "Y TU FAMILIA",
-    "puntos5": 5
+    "respuestas": [
+      {
+        "texto": "TIENES NOVIO (A)",
+        "puntos": 40
+      },
+      {
+        "texto": "CÓMO ESTAS",
+        "puntos": 36
+      },
+      {
+        "texto": "CUÁNDO TE CASAS",
+        "puntos": 13
+      },
+      {
+        "texto": "Y TU PAREJA",
+        "puntos": 6
+      },
+      {
+        "texto": "Y TU FAMILIA",
+        "puntos": 5
+      }
+    ]
   },
   {
     "id": "p00183",
     "pregunta": "Si las princesas de los cuentos tuvieran Facebook, Cuál tendría mas amigos?",
-    "texto1": "BLANCA NIEVES",
-    "puntos1": 38,
-    "texto2": "CENICIENTA",
-    "puntos2": 37,
-    "texto3": "SIRENITA",
-    "puntos3": 10,
-    "texto4": "BELLA DURMIENTE",
-    "puntos4": 9,
-    "texto5": "FIONA",
-    "puntos5": 6
+    "respuestas": [
+      {
+        "texto": "BLANCA NIEVES",
+        "puntos": 38
+      },
+      {
+        "texto": "CENICIENTA",
+        "puntos": 37
+      },
+      {
+        "texto": "SIRENITA",
+        "puntos": 10
+      },
+      {
+        "texto": "BELLA DURMIENTE",
+        "puntos": 9
+      },
+      {
+        "texto": "FIONA",
+        "puntos": 6
+      }
+    ]
   },
   {
     "id": "p00184",
     "pregunta": "Si puedieras reencarnar en un animal marino, Cuál serías?",
-    "texto1": "DELFÍN",
-    "puntos1": 40,
-    "texto2": "TIBURÓN",
-    "puntos2": 36,
-    "texto3": "BALLENA",
-    "puntos3": 13,
-    "texto4": "FOCA",
-    "puntos4": 6,
-    "texto5": "PEZ",
-    "puntos5": 5
+    "respuestas": [
+      {
+        "texto": "DELFÍN",
+        "puntos": 40
+      },
+      {
+        "texto": "TIBURÓN",
+        "puntos": 36
+      },
+      {
+        "texto": "BALLENA",
+        "puntos": 13
+      },
+      {
+        "texto": "FOCA",
+        "puntos": 6
+      },
+      {
+        "texto": "PEZ",
+        "puntos": 5
+      }
+    ]
   },
   {
     "id": "p00185",
     "pregunta": "Si pudieras volar con Superman, A dónde irían?",
-    "texto1": "LUNA",
-    "puntos1": 56,
-    "texto2": "PARÍS",
-    "puntos2": 24,
-    "texto3": "MARTE",
-    "puntos3": 13,
-    "texto4": "HAWAII",
-    "puntos4": 4,
-    "texto5": "CASA",
-    "puntos5": 3
+    "respuestas": [
+      {
+        "texto": "LUNA",
+        "puntos": 56
+      },
+      {
+        "texto": "PARÍS",
+        "puntos": 24
+      },
+      {
+        "texto": "MARTE",
+        "puntos": 13
+      },
+      {
+        "texto": "HAWAII",
+        "puntos": 4
+      },
+      {
+        "texto": "CASA",
+        "puntos": 3
+      }
+    ]
   },
   {
     "id": "p00186",
     "pregunta": "menciona un deporte que no podrían practicar los abuelitos",
-    "texto1": "FUTBOL",
-    "puntos1": 60,
-    "texto2": "BALONCESTO",
-    "puntos2": 14,
-    "texto3": "CORRER",
-    "puntos3": 11,
-    "texto4": "BEISBOL",
-    "puntos4": 10,
-    "texto5": "BOXEO",
-    "puntos5": 5
+    "respuestas": [
+      {
+        "texto": "FUTBOL",
+        "puntos": 60
+      },
+      {
+        "texto": "BALONCESTO",
+        "puntos": 14
+      },
+      {
+        "texto": "CORRER",
+        "puntos": 11
+      },
+      {
+        "texto": "BEISBOL",
+        "puntos": 10
+      },
+      {
+        "texto": "BOXEO",
+        "puntos": 5
+      }
+    ]
   },
   {
     "id": "p00187",
     "pregunta": "Menciona una queja que un astronauta tendría si viviera en una estación espacial",
-    "texto1": "BAÑO",
-    "puntos1": 37,
-    "texto2": "COMIDA",
-    "puntos2": 34,
-    "texto3": "GRAVEDAD",
-    "puntos3": 15,
-    "texto4": "CLIMA",
-    "puntos4": 9,
-    "texto5": "OXÍGENO",
-    "puntos5": 5
+    "respuestas": [
+      {
+        "texto": "BAÑO",
+        "puntos": 37
+      },
+      {
+        "texto": "COMIDA",
+        "puntos": 34
+      },
+      {
+        "texto": "GRAVEDAD",
+        "puntos": 15
+      },
+      {
+        "texto": "CLIMA",
+        "puntos": 9
+      },
+      {
+        "texto": "OXÍGENO",
+        "puntos": 5
+      }
+    ]
   },
   {
     "id": "p00188",
     "pregunta": "Fruta que contiene muchas semillas",
-    "texto1": "SANDÍA",
-    "puntos1": 33,
-    "texto2": "GRANADA",
-    "puntos2": 32,
-    "texto3": "GUAYABA",
-    "puntos3": 24,
-    "texto4": "PAPAYA",
-    "puntos4": 6,
-    "texto5": "KIWI",
-    "puntos5": 5
+    "respuestas": [
+      {
+        "texto": "SANDÍA",
+        "puntos": 33
+      },
+      {
+        "texto": "GRANADA",
+        "puntos": 32
+      },
+      {
+        "texto": "GUAYABA",
+        "puntos": 24
+      },
+      {
+        "texto": "PAPAYA",
+        "puntos": 6
+      },
+      {
+        "texto": "KIWI",
+        "puntos": 5
+      }
+    ]
   },
   {
     "id": "p00189",
     "pregunta": "Otra forma de decir si",
-    "texto1": "CLARO",
-    "puntos1": 35,
-    "texto2": "YES",
-    "puntos2": 25,
-    "texto3": "OK",
-    "puntos3": 18,
-    "texto4": "SIMÓN",
-    "puntos4": 14,
-    "texto5": "AJÁ",
-    "puntos5": 8
+    "respuestas": [
+      {
+        "texto": "CLARO",
+        "puntos": 35
+      },
+      {
+        "texto": "YES",
+        "puntos": 25
+      },
+      {
+        "texto": "OK",
+        "puntos": 18
+      },
+      {
+        "texto": "SIMÓN",
+        "puntos": 14
+      },
+      {
+        "texto": "AJÁ",
+        "puntos": 8
+      }
+    ]
   },
   {
     "id": "p00190",
     "pregunta": "Otra forma de decir no",
-    "texto1": "NEGATIVO",
-    "puntos1": 35,
-    "texto2": "NEL",
-    "puntos2": 31,
-    "texto3": "NOP",
-    "puntos3": 19,
-    "texto4": "CON LA CABEZA",
-    "puntos4": 9,
-    "texto5": "NUNCA",
-    "puntos5": 6
+    "respuestas": [
+      {
+        "texto": "NEGATIVO",
+        "puntos": 35
+      },
+      {
+        "texto": "NEL",
+        "puntos": 31
+      },
+      {
+        "texto": "NOP",
+        "puntos": 19
+      },
+      {
+        "texto": "CON LA CABEZA",
+        "puntos": 9
+      },
+      {
+        "texto": "NUNCA",
+        "puntos": 6
+      }
+    ]
   },
   {
     "id": "p00191",
     "pregunta": "Nombra un lugar al que vas porque alguien te lo recomendó",
-    "texto1": "RESTAURANTE",
-    "puntos1": 63,
-    "texto2": "CINE",
-    "puntos2": 16,
-    "texto3": "ANTRO",
-    "puntos3": 11,
-    "texto4": "DENTISTA",
-    "puntos4": 6,
-    "texto5": "DOCTOR",
-    "puntos5": 4
+    "respuestas": [
+      {
+        "texto": "RESTAURANTE",
+        "puntos": 63
+      },
+      {
+        "texto": "CINE",
+        "puntos": 16
+      },
+      {
+        "texto": "ANTRO",
+        "puntos": 11
+      },
+      {
+        "texto": "DENTISTA",
+        "puntos": 6
+      },
+      {
+        "texto": "DOCTOR",
+        "puntos": 4
+      }
+    ]
   },
   {
     "id": "p00192",
     "pregunta": "Lugar en el que las celebridades reciben trato VIP o especial",
-    "texto1": "EVENTO",
-    "puntos1": 32,
-    "texto2": "RESTAURANTE",
-    "puntos2": 27,
-    "texto3": "ANTRO",
-    "puntos3": 19,
-    "texto4": "HOTEL",
-    "puntos4": 14,
-    "texto5": "CONCIERTO",
-    "puntos5": 7
+    "respuestas": [
+      {
+        "texto": "EVENTO",
+        "puntos": 32
+      },
+      {
+        "texto": "RESTAURANTE",
+        "puntos": 27
+      },
+      {
+        "texto": "ANTRO",
+        "puntos": 19
+      },
+      {
+        "texto": "HOTEL",
+        "puntos": 14
+      },
+      {
+        "texto": "CONCIERTO",
+        "puntos": 7
+      }
+    ]
   },
   {
     "id": "p00193",
     "pregunta": "Algo que le dices a tus hijos que no desperdicien",
-    "texto1": "COMIDA",
-    "puntos1": 56,
-    "texto2": "AGUA",
-    "puntos2": 32,
-    "texto3": "TIEMPO",
-    "puntos3": 5,
-    "texto4": "DINERO",
-    "puntos4": 4,
-    "texto5": "LECHE",
-    "puntos5": 3
+    "respuestas": [
+      {
+        "texto": "COMIDA",
+        "puntos": 56
+      },
+      {
+        "texto": "AGUA",
+        "puntos": 32
+      },
+      {
+        "texto": "TIEMPO",
+        "puntos": 5
+      },
+      {
+        "texto": "DINERO",
+        "puntos": 4
+      },
+      {
+        "texto": "LECHE",
+        "puntos": 3
+      }
+    ]
   },
   {
     "id": "p00194",
     "pregunta": "Menciona algo que llenas con agua",
-    "texto1": "VASO",
-    "puntos1": 33,
-    "texto2": "BOTELLA",
-    "puntos2": 29,
-    "texto3": "CUBETA",
-    "puntos3": 16,
-    "texto4": "GARRAFÓN",
-    "puntos4": 12,
-    "texto5": "JARRA",
-    "puntos5": 10
+    "respuestas": [
+      {
+        "texto": "VASO",
+        "puntos": 33
+      },
+      {
+        "texto": "BOTELLA",
+        "puntos": 29
+      },
+      {
+        "texto": "CUBETA",
+        "puntos": 16
+      },
+      {
+        "texto": "GARRAFÓN",
+        "puntos": 12
+      },
+      {
+        "texto": "JARRA",
+        "puntos": 10
+      }
+    ]
   },
   {
     "id": "p00195",
     "pregunta": "En las películas del viejo oeste, Cómo identificas a un vaquero?",
-    "texto1": "SOMBRERO",
-    "puntos1": 39,
-    "texto2": "BOTAS",
-    "puntos2": 38,
-    "texto3": "PISTOLA",
-    "puntos3": 12,
-    "texto4": "ROPA",
-    "puntos4": 6,
-    "texto5": "CABALLO",
-    "puntos5": 5
+    "respuestas": [
+      {
+        "texto": "SOMBRERO",
+        "puntos": 39
+      },
+      {
+        "texto": "BOTAS",
+        "puntos": 38
+      },
+      {
+        "texto": "PISTOLA",
+        "puntos": 12
+      },
+      {
+        "texto": "ROPA",
+        "puntos": 6
+      },
+      {
+        "texto": "CABALLO",
+        "puntos": 5
+      }
+    ]
   },
   {
     "id": "p00196",
     "pregunta": "Si fueras hombre, Cada cuándo te rasurarías la barba?",
-    "texto1": "DIARIO",
-    "puntos1": 36,
-    "texto2": "DOS DÍAS",
-    "puntos2": 32,
-    "texto3": "TRES DÍAS",
-    "puntos3": 17,
-    "texto4": "SEMANA",
-    "puntos4": 13,
-    "texto5": "DIEZ DÍAS",
-    "puntos5": 2
+    "respuestas": [
+      {
+        "texto": "DIARIO",
+        "puntos": 36
+      },
+      {
+        "texto": "DOS DÍAS",
+        "puntos": 32
+      },
+      {
+        "texto": "TRES DÍAS",
+        "puntos": 17
+      },
+      {
+        "texto": "SEMANA",
+        "puntos": 13
+      },
+      {
+        "texto": "DIEZ DÍAS",
+        "puntos": 2
+      }
+    ]
   },
   {
     "id": "p00197",
     "pregunta": "En la película Titanic, Cómo rescatarías a Jack?",
-    "texto1": "SALVAVIDAS",
-    "puntos1": 33,
-    "texto2": "LANCHA",
-    "puntos2": 27,
-    "texto3": "OTRO BARCO",
-    "puntos3": 16,
-    "texto4": "NADANDO",
-    "puntos4": 13,
-    "texto5": "SUBIRLO",
-    "puntos5": 11
+    "respuestas": [
+      {
+        "texto": "SALVAVIDAS",
+        "puntos": 33
+      },
+      {
+        "texto": "LANCHA",
+        "puntos": 27
+      },
+      {
+        "texto": "OTRO BARCO",
+        "puntos": 16
+      },
+      {
+        "texto": "NADANDO",
+        "puntos": 13
+      },
+      {
+        "texto": "SUBIRLO",
+        "puntos": 11
+      }
+    ]
   },
   {
     "id": "p00198",
     "pregunta": "Razón por la que sudarías mucho",
-    "texto1": "CORRER",
-    "puntos1": 42,
-    "texto2": "EJERCICIO",
-    "puntos2": 26,
-    "texto3": "CALOR",
-    "puntos3": 24,
-    "texto4": "TRABAJANDO",
-    "puntos4": 5,
-    "texto5": "CAMINAR",
-    "puntos5": 3
+    "respuestas": [
+      {
+        "texto": "CORRER",
+        "puntos": 42
+      },
+      {
+        "texto": "EJERCICIO",
+        "puntos": 26
+      },
+      {
+        "texto": "CALOR",
+        "puntos": 24
+      },
+      {
+        "texto": "TRABAJANDO",
+        "puntos": 5
+      },
+      {
+        "texto": "CAMINAR",
+        "puntos": 3
+      }
+    ]
   },
   {
     "id": "p00199",
     "pregunta": "A qué te gustaria perder el miedo?",
-    "texto1": "ALTURAS",
-    "puntos1": 52,
-    "texto2": "VÍBORA",
-    "puntos2": 23,
-    "texto3": "SOLEDAD",
-    "puntos3": 12,
-    "texto4": "MUERTE",
-    "puntos4": 8,
-    "texto5": "RATONES",
-    "puntos5": 5
+    "respuestas": [
+      {
+        "texto": "ALTURAS",
+        "puntos": 52
+      },
+      {
+        "texto": "VÍBORA",
+        "puntos": 23
+      },
+      {
+        "texto": "SOLEDAD",
+        "puntos": 12
+      },
+      {
+        "texto": "MUERTE",
+        "puntos": 8
+      },
+      {
+        "texto": "RATONES",
+        "puntos": 5
+      }
+    ]
   },
   {
     "id": "p00200",
     "pregunta": "Cuántos contactos tienes en tu teléfono celular?",
-    "texto1": "CINCUENTA",
-    "puntos1": 31,
-    "texto2": "CIEN",
-    "puntos2": 23,
-    "texto3": "VEINTE",
-    "puntos3": 19,
-    "texto4": "DIEZ",
-    "puntos4": 17,
-    "texto5": "TREINTA",
-    "puntos5": 10
+    "respuestas": [
+      {
+        "texto": "CINCUENTA",
+        "puntos": 31
+      },
+      {
+        "texto": "CIEN",
+        "puntos": 23
+      },
+      {
+        "texto": "VEINTE",
+        "puntos": 19
+      },
+      {
+        "texto": "DIEZ",
+        "puntos": 17
+      },
+      {
+        "texto": "TREINTA",
+        "puntos": 10
+      }
+    ]
   }
 ]
