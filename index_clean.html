@@ -1,0 +1,730 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>100 Paisanos Dijeron — Juego</title>
+<style>
+:root{
+  /* Paleta más clara, inspirada en game show (azules/ámbar) sin ser chillona */
+  --bg:#183055;
+  --panel:#1f3f6b;
+  --card:#163153;
+  --accent:#ffd54f;   /* ámbar */
+  --good:#2ecc71;     /* verde correcto */
+  --bad:#e53935;      /* rojo para X */
+  --text:#ffffff;
+  --muted:#d8e2f0;
+  --chip:#254a7b;
+  --shadow:0 10px 36px rgba(0,0,0,.35);
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;background:radial-gradient(1200px 700px at 25% -10%, #2a4f8a 0%, #183055 45%, #122645 100%);
+  color:var(--text); font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Helvetica,Arial,sans-serif;
+}
+.wrapper{display:grid;grid-template-columns:320px 1fr; gap:18px; padding:18px; height:100%}
+@media (max-width: 980px){ .wrapper{grid-template-columns:1fr; grid-auto-rows:min-content 1fr} }
+
+/* Panel del conductor */
+.panel{
+  background:var(--panel); border:1px solid #203655; border-radius:16px; padding:14px; box-shadow:var(--shadow);
+}
+.panel h2{margin:0 0 8px 0; font-size:18px; color:#bfe0ff}
+.panel .row{display:flex; gap:8px; margin:8px 0; flex-wrap:wrap}
+.panel label{font-size:12px; color:var(--muted)}
+.panel input[type="text"], .panel select, .panel input[type="number"]{
+  width:100%; padding:9px 10px; border-radius:10px; border:1px solid #2a4468; background:#0a1626; color:var(--text);
+}
+.panel .btn{
+  display:inline-flex; align-items:center; justify-content:center;
+  padding:8px 10px; border-radius:10px; border:1px solid #325a86; background:#133055; color:#e8f2ff;
+  cursor:pointer; user-select:none; gap:8px; font-weight:600;
+}
+.panel .btn:hover{background:#163866}
+.btn.good{border-color:#2c7b57; background:#0d2a23}
+.btn.bad{border-color:#8a2f32; background:#2a0d0f}
+.btn.warn{border-color:#91742f; background:#2a220d}
+
+/* Board */
+.board{
+  background:var(--card); border:1px solid #173355; border-radius:16px; padding:18px; display:flex; flex-direction:column; gap:16px;
+  box-shadow:var(--shadow);
+}
+.header{
+  display:grid; grid-template-columns:1fr 220px 1fr; align-items:center; gap:14px;
+}
+@media (max-width: 700px){ .header{grid-template-columns:1fr} }
+.title{ text-align:center; font-weight:900; letter-spacing:.4px; font-size:28px; color:#fff}
+.teams{ display:flex; gap:12px; justify-content:space-between; align-items:center; }
+.team{
+  flex:1; background:linear-gradient(180deg, #173a60, #0b1f36); border:1px solid #1c3a60; border-radius:14px; padding:10px;
+  display:grid; grid-template-columns:auto 1fr auto; align-items:center; gap:8px;
+}
+.team input{
+  background:transparent; border:none; color:#fff; font-size:16px; font-weight:700; outline:none;
+}
+.score{ font-weight:900; font-size:28px; padding:6px 10px; background:#061326; border:1px solid #153259; border-radius:10px; min-width:76px; text-align:center}
+.active{ box-shadow:0 0 0 2px var(--accent) inset }
+.controls{ display:flex; gap:8px; flex-wrap:wrap; align-items:center; justify-content:center}
+.controls .chip{
+  background:var(--chip); border:1px solid #345785; padding:6px 10px; border-radius:999px; color:#d6e8ff; font-weight:600
+}
+.controls .switch{ display:inline-flex; align-items:center; gap:8px; cursor:pointer; user-select:none}
+.controls input[type="checkbox"]{ width:18px; height:18px}
+
+/* Question grid */
+.qbar{ display:flex; gap:10px; align-items:center; justify-content:center; flex-wrap:wrap; font-size:16px }
+.qbar select, .qbar input[type="number"]{ max-width:140px }
+.mult{ font-weight:800; color:#ffe082 }
+.timer{ font-family:ui-monospace,consolas,monaco,monospace; background:#0a1524; border:1px solid #2b4a78; border-radius:10px; padding:6px 10px; min-width:80px; text-align:center }
+.board-grid{ display:grid; grid-template-columns:repeat(2,1fr); gap:12px; }
+@media (max-width: 700px){ .board-grid{ grid-template-columns:1fr } }
+.card-answer{
+  background:linear-gradient(180deg, #10223b, #0a1526); border:1px solid #203b63; border-radius:14px; padding:12px 14px;
+  display:grid; grid-template-columns:36px 1fr 80px; align-items:center; gap:8px; min-height:56px;
+}
+.card-answer .n{ font-weight:900; font-size:26px; opacity:.95 }
+.card-answer .txt{ font-size:22px; font-weight:800; letter-spacing:.3px }
+.card-answer .pts{ font-weight:900; font-size:26px; text-align:right }
+.card-answer.revealed{ background:linear-gradient(180deg, #12365e, #0c2846); border-color:#2f5f98 }
+.placeholder{ opacity:.35; font-weight:600 }
+.strikes{ display:flex; gap:8px; justify-content:center; }
+.strike{ width:44px; height:44px; border-radius:10px; background:#2a0d12; border:1px solid #7a262b; display:flex; align-items:center; justify-content:center; color:#ff8a8d; font-weight:900; font-size:26px }
+.strike.off{ opacity:.25 }
+
+.footer-controls{ display:flex; gap:10px; justify-content:center; flex-wrap:wrap; }
+.footer-controls .btn{ color:#fff; font-weight:800; }
+.help{ font-size:12px; color:var(--muted); text-align:center }
+.small{ font-size:12px; color:#b2c6df }
+hr.sep{ border:none; border-top:1px solid #1a3558; opacity:.6 }
+a, button{ cursor:pointer }
+#btnCambiarEquipo{ background-color:#ffb300 !important; color:#fff !important; font-weight:800; }
+</style>
+</head>
+<body>
+<div class="wrapper">
+  <aside class="panel" id="panel">
+    <h2>Panel del Conductor</h2>
+
+    <div class="row">
+      <div style="flex:1">
+        <label>Equipo A</label>
+        <input id="teamAName" type="text" placeholder="Equipo A">
+      </div>
+      <div class="score" id="scoreA">0</div>
+      <div><button class="btn" id="btnAActive">Turno A</button></div>
+    </div>
+
+    <div class="row">
+      <div style="flex:1">
+        <label>Equipo B</label>
+        <input id="teamBName" type="text" placeholder="Equipo B">
+      </div>
+      <div class="score" id="scoreB">0</div>
+      <div><button class="btn" id="btnBActive">Turno B</button></div>
+    </div>
+
+    <div class="row">
+      <div class="btn good" id="btnAdd10A">+10 A</div>
+      <div class="btn bad" id="btnSub10A">-10 A</div>
+      <div class="btn good" id="btnAdd10B">+10 B</div>
+      <div class="btn bad" id="btnSub10B">-10 B</div>
+    </div>
+
+    <hr class="sep">
+
+    <div class="row">
+      <div style="flex:1">
+        <label>Sesión</label>
+        <select id="session">
+          <option value="duelo">1) Duelo</option>
+          <option value="ronda">2) Ronda (Strikes)</option>
+          <option value="robo">3) Robo</option>
+        </select>
+      </div>
+      <div style="width:120px">
+        <label>Multiplicador</label>
+        <select id="mult">
+          <option value="1">x1</option>
+          <option value="2">x2</option>
+          <option value="3">x3</option>
+        </select>
+      </div>
+    </div>
+
+    <div class="row">
+      <div style="flex:1">
+        <label>Pregunta #</label>
+        <select id="questionPicker"></select>
+      </div>
+      <div style="flex:1">
+        <label>Temporizador (seg)</label>
+        <div class="row" style="margin:0">
+          <input id="timerSecs" type="number" min="5" max="120" value="30">
+          <button class="btn warn" id="btnTimerToggle">Activar</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div style="flex:1">
+        <label>Respuesta del equipo activo</label>
+        <input id="answerInput" type="text" placeholder="Escribe la respuesta del equipo">
+      </div>
+      <button class="btn good" id="btnValidar">Validar</button>
+    </div>
+
+    <div class="row">
+  <button class="btn" id="btnLoadJSON">Cargar preguntas (.json)</button>
+  <input type="file" id="jsonFile" accept=".json" style="display:none">
+</div>
+
+<div class="row">
+      <button class="btn" id="btnRevelarTodas">Revelar todas</button>
+      <button class="btn warn" id="btnNuevaRonda">Nueva ronda</button>
+      <button class="btn bad" id="btnResetPartida">Borrar puntos</button>
+    </div>
+
+    <p class="help">Sugerencia: primero elige la pregunta, luego la sesión y quién está activo. Usa “Validar” para registrar las respuestas.</p>
+
+    <audio id="sndCorrect" src="correcto.mp3" preload="none"></audio>
+    <audio id="sndWrong" src="incorrecto.mp3" preload="none"></audio>
+    <audio id="sndTick" src="tick.mp3" preload="none"></audio>
+    <audio id="sndTime" src="timeup.mp3" preload="none"></audio>
+  </aside>
+
+  <main class="board">
+    <div class="header">
+      <div class="teams">
+        <div class="team" id="teamABox">
+          <div class="chip">A</div>
+          <input id="teamATitle" type="text" placeholder="Equipo A">
+          <div class="score" id="scoreABig">0</div>
+        </div>
+        <div class="team" id="teamBBox">
+          <div class="chip">B</div>
+          <input id="teamBTitle" type="text" placeholder="Equipo B">
+          <div class="score" id="scoreBBig">0</div>
+        </div>
+      </div>
+      <div class="title">
+        <div id="questionTitle">Cargando pregunta…</div>
+        <div class="small">Multiplicador: <span class="mult" id="multView">x1</span></div>
+      </div>
+      <div class="controls">
+        <div class="chip">Sesión: <span id="sessionView">Duelo</span></div>
+        <div class="chip">Temporizador: <span id="timerView">—</span></div>
+      </div>
+    </div>
+
+    <div class="qbar">
+      <div class="chip">Pregunta <span id="qNumView">—</span> de <span id="qTotal">—</span></div>
+      <div class="chip">Puntos ronda: <span id="roundPoints">0</span></div>
+    </div>
+
+    <div class="board-grid" id="answersGrid">
+      <!-- respuestas -->
+    </div>
+
+    <div class="strikes">
+      <div class="strike off" id="strike1">X</div>
+      <div class="strike off" id="strike2">X</div>
+      <div class="strike off" id="strike3">X</div>
+    </div>
+
+    <div class="footer-controls">
+      <button class="btn bad" id="btnStrike">Strike</button>
+      <button class="btn good" id="btnSumarEquipo">Sumar a equipo activo</button>
+      <button class="btn" id="btnCambiarEquipo">Cambiar equipo</button>
+    </div>
+
+    <div class="help">En “Robo”, el equipo contrario tiene una sola oportunidad: si acierta **cualquier** respuesta faltante, roba todos los puntos de la ronda.</div>
+  </main>
+</div>
+
+<script>
+// ===== Utilidades de texto y fuzzy =====
+const norm = s => (s||"")
+  .toString()
+  .normalize("NFD").replace(/\p{Diacritic}/gu,"")
+  .toLowerCase().trim();
+
+function diceSimilarity(a,b){
+  a = norm(a); b = norm(b);
+  if(a.length < 2 || b.length < 2) return 0;
+  const bigrams = s => {
+    const arr = [];
+    for(let i=0;i<s.length-1;i++) arr.push(s.slice(i,i+2));
+    return arr;
+  };
+  const A = bigrams(a), B = bigrams(b);
+  let matches = 0;
+  const map = new Map();
+  for(const x of A){ map.set(x, (map.get(x)||0) + 1); }
+  for(const y of B){
+    const c = map.get(y)||0;
+    if(c>0){ matches++; map.set(y, c-1); }
+  }
+  return (2*matches) / (A.length + B.length);
+}
+
+
+function levenshtein(a, b){
+  a = norm(a); b = norm(b);
+  const m = a.length, n = b.length;
+  const dp = Array.from({length:m+1},()=>Array(n+1).fill(0));
+  for(let i=0;i<=m;i++) dp[i][0]=i;
+  for(let j=0;j<=n;j++) dp[0][j]=j;
+  for(let i=1;i<=m;i++){
+    for(let j=1;j<=n;j++){
+      const cost = a[i-1]===b[j-1]?0:1;
+      dp[i][j] = Math.min(dp[i-1][j]+1, dp[i][j-1]+1, dp[i-1][j-1]+cost);
+    }
+  }
+  return dp[m][n];
+}
+
+function fuzzyEqual(input, target, aliases=[]){
+  const inN = norm(input), tgN = norm(target);
+  if(!inN || !tgN) return false;
+
+  if(inN === tgN) return true;
+  if(inN.length < 3) return false;
+
+  const candidates = [tgN, ...(aliases||[]).map(norm)];
+
+  for(const cand of candidates){
+    if(inN === cand) return true;
+    const L = cand.length <= 5 ? 1 : (cand.length <= 8 ? 2 : 3);
+    const lev = levenshtein(inN, cand);
+    const dice = diceSimilarity(inN, cand);
+    if(lev <= L && dice >= 0.60){
+      return true;
+    }
+  }
+  return false;
+}
+
+// ===== Estado =====
+let DATA = [];
+let qIndex = 0;
+let revealed = [];  // bools per answer
+let currentTeam = 'A'; // 'A' or 'B'
+let strikes = 0;
+let roundOwnerTeam = 'A'; // equipo que posee la ronda en 'ronda'
+let roundPoints = 0;
+let multiplier = 1;
+let session = 'duelo'; // duelo|ronda|robo
+let timerOn = false;
+let timerSec = 30;
+let timerInterval = null;
+
+const $ = sel => document.querySelector(sel);
+const $$ = sel => Array.from(document.querySelectorAll(sel));
+
+// ===== Persistencia mínima =====
+const store = {
+  load(){
+    try{
+      const s = JSON.parse(localStorage.getItem('paisanos_state')||'{}');
+      if(s.teamAName) $('#teamAName').value = s.teamAName;
+      if(s.teamBName) $('#teamBName').value = s.teamBName;
+      if(s.scoreA!=null){ $('#scoreA').textContent = s.scoreA; $('#scoreABig').textContent=s.scoreA; }
+      if(s.scoreB!=null){ $('#scoreB').textContent = s.scoreB; $('#scoreBBig').textContent=s.scoreB; }
+      if(s.currentTeam) setActiveTeam(s.currentTeam);
+    }catch(e){}
+  },
+  save(){
+    const s = {
+      teamAName: $('#teamAName').value,
+      teamBName: $('#teamBName').value,
+      scoreA: parseInt($('#scoreA').textContent||'0',10),
+      scoreB: parseInt($('#scoreB').textContent||'0',10),
+      currentTeam
+    };
+    localStorage.setItem('paisanos_state', JSON.stringify(s));
+  },
+  clearScores(){
+    const s = JSON.parse(localStorage.getItem('paisanos_state')||'{}');
+    s.scoreA = 0; s.scoreB = 0;
+    localStorage.setItem('paisanos_state', JSON.stringify(s));
+  }
+};
+
+function setActiveTeam(team){
+  currentTeam = team;
+  $('#teamABox').classList.toggle('active', team==='A');
+  $('#teamBBox').classList.toggle('active', team==='B');
+  store.save();
+}
+
+// ===== Carga de preguntas =====
+
+// ===== Carga local de JSON (soporte para file:// y fallback) =====
+
+function useQuestionsData(arr){
+  DATA = arr;
+  $('#qTotal').textContent = DATA.length;
+  const sel = $('#questionPicker');
+  sel.innerHTML = DATA.map((q,i)=>`<option value="${i}">${i+1}. ${q.pregunta}</option>`).join('');
+  sel.value = qIndex;
+  setQuestion(qIndex);
+}
+
+function tryLoadFromCache(){
+  try{
+    const raw = localStorage.getItem('paisanos_json_cache');
+    if(raw){
+      const arr = JSON.parse(raw);
+      if(Array.isArray(arr) && arr.length){ useQuestionsData(arr); return true; }
+    }
+  }catch(e){}
+  return false;
+}
+
+function enableLocalJsonLoader(){
+  const fileInput = document.getElementById('jsonFile');
+  const btn = document.getElementById('btnLoadJSON');
+  if(!btn || !fileInput) return;
+  // Evitar listeners duplicados
+  btn.onclick = ()=> fileInput.click();
+  fileInput.onchange = (e)=>{
+    const f = e.target.files && e.target.files[0];
+    if(!f) return;
+    const rd = new FileReader();
+    rd.onload = () => {
+      try{
+        const arr = JSON.parse(rd.result);
+        if(Array.isArray(arr) && arr.length){
+          localStorage.setItem('paisanos_json_cache', JSON.stringify(arr));
+          useQuestionsData(arr);
+        }else{
+          alert('El JSON no parece ser un arreglo de preguntas.');
+        }
+      }catch(err){
+        alert('JSON inválido: ' + err.message);
+      }
+    };
+    rd.readAsText(f, 'utf-8');
+  };
+}async function loadData(){
+  // Usa caché si existe (evita CORS y acelera)
+  if(tryLoadFromCache()){ enableLocalJsonLoader(); return; }
+
+  if(location.protocol === 'file:'){
+    // En file:// la mayoría de navegadores bloquean fetch
+    enableLocalJsonLoader();
+    alert('Estás abriendo el archivo por "file://". Usa "Cargar preguntas (.json)" o sirve la carpeta con un servidor local.');
+    return;
+  }
+  try{
+    const res = await fetch('preguntas.json');
+    if(!res.ok) throw new Error('HTTP '+res.status);
+    const arr = await res.json();
+    if(!Array.isArray(arr) || !arr.length) throw new Error('Formato JSON no válido');
+    localStorage.setItem('paisanos_json_cache', JSON.stringify(arr));
+    useQuestionsData(arr);
+  }catch(err){
+    enableLocalJsonLoader();
+    alert('No se pudo cargar preguntas.json ('+err.message+'). Cárgalo manualmente con el botón.');
+  }
+}
+function setQuestion(i){
+  qIndex = parseInt(i,10)||0;
+  const q = DATA[qIndex];
+  $('#questionPicker').value = qIndex;
+  $('#qNumView').textContent = qIndex+1;
+  $('#questionTitle').textContent = q.pregunta;
+  $('#multView').textContent = 'x'+multiplier;
+  $('#sessionView').textContent = session[0].toUpperCase()+session.slice(1);
+  buildAnswers(q.respuestas);
+  resetRound();
+}
+
+function buildAnswers(items){
+  const grid = $('#answersGrid');
+  const max = Math.max(4, items.length);
+  revealed = Array(max).fill(false);
+  grid.innerHTML = '';
+  for(let i=0;i<max;i++){
+    const it = items[i];
+    const num = i+1;
+    const isPlaceholder = !it;
+    const el = document.createElement('div');
+    el.className = 'card-answer'+(isPlaceholder?'':''); // revealed later
+    el.dataset.index = i;
+    el.innerHTML = `
+      <div class="n">${num}</div>
+      <div class="txt ${isPlaceholder?'placeholder':''}">${isPlaceholder?'—':''}</div>
+      <div class="pts">${isPlaceholder?'': '—'}</div>
+    `;
+    grid.appendChild(el);
+  }
+  updateRoundPoints();
+}
+
+function resetRound(){
+  strikes = 0;
+  roundPoints = 0;
+  updateStrikes();
+  updateRoundPoints();
+  $('#answerInput').value='';
+}
+
+// ===== Strikes =====
+function updateStrikes(){
+  [1,2,3].forEach(n=>{
+    $('#strike'+n).classList.toggle('off', n>strikes);
+  });
+}
+
+function addStrike(){
+  if(session!=='ronda') return;
+  strikes = Math.min(3, strikes+1);
+  playWrong();
+  updateStrikes();
+  if(strikes===3){
+    // Auto-ROBO: cambia turno al otro equipo y cambia sesión a 'robo'
+    setActiveTeam(currentTeam==='A'?'B':'A');
+    session = 'robo';
+    $('#session').value = 'robo';
+    $('#sessionView').textContent = 'Robo';
+    alert('¡3 strikes! Turno de ROBO para el otro equipo: una sola oportunidad para robar los puntos.');
+  }
+}
+
+// ===== Puntos =====
+function updateRoundPoints(){
+  $('#roundPoints').textContent = roundPoints;
+}
+
+function revealRemaining(){
+  const q = DATA[qIndex];
+  const cards = $$('#answersGrid .card-answer');
+  q.respuestas.forEach((r,i)=>{
+    if(!revealed[i] && cards[i]){
+      cards[i].classList.add('revealed');
+      cards[i].querySelector('.txt').textContent = r.texto;
+      cards[i].querySelector('.txt').classList.remove('placeholder');
+      cards[i].querySelector('.pts').textContent = r.puntos;
+      revealed[i] = true;
+    }
+  });
+}
+
+function advanceToNextQuestion(){
+  // Avanza a la siguiente pregunta; si ya no hay, vuelve a la 1 y avisa.
+  const next = qIndex + 1;
+  if(next < DATA.length){
+    setQuestion(next);
+  } else {
+    alert('Fin del banco de preguntas. Volvemos al inicio.');
+    setQuestion(0);
+  }
+  // Reset de UI de sesión/strikes ya lo hace setQuestion()
+  // Mantener el equipo activo según haya quedado tras el robo.
+}
+
+
+function addPointsToTeam(team, pts){
+  const id = team==='A' ? '#scoreA' : '#scoreB';
+  const idBig = team==='A' ? '#scoreABig' : '#scoreBBig';
+  const val = parseInt($(id).textContent||'0',10) + pts;
+  $(id).textContent = val;
+  $(idBig).textContent = val;
+  store.save();
+}
+
+function addPointsToActiveTeam(pts){
+  const id = currentTeam==='A' ? '#scoreA' : '#scoreB';
+  const idBig = currentTeam==='A' ? '#scoreABig' : '#scoreBBig';
+  const val = parseInt($(id).textContent||'0',10) + pts;
+  $(id).textContent = val;
+  $(idBig).textContent = val;
+  store.save();
+}
+
+// ===== Sonidos =====
+function playCorrect(){ $('#sndCorrect')?.play().catch(()=>{}); }
+function playWrong(){ $('#sndWrong')?.play().catch(()=>{}); }
+function playTick(){ $('#sndTick')?.play().catch(()=>{}); }
+function playTime(){ $('#sndTime')?.play().catch(()=>{}); }
+
+// ===== Validación/Fuzzy =====
+function validarRespuesta(input){
+  const q = DATA[qIndex];
+  let anyMatch = false;
+  q.respuestas.forEach((r, i)=>{
+    if(revealed[i]) return;
+    if(fuzzyEqual(input, r.texto, r.aliases || [])){
+      // Reveal
+      const cards = $$('#answersGrid .card-answer');
+      const card = cards[i];
+      card.classList.add('revealed');
+      card.querySelector('.txt').textContent = r.texto;
+      card.querySelector('.txt').classList.remove('placeholder');
+      card.querySelector('.pts').textContent = r.puntos;
+      revealed[i] = true;
+      const pts = (r.puntos||0) * multiplier;
+      roundPoints += pts;
+      updateRoundPoints();
+      playCorrect();
+      anyMatch = true;
+    }
+  });
+  if(!anyMatch) playWrong();
+  return anyMatch;
+}
+
+// ===== Robo =====
+function intentoRobo(input){
+  const q = DATA[qIndex];
+  for(let i=0;i<q.respuestas.length;i++){
+    if(revealed[i]) continue;
+    const r = q.respuestas[i];
+    if(fuzzyEqual(input, r.texto, r.aliases || [])){
+      // Roba todo
+      playCorrect();
+      return true;
+    }
+  }
+  playWrong();
+  return false;
+}
+
+// ===== Temporizador =====
+function updateTimerView(){
+  $('#timerView').textContent = timerOn ? (timerSec+'s') : '—';
+}
+function tick(){
+  if(!timerOn) return;
+  if(timerSec<=0){
+    clearInterval(timerInterval); timerInterval=null; timerOn=false;
+    updateTimerView();
+    playTime();
+    // Auto-strike si estamos en Ronda
+    if(session==='ronda'){ addStrike(); }
+    return;
+  }
+  timerSec--;
+  if(timerSec<=20) playTick();
+  updateTimerView();
+}
+function toggleTimer(){
+  if(timerOn){ // apagar
+    timerOn=false; clearInterval(timerInterval); timerInterval=null; updateTimerView(); $('#btnTimerToggle').textContent='Activar'; return;
+  }
+  timerSec = parseInt($('#timerSecs').value||'30',10);
+  timerOn=true; updateTimerView(); $('#btnTimerToggle').textContent='Detener';
+  timerInterval = setInterval(tick, 1000);
+}
+
+// ===== UI Events =====
+function bindUI(){
+  $('#teamAName').addEventListener('input', e=>$('#teamATitle').value=e.target.value);
+  $('#teamBName').addEventListener('input', e=>$('#teamBTitle').value=e.target.value);
+  $('#teamATitle').addEventListener('input', e=>$('#teamAName').value=e.target.value);
+  $('#teamBTitle').addEventListener('input', e=>$('#teamBName').value=e.target.value);
+  ['teamAName','teamBName','teamATitle','teamBTitle'].forEach(id=>{
+    $('#'+id).addEventListener('change', store.save);
+  });
+
+  $('#btnAActive').addEventListener('click', ()=>setActiveTeam('A'));
+  $('#btnBActive').addEventListener('click', ()=>setActiveTeam('B'));
+
+  $('#btnAdd10A').addEventListener('click', ()=>addPointsToActive('A',10));
+  $('#btnSub10A').addEventListener('click', ()=>addPointsToActive('A',-10));
+  $('#btnAdd10B').addEventListener('click', ()=>addPointsToActive('B',10));
+  $('#btnSub10B').addEventListener('click', ()=>addPointsToActive('B',-10));
+  function addPointsToActive(team, delta){
+    const id = team==='A'? '#scoreA' : '#scoreB';
+    const idB = team==='A'? '#scoreABig' : '#scoreBBig';
+    const v = Math.max(0, parseInt($(id).textContent||'0',10)+delta);
+    $(id).textContent = v; $(idB).textContent = v; store.save();
+  }
+
+  $('#session').addEventListener('change', e=>{
+    session = e.target.value;
+    $('#sessionView').textContent = session[0].toUpperCase()+session.slice(1);
+    if(session==='ronda'){ roundOwnerTeam = currentTeam; }
+  });
+  $('#mult').addEventListener('change', e=>{
+    multiplier = parseInt(e.target.value||'1',10);
+    $('#multView').textContent = 'x'+multiplier;
+  });
+  $('#questionPicker').addEventListener('change', e=>setQuestion(e.target.value));
+
+  $('#btnTimerToggle').addEventListener('click', toggleTimer);
+
+  $('#btnValidar').addEventListener('click', ()=>{
+    const input = $('#answerInput').value.trim();
+    if(!input) return;
+    if(session==='duelo' || session==='ronda'){
+      const ok = validarRespuesta(input);
+      if(session==='ronda' && !ok){ addStrike(); }
+    }else if(session==='robo'){
+      const ok = intentoRobo(input);
+      if(ok){
+        addPointsToActiveTeam(roundPoints);
+      } else {
+        // Falló el robo: puntos para el dueño original de la ronda
+        addPointsToTeam(roundOwnerTeam, roundPoints);
+      }
+      // Mostrar todas las respuestas y pasar a la siguiente pregunta automáticamente
+      revealRemaining();
+      roundPoints = 0; updateRoundPoints();
+      // Regresar la sesión a 'duelo' por defecto para la siguiente pregunta
+      session = 'duelo'; $('#session').value = 'duelo'; $('#sessionView').textContent = 'Duelo';
+      advanceToNextQuestion();
+    }
+    $('#answerInput').value='';
+  });
+
+  $('#btnRevelarTodas').addEventListener('click', ()=>{
+    const q = DATA[qIndex];
+    q.respuestas.forEach((r,i)=>{
+      if(revealed[i]) return;
+      const cards = $$('#answersGrid .card-answer');
+      if(!cards[i]) return;
+      cards[i].classList.add('revealed');
+      cards[i].querySelector('.txt').textContent = r.texto;
+      cards[i].querySelector('.txt').classList.remove('placeholder');
+      cards[i].querySelector('.pts').textContent = r.puntos;
+      revealed[i] = true;
+      const pts = (r.puntos||0) * multiplier;
+      roundPoints += pts;
+    });
+    updateRoundPoints();
+  });
+
+  $('#btnNuevaRonda').addEventListener('click', ()=>{
+    setQuestion(qIndex);
+  });
+
+  $('#btnResetPartida').addEventListener('click', ()=>{
+    if(confirm('¿Borrar todos los puntos acumulados?')){
+      $('#scoreA').textContent='0'; $('#scoreABig').textContent='0';
+      $('#scoreB').textContent='0'; $('#scoreBBig').textContent='0';
+      store.clearScores(); store.save();
+    }
+  });
+
+  $('#btnStrike').addEventListener('click', addStrike);
+  $('#btnSumarEquipo').addEventListener('click', ()=>{
+    addPointsToActiveTeam(roundPoints);
+    roundPoints = 0; updateRoundPoints();
+  });
+  $('#btnCambiarEquipo').addEventListener('click', ()=>setActiveTeam(currentTeam==='A'?'B':'A'));
+}
+
+window.addEventListener('load', async ()=>{ enableLocalJsonLoader();
+  store.load();
+  bindUI();
+  setActiveTeam(currentTeam);
+  await loadData();
+});
+</script>
+</body>
+</html>

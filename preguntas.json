@@ -1,0 +1,113 @@
+[
+  {
+    "pregunta": "¿Antónimo de libertad?",
+    "respuestas": [
+      {
+        "texto": "Esclavitud",
+        "puntos": 49,
+        "aliases": [
+          "servilismo",
+          "subyugación",
+          "opresión total"
+        ]
+      },
+      {
+        "texto": "Encierro",
+        "puntos": 31,
+        "aliases": [
+          "confinamiento",
+          "reclusión"
+        ]
+      },
+      {
+        "texto": "Prisión",
+        "puntos": 11,
+        "aliases": [
+          "carcel",
+          "cárceles",
+          "cárcel"
+        ]
+      },
+      {
+        "texto": "Opresión",
+        "puntos": 9,
+        "aliases": [
+          "coacción",
+          "dominación"
+        ]
+      }
+    ]
+  },
+  {
+    "pregunta": "Nombra una fruta cítrica",
+    "respuestas": [
+      {
+        "texto": "Naranja",
+        "puntos": 40,
+        "aliases": [
+          "china",
+          "naranjas"
+        ]
+      },
+      {
+        "texto": "Limón",
+        "puntos": 35,
+        "aliases": [
+          "lima",
+          "limones"
+        ]
+      },
+      {
+        "texto": "Toronja",
+        "puntos": 15,
+        "aliases": [
+          "pomelo",
+          "toronjas"
+        ]
+      },
+      {
+        "texto": "Mandarina",
+        "puntos": 10,
+        "aliases": [
+          "mandarinas"
+        ]
+      }
+    ]
+  },
+  {
+    "pregunta": "Algo que llevas a la playa",
+    "respuestas": [
+      {
+        "texto": "Traje de baño",
+        "puntos": 35,
+        "aliases": [
+          "bikini",
+          "bañador"
+        ]
+      },
+      {
+        "texto": "Bloqueador",
+        "puntos": 25,
+        "aliases": [
+          "protector solar",
+          "sunblock",
+          "bloqueador solar"
+        ]
+      },
+      {
+        "texto": "Toalla",
+        "puntos": 20,
+        "aliases": [
+          "toallas"
+        ]
+      },
+      {
+        "texto": "Sombrilla",
+        "puntos": 20,
+        "aliases": [
+          "parasol"
+        ]
+      }
+    ]
+  }
+]
