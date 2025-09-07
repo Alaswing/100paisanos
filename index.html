@@ -281,12 +281,12 @@ function setQuestion(i){
     const r = q?.respuestas[idx];
     if(r){
       const aliases = (r.aliases||r.alias||[]).map(norm);
-      items.push(`<li class="answer hidden" data-pts="\${r.puntos}" data-text="\${norm(r.texto)}" data-alias="\${aliases.join('|')}">
-        <div class="left"><span class="badge">\${idx+1}</span><span class="txt">\${r.texto}</span></div>
-        <span class="pts">\${r.puntos}</span></li>`);
+      items.push(`<li class="answer hidden" data-pts="${r.puntos}" data-text="${norm(r.texto)}" data-alias="${aliases.join('|')}">
+        <div class="left"><span class="badge">${idx+1}</span><span class="txt">${r.texto}</span></div>
+        <span class="pts">${r.puntos}</span></li>`);
     }else{
       items.push(`<li class="answer placeholder hidden" data-pts="0" data-text="">
-        <div class="left"><span class="badge">\${idx+1}</span><span class="txt">—</span></div>
+        <div class="left"><span class="badge">${idx+1}</span><span class="txt">—</span></div>
         <span class="pts">0</span></li>`);
     }
   }
